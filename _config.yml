@@ -13,3 +13,6 @@ html:
   extra_css: ["_static/custom.css"]
   home_page_in_navbar: true
 
+repository:
+  url: https://github.com/XeroX-cat/1Laba
+  branch: main
