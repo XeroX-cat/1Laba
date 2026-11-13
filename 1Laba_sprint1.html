@@ -345,6 +345,27 @@ document.write(`
                 <article class="bd-article">
                   
   <p><a href="https://colab.research.google.com/github/XeroX-cat/1Laba/blob/main/1Laba_sprint1.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="err">!</span><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">raw</span><span class="o">.</span><span class="n">githubusercontent</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">XeroX</span><span class="o">-</span><span class="n">cat</span><span class="o">/</span><span class="mi">1</span><span class="n">Laba</span><span class="o">/</span><span class="n">main</span><span class="o">/</span><span class="n">Макаки</span><span class="o">.</span><span class="n">xlsx</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>--2026-11-13 19:12:44--  https://raw.githubusercontent.com/XeroX-cat/1Laba/main/%D0%9C%D0%B0%D0%BA%D0%B0%D0%BA%D0%B8.xlsx
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.108.133, 185.199.111.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 43969 (43K) [application/octet-stream]
+Saving to: ‘Макаки.xlsx’
+
+Макаки.xlsx         100%[===================&gt;]  42.94K  --.-KB/s    in 0.006s  
+
+2026-11-13 19:12:44 (6.95 MB/s) - ‘Макаки.xlsx’ saved [43969/43969]
+</pre></div>
+</div>
+</div>
+</div>
 <p><a id="s1-top"></a></p>
 <div style="font-family: 'Georgia', serif; max-width: 900px; margin: 0 auto; padding: 40px; background-color: #1a1a1a; color: #e0e0e0; border-top: 4px solid #d4af37; border-bottom: 2px solid #333;">
     <div style="font-size: 12px; letter-spacing: 4px; color: #9b2226; text-transform: uppercase; font-weight: bold;">Lab 01 // Sprint 01</div>
@@ -391,7 +412,7 @@ document.write(`
 </details>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-2f1666e7-d4f9-4b56-a442-c88d9be7a630" class="colab-df-container">
+  <div id="df-bcffc973-156d-4e02-af2d-3b23fef6128d" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -494,7 +515,7 @@ document.write(`
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-2f1666e7-d4f9-4b56-a442-c88d9be7a630')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-bcffc973-156d-4e02-af2d-3b23fef6128d')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -546,12 +567,12 @@ document.write(`
 
     <script>
       const buttonEl =
-        document.querySelector('#df-2f1666e7-d4f9-4b56-a442-c88d9be7a630 button.colab-df-convert');
+        document.querySelector('#df-bcffc973-156d-4e02-af2d-3b23fef6128d button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-2f1666e7-d4f9-4b56-a442-c88d9be7a630');
+        const element = document.querySelector('#df-bcffc973-156d-4e02-af2d-3b23fef6128d');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -753,7 +774,12 @@ P(X=x_i)=p_i=\frac{n_i}{N},\qquad N=134.
 X(\omega_j) = m_j, \qquad
 P(X=x_i)=p_i=\frac{n_i}{N},\quad p_i\ge 0,\quad \sum_{i=1}^{k}p_i=1.
 \]</div>
-<div class="cell docutils container">
+<div class="cell tag_hide-input docutils container">
+<details class="admonition hide above-input">
+<summary aria-label="Toggle hidden content">
+<p class="collapsed admonition-title">Show code cell source</p>
+<p class="expanded admonition-title">Hide code cell source</p>
+</summary>
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># === СТИЛЬ ГРАФИКОВ ===</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mpl</span>
@@ -790,6 +816,7 @@ P(X=x_i)=p_i=\frac{n_i}{N},\quad p_i\ge 0,\quad \sum_{i=1}^{k}p_i=1.
 </pre></div>
 </div>
 </div>
+</details>
 </div>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
@@ -868,8 +895,7 @@ P(X=x_i)=p_i=\frac{n_i}{N},\quad p_i\ge 0,\quad \sum_{i=1}^{k}p_i=1.
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество масс:"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">mass</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество уникальных масс:"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">mass_table</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Сумма относительных частот:"</span><span class="p">,</span> <span class="n">mass_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
-<span class="n">display</span><span class="p">(</span><span class="n">mass_table</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"... и еще </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">mass_table</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">10</span><span class="si">}</span><span class="s2"> строк."</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">mass_table</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -881,7 +907,7 @@ P(X=x_i)=p_i=\frac{n_i}{N},\quad p_i\ge 0,\quad \sum_{i=1}^{k}p_i=1.
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-8358f59a-1c87-4a3a-916b-2d5bdcdc81b8" class="colab-df-container">
+  <div id="df-f1ea1ee3-1036-4165-826f-ee5136f97979" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -943,47 +969,55 @@ P(X=x_i)=p_i=\frac{n_i}{N},\quad p_i\ge 0,\quad \sum_{i=1}^{k}p_i=1.
       <td>0.037313</td>
     </tr>
     <tr>
-      <th>5</th>
-      <td>5.53</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.044776</td>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
-      <th>6</th>
-      <td>5.84</td>
-      <td>2</td>
-      <td>0.014925</td>
-      <td>0.059701</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>5.93</td>
+      <th>123</th>
+      <td>19.20</td>
       <td>1</td>
       <td>0.007463</td>
-      <td>0.067164</td>
+      <td>0.970149</td>
     </tr>
     <tr>
-      <th>8</th>
-      <td>6.30</td>
+      <th>124</th>
+      <td>19.76</td>
       <td>1</td>
       <td>0.007463</td>
-      <td>0.074627</td>
+      <td>0.977612</td>
     </tr>
     <tr>
-      <th>9</th>
-      <td>6.39</td>
+      <th>125</th>
+      <td>20.40</td>
       <td>1</td>
       <td>0.007463</td>
-      <td>0.082090</td>
+      <td>0.985075</td>
+    </tr>
+    <tr>
+      <th>126</th>
+      <td>20.97</td>
+      <td>1</td>
+      <td>0.007463</td>
+      <td>0.992537</td>
+    </tr>
+    <tr>
+      <th>127</th>
+      <td>22.35</td>
+      <td>1</td>
+      <td>0.007463</td>
+      <td>1.000000</td>
     </tr>
   </tbody>
 </table>
+<p>128 rows × 4 columns</p>
 </div>
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-8358f59a-1c87-4a3a-916b-2d5bdcdc81b8')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-f1ea1ee3-1036-4165-826f-ee5136f97979')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -1035,12 +1069,12 @@ P(X=x_i)=p_i=\frac{n_i}{N},\quad p_i\ge 0,\quad \sum_{i=1}^{k}p_i=1.
 
     <script>
       const buttonEl =
-        document.querySelector('#df-8358f59a-1c87-4a3a-916b-2d5bdcdc81b8 button.colab-df-convert');
+        document.querySelector('#df-f1ea1ee3-1036-4165-826f-ee5136f97979 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-8358f59a-1c87-4a3a-916b-2d5bdcdc81b8');
+        const element = document.querySelector('#df-f1ea1ee3-1036-4165-826f-ee5136f97979');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1061,10 +1095,7 @@ P(X=x_i)=p_i=\frac{n_i}{N},\quad p_i\ge 0,\quad \sum_{i=1}^{k}p_i=1.
 
     </div>
   </div>
-</div><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>... и еще 118 строк.
-</pre></div>
-</div>
-</div>
+</div></div>
 </div>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
@@ -1184,7 +1215,7 @@ Cтандартное отклонение, кг: 3.47
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-8c024046-b9ec-4a38-adad-deae9eb8141d" class="colab-df-container">
+  <div id="df-f8f0916c-b56b-4347-8e5c-f151d1d3e363" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1265,7 +1296,7 @@ Cтандартное отклонение, кг: 3.47
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-8c024046-b9ec-4a38-adad-deae9eb8141d')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-f8f0916c-b56b-4347-8e5c-f151d1d3e363')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -1317,12 +1348,12 @@ Cтандартное отклонение, кг: 3.47
 
     <script>
       const buttonEl =
-        document.querySelector('#df-8c024046-b9ec-4a38-adad-deae9eb8141d button.colab-df-convert');
+        document.querySelector('#df-f8f0916c-b56b-4347-8e5c-f151d1d3e363 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-8c024046-b9ec-4a38-adad-deae9eb8141d');
+        const element = document.querySelector('#df-f8f0916c-b56b-4347-8e5c-f151d1d3e363');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1649,8 +1680,7 @@ Y(\omega_j) = b_j, \qquad P(Y=y_i)=p_i=\frac{n_i}{N}.
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество длин тела:"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">b_length</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество уникальных длин тела:"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">b_length_table</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Сумма относительных частот:"</span><span class="p">,</span> <span class="n">b_length_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
-<span class="n">display</span><span class="p">(</span><span class="n">b_length_table</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"... и еще </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">b_length_table</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">10</span><span class="si">}</span><span class="s2"> строк."</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">b_length_table</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -1662,7 +1692,7 @@ Y(\omega_j) = b_j, \qquad P(Y=y_i)=p_i=\frac{n_i}{N}.
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-68ca54a9-081e-4a20-9adb-57dc6791db11" class="colab-df-container">
+  <div id="df-a14068e7-fd17-4f55-ac5c-909cd0c9cd85" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1724,47 +1754,55 @@ Y(\omega_j) = b_j, \qquad P(Y=y_i)=p_i=\frac{n_i}{N}.
       <td>0.044776</td>
     </tr>
     <tr>
-      <th>5</th>
-      <td>479.8</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.052239</td>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
-      <th>6</th>
-      <td>481.1</td>
+      <th>123</th>
+      <td>600.0</td>
       <td>1</td>
       <td>0.007463</td>
-      <td>0.059701</td>
+      <td>0.970149</td>
     </tr>
     <tr>
-      <th>7</th>
-      <td>485.5</td>
+      <th>124</th>
+      <td>603.1</td>
       <td>1</td>
       <td>0.007463</td>
-      <td>0.067164</td>
+      <td>0.977612</td>
     </tr>
     <tr>
-      <th>8</th>
-      <td>486.8</td>
+      <th>125</th>
+      <td>604.0</td>
       <td>1</td>
       <td>0.007463</td>
-      <td>0.074627</td>
+      <td>0.985075</td>
     </tr>
     <tr>
-      <th>9</th>
-      <td>487.3</td>
+      <th>126</th>
+      <td>606.3</td>
       <td>1</td>
       <td>0.007463</td>
-      <td>0.082090</td>
+      <td>0.992537</td>
+    </tr>
+    <tr>
+      <th>127</th>
+      <td>609.9</td>
+      <td>1</td>
+      <td>0.007463</td>
+      <td>1.000000</td>
     </tr>
   </tbody>
 </table>
+<p>128 rows × 4 columns</p>
 </div>
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-68ca54a9-081e-4a20-9adb-57dc6791db11')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-a14068e7-fd17-4f55-ac5c-909cd0c9cd85')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -1816,12 +1854,12 @@ Y(\omega_j) = b_j, \qquad P(Y=y_i)=p_i=\frac{n_i}{N}.
 
     <script>
       const buttonEl =
-        document.querySelector('#df-68ca54a9-081e-4a20-9adb-57dc6791db11 button.colab-df-convert');
+        document.querySelector('#df-a14068e7-fd17-4f55-ac5c-909cd0c9cd85 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-68ca54a9-081e-4a20-9adb-57dc6791db11');
+        const element = document.querySelector('#df-a14068e7-fd17-4f55-ac5c-909cd0c9cd85');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1842,10 +1880,7 @@ Y(\omega_j) = b_j, \qquad P(Y=y_i)=p_i=\frac{n_i}{N}.
 
     </div>
   </div>
-</div><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>... и еще 118 строк.
-</pre></div>
-</div>
-</div>
+</div></div>
 </div>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
@@ -1959,7 +1994,7 @@ Cтандартное отклонение, мм: 32.43
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-71410dc9-de30-4b71-a052-506f6b649878" class="colab-df-container">
+  <div id="df-70d3c1c7-d29f-4d21-b7c7-fd98f0bbea4f" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -2040,7 +2075,7 @@ Cтандартное отклонение, мм: 32.43
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-71410dc9-de30-4b71-a052-506f6b649878')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-70d3c1c7-d29f-4d21-b7c7-fd98f0bbea4f')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -2092,12 +2127,12 @@ Cтандартное отклонение, мм: 32.43
 
     <script>
       const buttonEl =
-        document.querySelector('#df-71410dc9-de30-4b71-a052-506f6b649878 button.colab-df-convert');
+        document.querySelector('#df-70d3c1c7-d29f-4d21-b7c7-fd98f0bbea4f button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-71410dc9-de30-4b71-a052-506f6b649878');
+        const element = document.querySelector('#df-70d3c1c7-d29f-4d21-b7c7-fd98f0bbea4f');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -2424,8 +2459,7 @@ Z(\omega_j) = h_j, \qquad P(Z=z_i)=p_i=\frac{n_i}{N}.
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество длин плечевых костей:"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">h_length</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество уникальных длин плечевых костей:"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">h_length_table</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Сумма относительных частот:"</span><span class="p">,</span> <span class="n">h_length_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
-<span class="n">display</span><span class="p">(</span><span class="n">h_length_table</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"... и еще </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">h_length_table</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">10</span><span class="si">}</span><span class="s2"> строк."</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">h_length_table</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -2437,7 +2471,7 @@ Z(\omega_j) = h_j, \qquad P(Z=z_i)=p_i=\frac{n_i}{N}.
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-3f2d19f6-d8ff-44a1-a690-b92f5dcfdf2c" class="colab-df-container">
+  <div id="df-4f9bb6ae-c7b3-49a1-acc8-8c2589804b1b" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -2499,47 +2533,55 @@ Z(\omega_j) = h_j, \qquad P(Z=z_i)=p_i=\frac{n_i}{N}.
       <td>0.037313</td>
     </tr>
     <tr>
-      <th>5</th>
-      <td>137.07</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.044776</td>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
-      <th>6</th>
-      <td>137.90</td>
+      <th>127</th>
+      <td>175.45</td>
       <td>1</td>
       <td>0.007463</td>
-      <td>0.052239</td>
+      <td>0.970149</td>
     </tr>
     <tr>
-      <th>7</th>
-      <td>137.98</td>
+      <th>128</th>
+      <td>177.33</td>
       <td>1</td>
       <td>0.007463</td>
-      <td>0.059701</td>
+      <td>0.977612</td>
     </tr>
     <tr>
-      <th>8</th>
-      <td>138.58</td>
+      <th>129</th>
+      <td>181.34</td>
       <td>1</td>
       <td>0.007463</td>
-      <td>0.067164</td>
+      <td>0.985075</td>
     </tr>
     <tr>
-      <th>9</th>
-      <td>139.01</td>
+      <th>130</th>
+      <td>181.37</td>
       <td>1</td>
       <td>0.007463</td>
-      <td>0.074627</td>
+      <td>0.992537</td>
+    </tr>
+    <tr>
+      <th>131</th>
+      <td>187.77</td>
+      <td>1</td>
+      <td>0.007463</td>
+      <td>1.000000</td>
     </tr>
   </tbody>
 </table>
+<p>132 rows × 4 columns</p>
 </div>
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-3f2d19f6-d8ff-44a1-a690-b92f5dcfdf2c')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-4f9bb6ae-c7b3-49a1-acc8-8c2589804b1b')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -2591,12 +2633,12 @@ Z(\omega_j) = h_j, \qquad P(Z=z_i)=p_i=\frac{n_i}{N}.
 
     <script>
       const buttonEl =
-        document.querySelector('#df-3f2d19f6-d8ff-44a1-a690-b92f5dcfdf2c button.colab-df-convert');
+        document.querySelector('#df-4f9bb6ae-c7b3-49a1-acc8-8c2589804b1b button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-3f2d19f6-d8ff-44a1-a690-b92f5dcfdf2c');
+        const element = document.querySelector('#df-4f9bb6ae-c7b3-49a1-acc8-8c2589804b1b');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -2617,10 +2659,7 @@ Z(\omega_j) = h_j, \qquad P(Z=z_i)=p_i=\frac{n_i}{N}.
 
     </div>
   </div>
-</div><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>... и еще 122 строк.
-</pre></div>
-</div>
-</div>
+</div></div>
 </div>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
@@ -2734,7 +2773,7 @@ Cтандартное отклонение, мм: 11.20
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-6132e318-f594-426e-8dac-b78f2cbaa6a0" class="colab-df-container">
+  <div id="df-b3766860-6fe0-4a41-b672-08ddc7b204ec" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -2815,7 +2854,7 @@ Cтандартное отклонение, мм: 11.20
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-6132e318-f594-426e-8dac-b78f2cbaa6a0')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-b3766860-6fe0-4a41-b672-08ddc7b204ec')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -2867,12 +2906,12 @@ Cтандартное отклонение, мм: 11.20
 
     <script>
       const buttonEl =
-        document.querySelector('#df-6132e318-f594-426e-8dac-b78f2cbaa6a0 button.colab-df-convert');
+        document.querySelector('#df-b3766860-6fe0-4a41-b672-08ddc7b204ec button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-6132e318-f594-426e-8dac-b78f2cbaa6a0');
+        const element = document.querySelector('#df-b3766860-6fe0-4a41-b672-08ddc7b204ec');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -3199,8 +3238,7 @@ W(\omega_j) = f_j, \qquad P(W=w_i)=p_i=\frac{n_i}{N}.
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество длин бедренных костей:"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">f_length</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество уникальных длин бедренных костей:"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">f_length_table</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Сумма относительных частот:"</span><span class="p">,</span> <span class="n">f_length_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
-<span class="n">display</span><span class="p">(</span><span class="n">f_length_table</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"... и еще </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">f_length_table</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">10</span><span class="si">}</span><span class="s2"> строк."</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">f_length_table</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -3212,7 +3250,7 @@ W(\omega_j) = f_j, \qquad P(W=w_i)=p_i=\frac{n_i}{N}.
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-9e2b9b3d-61c3-4f6e-bcf7-f8d70e4c105d" class="colab-df-container">
+  <div id="df-6884b864-573a-4a7f-80d6-8b5928d83907" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -3274,47 +3312,55 @@ W(\omega_j) = f_j, \qquad P(W=w_i)=p_i=\frac{n_i}{N}.
       <td>0.037313</td>
     </tr>
     <tr>
-      <th>5</th>
-      <td>155.51</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.044776</td>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
-      <th>6</th>
-      <td>155.92</td>
+      <th>126</th>
+      <td>205.35</td>
       <td>1</td>
       <td>0.007463</td>
-      <td>0.052239</td>
+      <td>0.970149</td>
     </tr>
     <tr>
-      <th>7</th>
-      <td>156.34</td>
+      <th>127</th>
+      <td>205.46</td>
       <td>1</td>
       <td>0.007463</td>
-      <td>0.059701</td>
+      <td>0.977612</td>
     </tr>
     <tr>
-      <th>8</th>
-      <td>157.56</td>
+      <th>128</th>
+      <td>208.16</td>
       <td>1</td>
       <td>0.007463</td>
-      <td>0.067164</td>
+      <td>0.985075</td>
     </tr>
     <tr>
-      <th>9</th>
-      <td>158.68</td>
+      <th>129</th>
+      <td>214.48</td>
       <td>1</td>
       <td>0.007463</td>
-      <td>0.074627</td>
+      <td>0.992537</td>
+    </tr>
+    <tr>
+      <th>130</th>
+      <td>217.33</td>
+      <td>1</td>
+      <td>0.007463</td>
+      <td>1.000000</td>
     </tr>
   </tbody>
 </table>
+<p>131 rows × 4 columns</p>
 </div>
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-9e2b9b3d-61c3-4f6e-bcf7-f8d70e4c105d')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-6884b864-573a-4a7f-80d6-8b5928d83907')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -3366,12 +3412,12 @@ W(\omega_j) = f_j, \qquad P(W=w_i)=p_i=\frac{n_i}{N}.
 
     <script>
       const buttonEl =
-        document.querySelector('#df-9e2b9b3d-61c3-4f6e-bcf7-f8d70e4c105d button.colab-df-convert');
+        document.querySelector('#df-6884b864-573a-4a7f-80d6-8b5928d83907 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-9e2b9b3d-61c3-4f6e-bcf7-f8d70e4c105d');
+        const element = document.querySelector('#df-6884b864-573a-4a7f-80d6-8b5928d83907');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -3392,10 +3438,7 @@ W(\omega_j) = f_j, \qquad P(W=w_i)=p_i=\frac{n_i}{N}.
 
     </div>
   </div>
-</div><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>... и еще 121 строк.
-</pre></div>
-</div>
-</div>
+</div></div>
 </div>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
@@ -3507,7 +3550,7 @@ Cтандартное отклонение, мм: 14.50
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-73377631-6c43-46b9-bb4f-4b04e10167e6" class="colab-df-container">
+  <div id="df-39028007-fc49-40d9-9d78-1483dc1a6032" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -3588,7 +3631,7 @@ Cтандартное отклонение, мм: 14.50
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-73377631-6c43-46b9-bb4f-4b04e10167e6')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-39028007-fc49-40d9-9d78-1483dc1a6032')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -3640,12 +3683,12 @@ Cтандартное отклонение, мм: 14.50
 
     <script>
       const buttonEl =
-        document.querySelector('#df-73377631-6c43-46b9-bb4f-4b04e10167e6 button.colab-df-convert');
+        document.querySelector('#df-39028007-fc49-40d9-9d78-1483dc1a6032 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-73377631-6c43-46b9-bb4f-4b04e10167e6');
+        const element = document.querySelector('#df-39028007-fc49-40d9-9d78-1483dc1a6032');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
