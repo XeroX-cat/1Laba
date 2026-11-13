@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=0f924352" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=90d15450" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -345,27 +345,6 @@ document.write(`
                 <article class="bd-article">
                   
   <p><a href="https://colab.research.google.com/github/XeroX-cat/1Laba/blob/main/1Laba_sprint1.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="err">!</span><span class="n">wget</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">raw</span><span class="o">.</span><span class="n">githubusercontent</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">XeroX</span><span class="o">-</span><span class="n">cat</span><span class="o">/</span><span class="mi">1</span><span class="n">Laba</span><span class="o">/</span><span class="n">main</span><span class="o">/</span><span class="n">Макаки</span><span class="o">.</span><span class="n">xlsx</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>--2026-11-12 22:36:25--  https://raw.githubusercontent.com/XeroX-cat/1Laba/main/%D0%9C%D0%B0%D0%BA%D0%B0%D0%BA%D0%B8.xlsx
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 43969 (43K) [application/octet-stream]
-Saving to: ‘Макаки.xlsx’
-
-Макаки.xlsx         100%[===================&gt;]  42.94K  --.-KB/s    in 0.001s  
-
-2026-11-12 22:36:25 (29.2 MB/s) - ‘Макаки.xlsx’ saved [43969/43969]
-</pre></div>
-</div>
-</div>
-</div>
 <p><a id="s1-top"></a></p>
 <div style="font-family: 'Georgia', serif; max-width: 900px; margin: 0 auto; padding: 40px; background-color: #1a1a1a; color: #e0e0e0; border-top: 4px solid #d4af37; border-bottom: 2px solid #333;">
     <div style="font-size: 12px; letter-spacing: 4px; color: #9b2226; text-transform: uppercase; font-weight: bold;">Lab 01 // Sprint 01</div>
@@ -373,7 +352,7 @@ Saving to: ‘Макаки.xlsx’
     <div style="font-size: 16px; color: #888; font-style: italic; margin-bottom: 20px;">описательная статистика, EDA, проверка гипотез</div>
     <div style="height: 1px; background: #333; margin: 20px 0;"></div>
     <div style="font-size: 12px; color: #888; letter-spacing: 1px;">
-        КТвД &nbsp;·&nbsp; XeroX-cat &nbsp;·&nbsp; <a href="https://github.com/XeroX-cat/1Laba" style="color: #d4af37; text-decoration: none;">github.com/XeroX-cat/1Laba</a>
+        &nbsp; <a href="https://github.com/XeroX-cat/1Laba" style="color: #d4af37; text-decoration: none;">github.com/XeroX-cat/1Laba</a>
     </div>
 </div>
 <section id="id1">
@@ -395,14 +374,7 @@ Saving to: ‘Макаки.xlsx’
 </div>
 <p>Источник: <a class="reference external" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3403949/">PMC3403949</a>. Загружаем <code class="docutils literal notranslate"><span class="pre">Макаки.xlsx</span></code>, оставляем пол, долю китайского происхождения, массу тела, длину тела, длину плечевой и бедренной костей; строки с пропусками удаляем.</p>
 <details>
-<summary style="cursor: pointer; color: #d4af37; font-weight: bold;">[ Показать/Скрыть код ]</summary>
-<p>Код ниже выполняет загрузку и очистку. Результаты выводятся под ячейками.</p>
-</details><div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<summary style="cursor: pointer; color: #d4af37; font-weight: bold;">[ Показать/Скрыть код загрузки ]</summary><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># %pip install pandas xlrd</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -412,10 +384,9 @@ Saving to: ‘Макаки.xlsx’
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-d1439669-faa4-42cb-80b1-eae82741b42f" class="colab-df-container">
+  <div id="df-1b1d547d-f537-4c22-bcf3-fc07ba45da00" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -518,7 +489,7 @@ Saving to: ‘Макаки.xlsx’
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-d1439669-faa4-42cb-80b1-eae82741b42f')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-1b1d547d-f537-4c22-bcf3-fc07ba45da00')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -570,12 +541,12 @@ Saving to: ‘Макаки.xlsx’
 
     <script>
       const buttonEl =
-        document.querySelector('#df-d1439669-faa4-42cb-80b1-eae82741b42f button.colab-df-convert');
+        document.querySelector('#df-1b1d547d-f537-4c22-bcf3-fc07ba45da00 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-d1439669-faa4-42cb-80b1-eae82741b42f');
+        const element = document.querySelector('#df-1b1d547d-f537-4c22-bcf3-fc07ba45da00');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -598,18 +569,12 @@ Saving to: ‘Макаки.xlsx’
   </div>
 </div></div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">toque</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class 'pandas.core.frame.DataFrame'&gt;
 RangeIndex: 134 entries, 0 to 133
@@ -632,19 +597,13 @@ memory usage: 10.6+ KB
 </div>
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">selected</span> <span class="o">=</span> <span class="n">toque</span><span class="p">[[</span><span class="s2">"Sex"</span><span class="p">,</span> <span class="s2">"Chinese Ancestry"</span><span class="p">,</span> <span class="s2">"kg"</span><span class="p">,</span> <span class="s2">"C-R curved"</span><span class="p">,</span> <span class="s2">"R humeral max"</span><span class="p">,</span> <span class="s2">"R femoral max"</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="n">selected</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output text_html"><div>
 <style scoped>
@@ -696,12 +655,7 @@ memory usage: 10.6+ KB
 </table>
 </div><br><label><b>dtype:</b> int64</label></div></div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">complete</span> <span class="o">=</span> <span class="n">selected</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Всего строк:"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">selected</span><span class="p">))</span>
@@ -710,7 +664,6 @@ memory usage: 10.6+ KB
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Всего строк: 134
 Строк со всеми тремя измерениями: 134
@@ -719,12 +672,7 @@ memory usage: 10.6+ KB
 </div>
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sample_with</span> <span class="o">=</span> <span class="n">complete</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
 <span class="n">sample_without</span> <span class="o">=</span> <span class="n">complete</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">43</span><span class="p">)</span>
@@ -735,7 +683,6 @@ memory usage: 10.6+ KB
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Самцов: 42
 Самок: 92
@@ -743,6 +690,7 @@ memory usage: 10.6+ KB
 </div>
 </div>
 </div>
+</details>
 <p><a id="s1-nature"></a></p>
 <div style="font-family: 'Georgia', serif; border-left: 4px solid #d4af37; padding-left: 20px; margin: 40px 0 20px;">
     <div style="font-size: 12px; letter-spacing: 2px; color: #888;">РАЗДЕЛ 2</div>
@@ -778,7 +726,7 @@ X(\omega_j) = m_j, \qquad
 P(X=x_i)=p_i=\frac{n_i}{N},\quad p_i\ge 0,\quad \sum_{i=1}^{k}p_i=1.
 \]</div>
 <details>
-<summary style="cursor: pointer; color: #d4af37; font-weight: bold;">[ Показать/Скрыть код ]</summary><div class="cell docutils container">
+<summary style="cursor: pointer; color: #d4af37; font-weight: bold;">[ Показать/Скрыть код графиков массы ]</summary><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># === СТИЛЬ ГРАФИКОВ ===</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mpl</span>
@@ -816,12 +764,7 @@ P(X=x_i)=p_i=\frac{n_i}{N},\quad p_i\ge 0,\quad \sum_{i=1}^{k}p_i=1.
 </div>
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
@@ -843,17 +786,11 @@ P(X=x_i)=p_i=\frac{n_i}{N},\quad p_i\ge 0,\quad \sum_{i=1}^{k}p_i=1.
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <img alt="_images/05dd47b82b56efb82640c2676022e0abe456a734e419d3240bf1369439e30e29.png" src="_images/05dd47b82b56efb82640c2676022e0abe456a734e419d3240bf1369439e30e29.png" />
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -873,17 +810,11 @@ P(X=x_i)=p_i=\frac{n_i}{N},\quad p_i\ge 0,\quad \sum_{i=1}^{k}p_i=1.
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <img alt="_images/65657930fa77df3d2e197bd2b2540d0161006a7c4c3914edc3ad72a4a6f2bb67.png" src="_images/65657930fa77df3d2e197bd2b2540d0161006a7c4c3914edc3ad72a4a6f2bb67.png" />
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mass</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"kg"</span><span class="p">]</span>
 <span class="n">mass_table</span> <span class="o">=</span> <span class="n">mass</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
@@ -893,12 +824,11 @@ P(X=x_i)=p_i=\frac{n_i}{N},\quad p_i\ge 0,\quad \sum_{i=1}^{k}p_i=1.
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество масс:"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">mass</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество уникальных масс:"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">mass_table</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Сумма относительных частот:"</span><span class="p">,</span> <span class="n">mass_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
-<span class="k">with</span> <span class="n">pd</span><span class="o">.</span><span class="n">option_context</span><span class="p">(</span><span class="s2">"display.max_rows"</span><span class="p">,</span> <span class="kc">None</span><span class="p">):</span>
-    <span class="n">display</span><span class="p">(</span><span class="n">mass_table</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">mass_table</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"... и еще </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">mass_table</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">10</span><span class="si">}</span><span class="s2"> строк."</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Количество масс: 134
 Количество уникальных масс: 128
@@ -906,7 +836,7 @@ P(X=x_i)=p_i=\frac{n_i}{N},\quad p_i\ge 0,\quad \sum_{i=1}^{k}p_i=1.
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-a4ba13e2-5e81-403a-bbd1-eddb795a30f0" class="colab-df-container">
+  <div id="df-a8808c51-1e0b-4eee-bf2a-432f953e3778" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1002,839 +932,13 @@ P(X=x_i)=p_i=\frac{n_i}{N},\quad p_i\ge 0,\quad \sum_{i=1}^{k}p_i=1.
       <td>0.007463</td>
       <td>0.082090</td>
     </tr>
-    <tr>
-      <th>10</th>
-      <td>6.40</td>
-      <td>2</td>
-      <td>0.014925</td>
-      <td>0.097015</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>6.60</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.104478</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>6.77</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.111940</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>6.83</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.119403</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>6.94</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.126866</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>7.00</td>
-      <td>3</td>
-      <td>0.022388</td>
-      <td>0.149254</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>7.11</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.156716</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>7.12</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.164179</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>7.20</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.171642</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>7.26</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.179104</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>7.33</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.186567</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>7.35</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.194030</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>7.36</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.201493</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>7.37</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.208955</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>7.38</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.216418</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>7.39</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.223881</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>7.43</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.231343</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>7.57</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.238806</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>7.64</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.246269</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>7.66</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.253731</td>
-    </tr>
-    <tr>
-      <th>30</th>
-      <td>7.70</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.261194</td>
-    </tr>
-    <tr>
-      <th>31</th>
-      <td>7.81</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.268657</td>
-    </tr>
-    <tr>
-      <th>32</th>
-      <td>7.86</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.276119</td>
-    </tr>
-    <tr>
-      <th>33</th>
-      <td>7.91</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.283582</td>
-    </tr>
-    <tr>
-      <th>34</th>
-      <td>7.98</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.291045</td>
-    </tr>
-    <tr>
-      <th>35</th>
-      <td>8.35</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.298507</td>
-    </tr>
-    <tr>
-      <th>36</th>
-      <td>8.36</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.305970</td>
-    </tr>
-    <tr>
-      <th>37</th>
-      <td>8.38</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.313433</td>
-    </tr>
-    <tr>
-      <th>38</th>
-      <td>8.42</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.320896</td>
-    </tr>
-    <tr>
-      <th>39</th>
-      <td>8.44</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.328358</td>
-    </tr>
-    <tr>
-      <th>40</th>
-      <td>8.49</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.335821</td>
-    </tr>
-    <tr>
-      <th>41</th>
-      <td>8.50</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.343284</td>
-    </tr>
-    <tr>
-      <th>42</th>
-      <td>8.87</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.350746</td>
-    </tr>
-    <tr>
-      <th>43</th>
-      <td>8.90</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.358209</td>
-    </tr>
-    <tr>
-      <th>44</th>
-      <td>8.95</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.365672</td>
-    </tr>
-    <tr>
-      <th>45</th>
-      <td>8.96</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.373134</td>
-    </tr>
-    <tr>
-      <th>46</th>
-      <td>9.03</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.380597</td>
-    </tr>
-    <tr>
-      <th>47</th>
-      <td>9.04</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.388060</td>
-    </tr>
-    <tr>
-      <th>48</th>
-      <td>9.30</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.395522</td>
-    </tr>
-    <tr>
-      <th>49</th>
-      <td>9.34</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.402985</td>
-    </tr>
-    <tr>
-      <th>50</th>
-      <td>9.41</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.410448</td>
-    </tr>
-    <tr>
-      <th>51</th>
-      <td>9.42</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.417910</td>
-    </tr>
-    <tr>
-      <th>52</th>
-      <td>9.45</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.425373</td>
-    </tr>
-    <tr>
-      <th>53</th>
-      <td>9.49</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.432836</td>
-    </tr>
-    <tr>
-      <th>54</th>
-      <td>9.50</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.440299</td>
-    </tr>
-    <tr>
-      <th>55</th>
-      <td>9.51</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.447761</td>
-    </tr>
-    <tr>
-      <th>56</th>
-      <td>9.53</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.455224</td>
-    </tr>
-    <tr>
-      <th>57</th>
-      <td>9.58</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.462687</td>
-    </tr>
-    <tr>
-      <th>58</th>
-      <td>9.60</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.470149</td>
-    </tr>
-    <tr>
-      <th>59</th>
-      <td>9.62</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.477612</td>
-    </tr>
-    <tr>
-      <th>60</th>
-      <td>9.66</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.485075</td>
-    </tr>
-    <tr>
-      <th>61</th>
-      <td>9.73</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.492537</td>
-    </tr>
-    <tr>
-      <th>62</th>
-      <td>9.75</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.500000</td>
-    </tr>
-    <tr>
-      <th>63</th>
-      <td>9.88</td>
-      <td>2</td>
-      <td>0.014925</td>
-      <td>0.514925</td>
-    </tr>
-    <tr>
-      <th>64</th>
-      <td>9.90</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.522388</td>
-    </tr>
-    <tr>
-      <th>65</th>
-      <td>9.94</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.529851</td>
-    </tr>
-    <tr>
-      <th>66</th>
-      <td>10.09</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.537313</td>
-    </tr>
-    <tr>
-      <th>67</th>
-      <td>10.17</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.544776</td>
-    </tr>
-    <tr>
-      <th>68</th>
-      <td>10.28</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.552239</td>
-    </tr>
-    <tr>
-      <th>69</th>
-      <td>10.57</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.559701</td>
-    </tr>
-    <tr>
-      <th>70</th>
-      <td>10.75</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.567164</td>
-    </tr>
-    <tr>
-      <th>71</th>
-      <td>10.76</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.574627</td>
-    </tr>
-    <tr>
-      <th>72</th>
-      <td>10.79</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.582090</td>
-    </tr>
-    <tr>
-      <th>73</th>
-      <td>10.80</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.589552</td>
-    </tr>
-    <tr>
-      <th>74</th>
-      <td>10.81</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.597015</td>
-    </tr>
-    <tr>
-      <th>75</th>
-      <td>10.83</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.604478</td>
-    </tr>
-    <tr>
-      <th>76</th>
-      <td>10.87</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.611940</td>
-    </tr>
-    <tr>
-      <th>77</th>
-      <td>10.88</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.619403</td>
-    </tr>
-    <tr>
-      <th>78</th>
-      <td>10.93</td>
-      <td>2</td>
-      <td>0.014925</td>
-      <td>0.634328</td>
-    </tr>
-    <tr>
-      <th>79</th>
-      <td>11.07</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.641791</td>
-    </tr>
-    <tr>
-      <th>80</th>
-      <td>11.09</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.649254</td>
-    </tr>
-    <tr>
-      <th>81</th>
-      <td>11.10</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.656716</td>
-    </tr>
-    <tr>
-      <th>82</th>
-      <td>11.15</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.664179</td>
-    </tr>
-    <tr>
-      <th>83</th>
-      <td>11.18</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.671642</td>
-    </tr>
-    <tr>
-      <th>84</th>
-      <td>11.21</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.679104</td>
-    </tr>
-    <tr>
-      <th>85</th>
-      <td>11.33</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.686567</td>
-    </tr>
-    <tr>
-      <th>86</th>
-      <td>11.34</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.694030</td>
-    </tr>
-    <tr>
-      <th>87</th>
-      <td>11.35</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.701493</td>
-    </tr>
-    <tr>
-      <th>88</th>
-      <td>11.44</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.708955</td>
-    </tr>
-    <tr>
-      <th>89</th>
-      <td>11.45</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.716418</td>
-    </tr>
-    <tr>
-      <th>90</th>
-      <td>11.53</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.723881</td>
-    </tr>
-    <tr>
-      <th>91</th>
-      <td>11.63</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.731343</td>
-    </tr>
-    <tr>
-      <th>92</th>
-      <td>11.69</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.738806</td>
-    </tr>
-    <tr>
-      <th>93</th>
-      <td>11.78</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.746269</td>
-    </tr>
-    <tr>
-      <th>94</th>
-      <td>11.84</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.753731</td>
-    </tr>
-    <tr>
-      <th>95</th>
-      <td>11.85</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.761194</td>
-    </tr>
-    <tr>
-      <th>96</th>
-      <td>11.88</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.768657</td>
-    </tr>
-    <tr>
-      <th>97</th>
-      <td>11.90</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.776119</td>
-    </tr>
-    <tr>
-      <th>98</th>
-      <td>12.01</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.783582</td>
-    </tr>
-    <tr>
-      <th>99</th>
-      <td>12.10</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.791045</td>
-    </tr>
-    <tr>
-      <th>100</th>
-      <td>12.36</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.798507</td>
-    </tr>
-    <tr>
-      <th>101</th>
-      <td>12.57</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.805970</td>
-    </tr>
-    <tr>
-      <th>102</th>
-      <td>12.58</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.813433</td>
-    </tr>
-    <tr>
-      <th>103</th>
-      <td>12.61</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.820896</td>
-    </tr>
-    <tr>
-      <th>104</th>
-      <td>12.65</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.828358</td>
-    </tr>
-    <tr>
-      <th>105</th>
-      <td>12.96</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.835821</td>
-    </tr>
-    <tr>
-      <th>106</th>
-      <td>12.99</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.843284</td>
-    </tr>
-    <tr>
-      <th>107</th>
-      <td>13.26</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.850746</td>
-    </tr>
-    <tr>
-      <th>108</th>
-      <td>13.36</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.858209</td>
-    </tr>
-    <tr>
-      <th>109</th>
-      <td>13.52</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.865672</td>
-    </tr>
-    <tr>
-      <th>110</th>
-      <td>13.72</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.873134</td>
-    </tr>
-    <tr>
-      <th>111</th>
-      <td>14.80</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.880597</td>
-    </tr>
-    <tr>
-      <th>112</th>
-      <td>14.85</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.888060</td>
-    </tr>
-    <tr>
-      <th>113</th>
-      <td>14.91</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.895522</td>
-    </tr>
-    <tr>
-      <th>114</th>
-      <td>14.95</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.902985</td>
-    </tr>
-    <tr>
-      <th>115</th>
-      <td>15.21</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.910448</td>
-    </tr>
-    <tr>
-      <th>116</th>
-      <td>15.83</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.917910</td>
-    </tr>
-    <tr>
-      <th>117</th>
-      <td>16.02</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.925373</td>
-    </tr>
-    <tr>
-      <th>118</th>
-      <td>16.58</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.932836</td>
-    </tr>
-    <tr>
-      <th>119</th>
-      <td>16.70</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.940299</td>
-    </tr>
-    <tr>
-      <th>120</th>
-      <td>17.30</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.947761</td>
-    </tr>
-    <tr>
-      <th>121</th>
-      <td>17.62</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.955224</td>
-    </tr>
-    <tr>
-      <th>122</th>
-      <td>18.60</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.962687</td>
-    </tr>
-    <tr>
-      <th>123</th>
-      <td>19.20</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.970149</td>
-    </tr>
-    <tr>
-      <th>124</th>
-      <td>19.76</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.977612</td>
-    </tr>
-    <tr>
-      <th>125</th>
-      <td>20.40</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.985075</td>
-    </tr>
-    <tr>
-      <th>126</th>
-      <td>20.97</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.992537</td>
-    </tr>
-    <tr>
-      <th>127</th>
-      <td>22.35</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>1.000000</td>
-    </tr>
   </tbody>
 </table>
 </div>
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-a4ba13e2-5e81-403a-bbd1-eddb795a30f0')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-a8808c51-1e0b-4eee-bf2a-432f953e3778')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -1886,12 +990,12 @@ P(X=x_i)=p_i=\frac{n_i}{N},\quad p_i\ge 0,\quad \sum_{i=1}^{k}p_i=1.
 
     <script>
       const buttonEl =
-        document.querySelector('#df-a4ba13e2-5e81-403a-bbd1-eddb795a30f0 button.colab-df-convert');
+        document.querySelector('#df-a8808c51-1e0b-4eee-bf2a-432f953e3778 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-a4ba13e2-5e81-403a-bbd1-eddb795a30f0');
+        const element = document.querySelector('#df-a8808c51-1e0b-4eee-bf2a-432f953e3778');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1912,14 +1016,12 @@ P(X=x_i)=p_i=\frac{n_i}{N},\quad p_i\ge 0,\quad \sum_{i=1}^{k}p_i=1.
 
     </div>
   </div>
-</div></div>
+</div><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>... и еще 118 строк.
+</pre></div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+</div>
+</div>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mass_table</span> <span class="o">=</span> <span class="n">mass_table</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">"mass_kg"</span><span class="p">)</span>
 <span class="n">mass_table</span><span class="p">[</span><span class="s2">"P"</span><span class="p">]</span> <span class="o">=</span> <span class="n">mass_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">]</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span>
@@ -1934,17 +1036,11 @@ P(X=x_i)=p_i=\frac{n_i}{N},\quad p_i\ge 0,\quad \sum_{i=1}^{k}p_i=1.
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <img alt="_images/c31b2c8c57ee87311dcc84ff7561717e93a509b3fb19dcac64d979e85400d28a.png" src="_images/c31b2c8c57ee87311dcc84ff7561717e93a509b3fb19dcac64d979e85400d28a.png" />
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">expected_mass</span> <span class="o">=</span> <span class="p">(</span><span class="n">mass_table</span><span class="p">[</span><span class="s2">"mass_kg"</span><span class="p">]</span> <span class="o">*</span> <span class="n">mass_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 <span class="n">variance_mass</span> <span class="o">=</span> <span class="p">((</span><span class="n">mass_table</span><span class="p">[</span><span class="s2">"mass_kg"</span><span class="p">]</span> <span class="o">-</span> <span class="n">mass</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">mass_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -1973,7 +1069,6 @@ P(X=x_i)=p_i=\frac{n_i}{N},\quad p_i\ge 0,\quad \sum_{i=1}^{k}p_i=1.
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Мат. ожидание по таблице частот, кг: 10.38
 Количество масс: 134.00
@@ -1996,12 +1091,7 @@ Cтандартное отклонение, кг: 3.47
 </div>
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rng</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
 <span class="n">population</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"kg"</span><span class="p">]</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
@@ -2026,13 +1116,12 @@ Cтандартное отклонение, кг: 3.47
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Средняя масса генеральной совокупности: 10.38 кг
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-49136124-1f02-4b0e-a499-ec0fcade81df" class="colab-df-container">
+  <div id="df-196d53e5-bee6-40c0-9cce-c2dd26d36e6c" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -2113,7 +1202,7 @@ Cтандартное отклонение, кг: 3.47
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-49136124-1f02-4b0e-a499-ec0fcade81df')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-196d53e5-bee6-40c0-9cce-c2dd26d36e6c')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -2165,12 +1254,12 @@ Cтандартное отклонение, кг: 3.47
 
     <script>
       const buttonEl =
-        document.querySelector('#df-49136124-1f02-4b0e-a499-ec0fcade81df button.colab-df-convert');
+        document.querySelector('#df-196d53e5-bee6-40c0-9cce-c2dd26d36e6c button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-49136124-1f02-4b0e-a499-ec0fcade81df');
+        const element = document.querySelector('#df-196d53e5-bee6-40c0-9cce-c2dd26d36e6c');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -2193,12 +1282,7 @@ Cтандартное отклонение, кг: 3.47
   </div>
 </div></div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">consistency_mass</span><span class="p">[</span><span class="s2">"Размер выборки"</span><span class="p">],</span> <span class="n">consistency_mass</span><span class="p">[</span><span class="s2">"RMSE, кг"</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s2">"o"</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">PALETTE</span><span class="p">[</span><span class="s2">"primary"</span><span class="p">])</span>
@@ -2212,17 +1296,11 @@ Cтандартное отклонение, кг: 3.47
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <img alt="_images/6d9d39adda6e41929faf91f7016980d83b5d8960f3118b262a78ff80f0d43719.png" src="_images/6d9d39adda6e41929faf91f7016980d83b5d8960f3118b262a78ff80f0d43719.png" />
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mass_with</span> <span class="o">=</span> <span class="n">sample_with</span><span class="p">[</span><span class="s2">"kg"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество:"</span><span class="p">,</span> <span class="n">mass_with</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
@@ -2237,7 +1315,6 @@ Cтандартное отклонение, кг: 3.47
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Количество: 50
 Среднее, кг: 10.09
@@ -2252,12 +1329,7 @@ Cтандартное отклонение, кг: 3.47
 </div>
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mass_without</span> <span class="o">=</span> <span class="n">sample_without</span><span class="p">[</span><span class="s2">"kg"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество:"</span><span class="p">,</span> <span class="n">mass_without</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
@@ -2272,7 +1344,6 @@ Cтандартное отклонение, кг: 3.47
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Количество: 50
 Среднее, кг: 9.78
@@ -2287,12 +1358,7 @@ Cтандартное отклонение, кг: 3.47
 </div>
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mass_males</span> <span class="o">=</span> <span class="n">sample_males</span><span class="p">[</span><span class="s2">"kg"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество:"</span><span class="p">,</span> <span class="n">mass_males</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
@@ -2307,7 +1373,6 @@ Cтандартное отклонение, кг: 3.47
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Количество: 42
 Среднее, кг: 13.61
@@ -2322,12 +1387,7 @@ Cтандартное отклонение, кг: 3.47
 </div>
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mass_females</span> <span class="o">=</span> <span class="n">sample_females</span><span class="p">[</span><span class="s2">"kg"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество:"</span><span class="p">,</span> <span class="n">mass_females</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
@@ -2342,7 +1402,6 @@ Cтандартное отклонение, кг: 3.47
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Количество: 92
 Среднее, кг: 8.90
@@ -2357,12 +1416,7 @@ Cтандартное отклонение, кг: 3.47
 </div>
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее генеральной совокупности, кг: </span><span class="si">{</span><span class="n">mass</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее выборки с возвращением, кг: </span><span class="si">{</span><span class="n">mass_with</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -2372,7 +1426,6 @@ Cтандартное отклонение, кг: 3.47
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Среднее генеральной совокупности, кг: 10.38
 Среднее выборки с возвращением, кг: 10.09
@@ -2383,12 +1436,7 @@ Cтандартное отклонение, кг: 3.47
 </div>
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">difference</span> <span class="o">=</span> <span class="n">mass_males</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">-</span> <span class="n">mass_females</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 <span class="n">relative_difference</span> <span class="o">=</span> <span class="n">difference</span> <span class="o">/</span> <span class="n">mass_females</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">*</span> <span class="mi">100</span>
@@ -2400,7 +1448,6 @@ Cтандартное отклонение, кг: 3.47
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Среднее всей совокупности, кг: 10.38
 Среднее самцов, кг: 13.61
@@ -2423,12 +1470,7 @@ Cтандартное отклонение, кг: 3.47
 Y(\omega_j) = b_j, \qquad P(Y=y_i)=p_i=\frac{n_i}{N}.
 \]</div>
 <details>
-<summary style="cursor: pointer; color: #d4af37; font-weight: bold;">[ Показать/Скрыть код ]</summary><div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<summary style="cursor: pointer; color: #d4af37; font-weight: bold;">[ Показать/Скрыть код графиков длины тела ]</summary><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
@@ -2449,17 +1491,11 @@ Y(\omega_j) = b_j, \qquad P(Y=y_i)=p_i=\frac{n_i}{N}.
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <img alt="_images/dca627f5ddcce05fff8c8d4a2f9ab293a4a03f1d16e0d0ed15d87055ceb154e3.png" src="_images/dca627f5ddcce05fff8c8d4a2f9ab293a4a03f1d16e0d0ed15d87055ceb154e3.png" />
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -2479,17 +1515,11 @@ Y(\omega_j) = b_j, \qquad P(Y=y_i)=p_i=\frac{n_i}{N}.
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <img alt="_images/f9a15efcc82075a6ba32bbdfd9cfd9052666d38825aa5954826e710e8e9825b4.png" src="_images/f9a15efcc82075a6ba32bbdfd9cfd9052666d38825aa5954826e710e8e9825b4.png" />
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">b_length</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"C-R curved"</span><span class="p">]</span>
 <span class="n">b_length_table</span> <span class="o">=</span> <span class="n">b_length</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
@@ -2499,12 +1529,11 @@ Y(\omega_j) = b_j, \qquad P(Y=y_i)=p_i=\frac{n_i}{N}.
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество длин тела:"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">b_length</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество уникальных длин тела:"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">b_length_table</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Сумма относительных частот:"</span><span class="p">,</span> <span class="n">b_length_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
-<span class="k">with</span> <span class="n">pd</span><span class="o">.</span><span class="n">option_context</span><span class="p">(</span><span class="s2">"display.max_rows"</span><span class="p">,</span> <span class="kc">None</span><span class="p">):</span>
-    <span class="n">display</span><span class="p">(</span><span class="n">b_length_table</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">b_length_table</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"... и еще </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">b_length_table</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">10</span><span class="si">}</span><span class="s2"> строк."</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Количество длин тела: 134
 Количество уникальных длин тела: 128
@@ -2512,7 +1541,7 @@ Y(\omega_j) = b_j, \qquad P(Y=y_i)=p_i=\frac{n_i}{N}.
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-b7c7bff5-2e07-49a9-93b8-b7ec5152134f" class="colab-df-container">
+  <div id="df-f8e0d8e1-a61e-423f-9638-d43cab10d2b5" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -2608,839 +1637,13 @@ Y(\omega_j) = b_j, \qquad P(Y=y_i)=p_i=\frac{n_i}{N}.
       <td>0.007463</td>
       <td>0.082090</td>
     </tr>
-    <tr>
-      <th>10</th>
-      <td>487.4</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.089552</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>489.0</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.097015</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>489.9</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.104478</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>492.1</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.111940</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>492.4</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.119403</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>492.9</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.126866</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>493.2</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.134328</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>493.4</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.141791</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>494.0</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.149254</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>494.9</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.156716</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>495.5</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.164179</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>497.2</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.171642</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>498.1</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.179104</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>499.5</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.186567</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>502.4</td>
-      <td>2</td>
-      <td>0.014925</td>
-      <td>0.201493</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>502.8</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.208955</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>503.0</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.216418</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>503.1</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.223881</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>503.2</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.231343</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>503.6</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.238806</td>
-    </tr>
-    <tr>
-      <th>30</th>
-      <td>503.9</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.246269</td>
-    </tr>
-    <tr>
-      <th>31</th>
-      <td>504.1</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.253731</td>
-    </tr>
-    <tr>
-      <th>32</th>
-      <td>505.9</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.261194</td>
-    </tr>
-    <tr>
-      <th>33</th>
-      <td>506.7</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.268657</td>
-    </tr>
-    <tr>
-      <th>34</th>
-      <td>507.1</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.276119</td>
-    </tr>
-    <tr>
-      <th>35</th>
-      <td>507.2</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.283582</td>
-    </tr>
-    <tr>
-      <th>36</th>
-      <td>507.7</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.291045</td>
-    </tr>
-    <tr>
-      <th>37</th>
-      <td>507.9</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.298507</td>
-    </tr>
-    <tr>
-      <th>38</th>
-      <td>509.0</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.305970</td>
-    </tr>
-    <tr>
-      <th>39</th>
-      <td>510.6</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.313433</td>
-    </tr>
-    <tr>
-      <th>40</th>
-      <td>510.9</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.320896</td>
-    </tr>
-    <tr>
-      <th>41</th>
-      <td>511.0</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.328358</td>
-    </tr>
-    <tr>
-      <th>42</th>
-      <td>511.2</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.335821</td>
-    </tr>
-    <tr>
-      <th>43</th>
-      <td>512.3</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.343284</td>
-    </tr>
-    <tr>
-      <th>44</th>
-      <td>512.7</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.350746</td>
-    </tr>
-    <tr>
-      <th>45</th>
-      <td>513.7</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.358209</td>
-    </tr>
-    <tr>
-      <th>46</th>
-      <td>514.1</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.365672</td>
-    </tr>
-    <tr>
-      <th>47</th>
-      <td>514.3</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.373134</td>
-    </tr>
-    <tr>
-      <th>48</th>
-      <td>514.4</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.380597</td>
-    </tr>
-    <tr>
-      <th>49</th>
-      <td>515.5</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.388060</td>
-    </tr>
-    <tr>
-      <th>50</th>
-      <td>516.1</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.395522</td>
-    </tr>
-    <tr>
-      <th>51</th>
-      <td>516.2</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.402985</td>
-    </tr>
-    <tr>
-      <th>52</th>
-      <td>516.3</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.410448</td>
-    </tr>
-    <tr>
-      <th>53</th>
-      <td>516.6</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.417910</td>
-    </tr>
-    <tr>
-      <th>54</th>
-      <td>516.7</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.425373</td>
-    </tr>
-    <tr>
-      <th>55</th>
-      <td>517.0</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.432836</td>
-    </tr>
-    <tr>
-      <th>56</th>
-      <td>517.3</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.440299</td>
-    </tr>
-    <tr>
-      <th>57</th>
-      <td>517.4</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.447761</td>
-    </tr>
-    <tr>
-      <th>58</th>
-      <td>517.5</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.455224</td>
-    </tr>
-    <tr>
-      <th>59</th>
-      <td>518.7</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.462687</td>
-    </tr>
-    <tr>
-      <th>60</th>
-      <td>519.7</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.470149</td>
-    </tr>
-    <tr>
-      <th>61</th>
-      <td>519.9</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.477612</td>
-    </tr>
-    <tr>
-      <th>62</th>
-      <td>520.0</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.485075</td>
-    </tr>
-    <tr>
-      <th>63</th>
-      <td>520.7</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.492537</td>
-    </tr>
-    <tr>
-      <th>64</th>
-      <td>520.8</td>
-      <td>2</td>
-      <td>0.014925</td>
-      <td>0.507463</td>
-    </tr>
-    <tr>
-      <th>65</th>
-      <td>522.1</td>
-      <td>2</td>
-      <td>0.014925</td>
-      <td>0.522388</td>
-    </tr>
-    <tr>
-      <th>66</th>
-      <td>522.2</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.529851</td>
-    </tr>
-    <tr>
-      <th>67</th>
-      <td>523.4</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.537313</td>
-    </tr>
-    <tr>
-      <th>68</th>
-      <td>524.0</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.544776</td>
-    </tr>
-    <tr>
-      <th>69</th>
-      <td>526.8</td>
-      <td>2</td>
-      <td>0.014925</td>
-      <td>0.559701</td>
-    </tr>
-    <tr>
-      <th>70</th>
-      <td>526.9</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.567164</td>
-    </tr>
-    <tr>
-      <th>71</th>
-      <td>527.4</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.574627</td>
-    </tr>
-    <tr>
-      <th>72</th>
-      <td>527.5</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.582090</td>
-    </tr>
-    <tr>
-      <th>73</th>
-      <td>527.7</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.589552</td>
-    </tr>
-    <tr>
-      <th>74</th>
-      <td>528.0</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.597015</td>
-    </tr>
-    <tr>
-      <th>75</th>
-      <td>529.0</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.604478</td>
-    </tr>
-    <tr>
-      <th>76</th>
-      <td>529.2</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.611940</td>
-    </tr>
-    <tr>
-      <th>77</th>
-      <td>529.6</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.619403</td>
-    </tr>
-    <tr>
-      <th>78</th>
-      <td>531.6</td>
-      <td>2</td>
-      <td>0.014925</td>
-      <td>0.634328</td>
-    </tr>
-    <tr>
-      <th>79</th>
-      <td>531.7</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.641791</td>
-    </tr>
-    <tr>
-      <th>80</th>
-      <td>532.3</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.649254</td>
-    </tr>
-    <tr>
-      <th>81</th>
-      <td>532.4</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.656716</td>
-    </tr>
-    <tr>
-      <th>82</th>
-      <td>532.9</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.664179</td>
-    </tr>
-    <tr>
-      <th>83</th>
-      <td>537.7</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.671642</td>
-    </tr>
-    <tr>
-      <th>84</th>
-      <td>540.2</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.679104</td>
-    </tr>
-    <tr>
-      <th>85</th>
-      <td>540.4</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.686567</td>
-    </tr>
-    <tr>
-      <th>86</th>
-      <td>540.6</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.694030</td>
-    </tr>
-    <tr>
-      <th>87</th>
-      <td>541.2</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.701493</td>
-    </tr>
-    <tr>
-      <th>88</th>
-      <td>542.3</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.708955</td>
-    </tr>
-    <tr>
-      <th>89</th>
-      <td>542.9</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.716418</td>
-    </tr>
-    <tr>
-      <th>90</th>
-      <td>543.7</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.723881</td>
-    </tr>
-    <tr>
-      <th>91</th>
-      <td>547.5</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.731343</td>
-    </tr>
-    <tr>
-      <th>92</th>
-      <td>547.6</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.738806</td>
-    </tr>
-    <tr>
-      <th>93</th>
-      <td>549.3</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.746269</td>
-    </tr>
-    <tr>
-      <th>94</th>
-      <td>549.8</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.753731</td>
-    </tr>
-    <tr>
-      <th>95</th>
-      <td>549.9</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.761194</td>
-    </tr>
-    <tr>
-      <th>96</th>
-      <td>551.7</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.768657</td>
-    </tr>
-    <tr>
-      <th>97</th>
-      <td>552.1</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.776119</td>
-    </tr>
-    <tr>
-      <th>98</th>
-      <td>553.3</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.783582</td>
-    </tr>
-    <tr>
-      <th>99</th>
-      <td>553.4</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.791045</td>
-    </tr>
-    <tr>
-      <th>100</th>
-      <td>553.9</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.798507</td>
-    </tr>
-    <tr>
-      <th>101</th>
-      <td>554.6</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.805970</td>
-    </tr>
-    <tr>
-      <th>102</th>
-      <td>560.4</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.813433</td>
-    </tr>
-    <tr>
-      <th>103</th>
-      <td>560.9</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.820896</td>
-    </tr>
-    <tr>
-      <th>104</th>
-      <td>562.6</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.828358</td>
-    </tr>
-    <tr>
-      <th>105</th>
-      <td>564.0</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.835821</td>
-    </tr>
-    <tr>
-      <th>106</th>
-      <td>564.7</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.843284</td>
-    </tr>
-    <tr>
-      <th>107</th>
-      <td>565.3</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.850746</td>
-    </tr>
-    <tr>
-      <th>108</th>
-      <td>566.1</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.858209</td>
-    </tr>
-    <tr>
-      <th>109</th>
-      <td>569.2</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.865672</td>
-    </tr>
-    <tr>
-      <th>110</th>
-      <td>573.4</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.873134</td>
-    </tr>
-    <tr>
-      <th>111</th>
-      <td>573.8</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.880597</td>
-    </tr>
-    <tr>
-      <th>112</th>
-      <td>573.9</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.888060</td>
-    </tr>
-    <tr>
-      <th>113</th>
-      <td>574.6</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.895522</td>
-    </tr>
-    <tr>
-      <th>114</th>
-      <td>575.8</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.902985</td>
-    </tr>
-    <tr>
-      <th>115</th>
-      <td>577.0</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.910448</td>
-    </tr>
-    <tr>
-      <th>116</th>
-      <td>579.4</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.917910</td>
-    </tr>
-    <tr>
-      <th>117</th>
-      <td>579.9</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.925373</td>
-    </tr>
-    <tr>
-      <th>118</th>
-      <td>582.8</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.932836</td>
-    </tr>
-    <tr>
-      <th>119</th>
-      <td>586.3</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.940299</td>
-    </tr>
-    <tr>
-      <th>120</th>
-      <td>589.8</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.947761</td>
-    </tr>
-    <tr>
-      <th>121</th>
-      <td>592.9</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.955224</td>
-    </tr>
-    <tr>
-      <th>122</th>
-      <td>596.8</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.962687</td>
-    </tr>
-    <tr>
-      <th>123</th>
-      <td>600.0</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.970149</td>
-    </tr>
-    <tr>
-      <th>124</th>
-      <td>603.1</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.977612</td>
-    </tr>
-    <tr>
-      <th>125</th>
-      <td>604.0</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.985075</td>
-    </tr>
-    <tr>
-      <th>126</th>
-      <td>606.3</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.992537</td>
-    </tr>
-    <tr>
-      <th>127</th>
-      <td>609.9</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>1.000000</td>
-    </tr>
   </tbody>
 </table>
 </div>
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-b7c7bff5-2e07-49a9-93b8-b7ec5152134f')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-f8e0d8e1-a61e-423f-9638-d43cab10d2b5')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -3492,12 +1695,12 @@ Y(\omega_j) = b_j, \qquad P(Y=y_i)=p_i=\frac{n_i}{N}.
 
     <script>
       const buttonEl =
-        document.querySelector('#df-b7c7bff5-2e07-49a9-93b8-b7ec5152134f button.colab-df-convert');
+        document.querySelector('#df-f8e0d8e1-a61e-423f-9638-d43cab10d2b5 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-b7c7bff5-2e07-49a9-93b8-b7ec5152134f');
+        const element = document.querySelector('#df-f8e0d8e1-a61e-423f-9638-d43cab10d2b5');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -3518,14 +1721,12 @@ Y(\omega_j) = b_j, \qquad P(Y=y_i)=p_i=\frac{n_i}{N}.
 
     </div>
   </div>
-</div></div>
+</div><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>... и еще 118 строк.
+</pre></div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+</div>
+</div>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">b_length_table</span> <span class="o">=</span> <span class="n">b_length_table</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">"b_length_mm"</span><span class="p">)</span>
 <span class="n">b_length_table</span><span class="p">[</span><span class="s2">"P"</span><span class="p">]</span> <span class="o">=</span> <span class="n">b_length_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">]</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span>
@@ -3540,17 +1741,11 @@ Y(\omega_j) = b_j, \qquad P(Y=y_i)=p_i=\frac{n_i}{N}.
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <img alt="_images/e16b54b4518288484162982580650023c5bf2c5b758228a2e093c628e04826e2.png" src="_images/e16b54b4518288484162982580650023c5bf2c5b758228a2e093c628e04826e2.png" />
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">expected_b_length</span> <span class="o">=</span> <span class="p">(</span><span class="n">b_length_table</span><span class="p">[</span><span class="s2">"b_length_mm"</span><span class="p">]</span> <span class="o">*</span> <span class="n">b_length_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 <span class="n">variance_b_length</span> <span class="o">=</span> <span class="p">((</span><span class="n">b_length_table</span><span class="p">[</span><span class="s2">"b_length_mm"</span><span class="p">]</span> <span class="o">-</span> <span class="n">b_length</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">b_length_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -3575,7 +1770,6 @@ Y(\omega_j) = b_j, \qquad P(Y=y_i)=p_i=\frac{n_i}{N}.
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Мат. ожидание по таблице частот, мм: 528.11
 Количество длин тел: 134.00
@@ -3596,12 +1790,7 @@ Cтандартное отклонение, мм: 32.43
 </div>
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rng</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
 <span class="n">population</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"C-R curved"</span><span class="p">]</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
@@ -3626,13 +1815,12 @@ Cтандартное отклонение, мм: 32.43
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Средняя длина тела в генеральной совокупности: 528.11 мм
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-c704bd0b-8d1c-41e6-91fa-c79e10736b26" class="colab-df-container">
+  <div id="df-0b85f534-13af-41d8-8791-3111d66c8fd1" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -3713,7 +1901,7 @@ Cтандартное отклонение, мм: 32.43
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-c704bd0b-8d1c-41e6-91fa-c79e10736b26')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-0b85f534-13af-41d8-8791-3111d66c8fd1')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -3765,12 +1953,12 @@ Cтандартное отклонение, мм: 32.43
 
     <script>
       const buttonEl =
-        document.querySelector('#df-c704bd0b-8d1c-41e6-91fa-c79e10736b26 button.colab-df-convert');
+        document.querySelector('#df-0b85f534-13af-41d8-8791-3111d66c8fd1 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-c704bd0b-8d1c-41e6-91fa-c79e10736b26');
+        const element = document.querySelector('#df-0b85f534-13af-41d8-8791-3111d66c8fd1');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -3793,12 +1981,7 @@ Cтандартное отклонение, мм: 32.43
   </div>
 </div></div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">consistency_b_length</span><span class="p">[</span><span class="s2">"Размер выборки"</span><span class="p">],</span> <span class="n">consistency_b_length</span><span class="p">[</span><span class="s2">"RMSE, мм"</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s2">"o"</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">PALETTE</span><span class="p">[</span><span class="s2">"primary"</span><span class="p">])</span>
@@ -3812,17 +1995,11 @@ Cтандартное отклонение, мм: 32.43
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <img alt="_images/89d9afedc0d80f878a7e0c72579d5523153c16163950806ff5af6262d616c0cf.png" src="_images/89d9afedc0d80f878a7e0c72579d5523153c16163950806ff5af6262d616c0cf.png" />
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">b_with</span> <span class="o">=</span> <span class="n">sample_with</span><span class="p">[</span><span class="s2">"C-R curved"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество:"</span><span class="p">,</span> <span class="n">b_with</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
@@ -3837,7 +2014,6 @@ Cтандартное отклонение, мм: 32.43
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Количество: 50
 Среднее, мм: 531.46
@@ -3852,12 +2028,7 @@ Cтандартное отклонение, мм: 32.43
 </div>
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">b_without</span> <span class="o">=</span> <span class="n">sample_without</span><span class="p">[</span><span class="s2">"C-R curved"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество:"</span><span class="p">,</span> <span class="n">b_without</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
@@ -3872,7 +2043,6 @@ Cтандартное отклонение, мм: 32.43
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Количество: 50
 Среднее, мм: 523.53
@@ -3887,12 +2057,7 @@ Cтандартное отклонение, мм: 32.43
 </div>
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">b_males</span> <span class="o">=</span> <span class="n">sample_males</span><span class="p">[</span><span class="s2">"C-R curved"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество:"</span><span class="p">,</span> <span class="n">b_males</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
@@ -3907,7 +2072,6 @@ Cтандартное отклонение, мм: 32.43
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Количество: 42
 Среднее, мм: 560.87
@@ -3922,12 +2086,7 @@ Cтандартное отклонение, мм: 32.43
 </div>
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">b_females</span> <span class="o">=</span> <span class="n">sample_females</span><span class="p">[</span><span class="s2">"C-R curved"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество:"</span><span class="p">,</span> <span class="n">b_females</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
@@ -3942,7 +2101,6 @@ Cтандартное отклонение, мм: 32.43
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Количество: 92
 Среднее, мм: 513.15
@@ -3957,12 +2115,7 @@ Cтандартное отклонение, мм: 32.43
 </div>
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее генеральной совокупности, мм: </span><span class="si">{</span><span class="n">b_length</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее выборки с возвращением, мм: </span><span class="si">{</span><span class="n">b_with</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -3972,7 +2125,6 @@ Cтандартное отклонение, мм: 32.43
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Среднее генеральной совокупности, мм: 528.11
 Среднее выборки с возвращением, мм: 531.46
@@ -3983,12 +2135,7 @@ Cтандартное отклонение, мм: 32.43
 </div>
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">difference</span> <span class="o">=</span> <span class="n">b_males</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">-</span> <span class="n">b_females</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 <span class="n">relative_difference</span> <span class="o">=</span> <span class="n">difference</span> <span class="o">/</span> <span class="n">b_females</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">*</span> <span class="mi">100</span>
@@ -4000,7 +2147,6 @@ Cтандартное отклонение, мм: 32.43
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Среднее всей совокупности, мм: 528.11
 Среднее самцов, мм: 560.87
@@ -4023,12 +2169,7 @@ Cтандартное отклонение, мм: 32.43
 Z(\omega_j) = h_j, \qquad P(Z=z_i)=p_i=\frac{n_i}{N}.
 \]</div>
 <details>
-<summary style="cursor: pointer; color: #d4af37; font-weight: bold;">[ Показать/Скрыть код ]</summary><div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<summary style="cursor: pointer; color: #d4af37; font-weight: bold;">[ Показать/Скрыть код графиков плечевой кости ]</summary><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
@@ -4049,17 +2190,11 @@ Z(\omega_j) = h_j, \qquad P(Z=z_i)=p_i=\frac{n_i}{N}.
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <img alt="_images/27e6a44a77dd821b7a5eb86066d8819bf6d27d6644d305619458f127654ce748.png" src="_images/27e6a44a77dd821b7a5eb86066d8819bf6d27d6644d305619458f127654ce748.png" />
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -4079,17 +2214,11 @@ Z(\omega_j) = h_j, \qquad P(Z=z_i)=p_i=\frac{n_i}{N}.
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <img alt="_images/d84a259ee4746ac47bb002a7ef09073c538beeb0930883fdc8fb469bcc2cd34f.png" src="_images/d84a259ee4746ac47bb002a7ef09073c538beeb0930883fdc8fb469bcc2cd34f.png" />
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">h_length</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"R humeral max"</span><span class="p">]</span>
 <span class="n">h_length_table</span> <span class="o">=</span> <span class="n">h_length</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
@@ -4099,12 +2228,11 @@ Z(\omega_j) = h_j, \qquad P(Z=z_i)=p_i=\frac{n_i}{N}.
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество длин плечевых костей:"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">h_length</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество уникальных длин плечевых костей:"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">h_length_table</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Сумма относительных частот:"</span><span class="p">,</span> <span class="n">h_length_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
-<span class="k">with</span> <span class="n">pd</span><span class="o">.</span><span class="n">option_context</span><span class="p">(</span><span class="s2">"display.max_rows"</span><span class="p">,</span> <span class="kc">None</span><span class="p">):</span>
-    <span class="n">display</span><span class="p">(</span><span class="n">h_length_table</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">h_length_table</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"... и еще </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">h_length_table</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">10</span><span class="si">}</span><span class="s2"> строк."</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Количество длин плечевых костей: 134
 Количество уникальных длин плечевых костей: 132
@@ -4112,7 +2240,7 @@ Z(\omega_j) = h_j, \qquad P(Z=z_i)=p_i=\frac{n_i}{N}.
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-02961ca9-bfda-44e9-98f7-aee18ae6b8d0" class="colab-df-container">
+  <div id="df-a15c8697-8556-4caa-a63c-bf2a72d2a188" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -4208,867 +2336,13 @@ Z(\omega_j) = h_j, \qquad P(Z=z_i)=p_i=\frac{n_i}{N}.
       <td>0.007463</td>
       <td>0.074627</td>
     </tr>
-    <tr>
-      <th>10</th>
-      <td>139.50</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.082090</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>139.61</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.089552</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>139.83</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.097015</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>139.88</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.104478</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>139.92</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.111940</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>140.26</td>
-      <td>2</td>
-      <td>0.014925</td>
-      <td>0.126866</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>141.31</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.134328</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>141.68</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.141791</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>142.54</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.149254</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>142.58</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.156716</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>142.98</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.164179</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>142.99</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.171642</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>143.11</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.179104</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>143.26</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.186567</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>143.46</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.194030</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>143.54</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.201493</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>143.62</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.208955</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>143.76</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.216418</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>144.01</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.223881</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>144.34</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.231343</td>
-    </tr>
-    <tr>
-      <th>30</th>
-      <td>144.76</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.238806</td>
-    </tr>
-    <tr>
-      <th>31</th>
-      <td>144.85</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.246269</td>
-    </tr>
-    <tr>
-      <th>32</th>
-      <td>144.96</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.253731</td>
-    </tr>
-    <tr>
-      <th>33</th>
-      <td>145.26</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.261194</td>
-    </tr>
-    <tr>
-      <th>34</th>
-      <td>145.56</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.268657</td>
-    </tr>
-    <tr>
-      <th>35</th>
-      <td>145.73</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.276119</td>
-    </tr>
-    <tr>
-      <th>36</th>
-      <td>145.75</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.283582</td>
-    </tr>
-    <tr>
-      <th>37</th>
-      <td>145.97</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.291045</td>
-    </tr>
-    <tr>
-      <th>38</th>
-      <td>146.07</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.298507</td>
-    </tr>
-    <tr>
-      <th>39</th>
-      <td>146.39</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.305970</td>
-    </tr>
-    <tr>
-      <th>40</th>
-      <td>146.42</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.313433</td>
-    </tr>
-    <tr>
-      <th>41</th>
-      <td>146.62</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.320896</td>
-    </tr>
-    <tr>
-      <th>42</th>
-      <td>146.78</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.328358</td>
-    </tr>
-    <tr>
-      <th>43</th>
-      <td>147.33</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.335821</td>
-    </tr>
-    <tr>
-      <th>44</th>
-      <td>147.49</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.343284</td>
-    </tr>
-    <tr>
-      <th>45</th>
-      <td>147.72</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.350746</td>
-    </tr>
-    <tr>
-      <th>46</th>
-      <td>147.80</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.358209</td>
-    </tr>
-    <tr>
-      <th>47</th>
-      <td>147.95</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.365672</td>
-    </tr>
-    <tr>
-      <th>48</th>
-      <td>148.25</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.373134</td>
-    </tr>
-    <tr>
-      <th>49</th>
-      <td>148.43</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.380597</td>
-    </tr>
-    <tr>
-      <th>50</th>
-      <td>148.52</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.388060</td>
-    </tr>
-    <tr>
-      <th>51</th>
-      <td>148.57</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.395522</td>
-    </tr>
-    <tr>
-      <th>52</th>
-      <td>148.68</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.402985</td>
-    </tr>
-    <tr>
-      <th>53</th>
-      <td>148.95</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.410448</td>
-    </tr>
-    <tr>
-      <th>54</th>
-      <td>149.04</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.417910</td>
-    </tr>
-    <tr>
-      <th>55</th>
-      <td>149.23</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.425373</td>
-    </tr>
-    <tr>
-      <th>56</th>
-      <td>149.94</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.432836</td>
-    </tr>
-    <tr>
-      <th>57</th>
-      <td>150.07</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.440299</td>
-    </tr>
-    <tr>
-      <th>58</th>
-      <td>150.25</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.447761</td>
-    </tr>
-    <tr>
-      <th>59</th>
-      <td>150.42</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.455224</td>
-    </tr>
-    <tr>
-      <th>60</th>
-      <td>150.44</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.462687</td>
-    </tr>
-    <tr>
-      <th>61</th>
-      <td>150.58</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.470149</td>
-    </tr>
-    <tr>
-      <th>62</th>
-      <td>151.08</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.477612</td>
-    </tr>
-    <tr>
-      <th>63</th>
-      <td>151.77</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.485075</td>
-    </tr>
-    <tr>
-      <th>64</th>
-      <td>151.99</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.492537</td>
-    </tr>
-    <tr>
-      <th>65</th>
-      <td>152.01</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.500000</td>
-    </tr>
-    <tr>
-      <th>66</th>
-      <td>152.12</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.507463</td>
-    </tr>
-    <tr>
-      <th>67</th>
-      <td>152.38</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.514925</td>
-    </tr>
-    <tr>
-      <th>68</th>
-      <td>152.44</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.522388</td>
-    </tr>
-    <tr>
-      <th>69</th>
-      <td>152.53</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.529851</td>
-    </tr>
-    <tr>
-      <th>70</th>
-      <td>152.57</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.537313</td>
-    </tr>
-    <tr>
-      <th>71</th>
-      <td>152.61</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.544776</td>
-    </tr>
-    <tr>
-      <th>72</th>
-      <td>153.17</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.552239</td>
-    </tr>
-    <tr>
-      <th>73</th>
-      <td>153.57</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.559701</td>
-    </tr>
-    <tr>
-      <th>74</th>
-      <td>153.65</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.567164</td>
-    </tr>
-    <tr>
-      <th>75</th>
-      <td>153.66</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.574627</td>
-    </tr>
-    <tr>
-      <th>76</th>
-      <td>154.03</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.582090</td>
-    </tr>
-    <tr>
-      <th>77</th>
-      <td>154.43</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.589552</td>
-    </tr>
-    <tr>
-      <th>78</th>
-      <td>154.73</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.597015</td>
-    </tr>
-    <tr>
-      <th>79</th>
-      <td>155.02</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.604478</td>
-    </tr>
-    <tr>
-      <th>80</th>
-      <td>155.07</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.611940</td>
-    </tr>
-    <tr>
-      <th>81</th>
-      <td>155.13</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.619403</td>
-    </tr>
-    <tr>
-      <th>82</th>
-      <td>155.37</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.626866</td>
-    </tr>
-    <tr>
-      <th>83</th>
-      <td>155.76</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.634328</td>
-    </tr>
-    <tr>
-      <th>84</th>
-      <td>155.99</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.641791</td>
-    </tr>
-    <tr>
-      <th>85</th>
-      <td>156.02</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.649254</td>
-    </tr>
-    <tr>
-      <th>86</th>
-      <td>156.15</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.656716</td>
-    </tr>
-    <tr>
-      <th>87</th>
-      <td>156.21</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.664179</td>
-    </tr>
-    <tr>
-      <th>88</th>
-      <td>156.88</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.671642</td>
-    </tr>
-    <tr>
-      <th>89</th>
-      <td>157.15</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.679104</td>
-    </tr>
-    <tr>
-      <th>90</th>
-      <td>157.49</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.686567</td>
-    </tr>
-    <tr>
-      <th>91</th>
-      <td>157.54</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.694030</td>
-    </tr>
-    <tr>
-      <th>92</th>
-      <td>157.58</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.701493</td>
-    </tr>
-    <tr>
-      <th>93</th>
-      <td>157.95</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.708955</td>
-    </tr>
-    <tr>
-      <th>94</th>
-      <td>158.31</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.716418</td>
-    </tr>
-    <tr>
-      <th>95</th>
-      <td>158.37</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.723881</td>
-    </tr>
-    <tr>
-      <th>96</th>
-      <td>158.50</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.731343</td>
-    </tr>
-    <tr>
-      <th>97</th>
-      <td>158.68</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.738806</td>
-    </tr>
-    <tr>
-      <th>98</th>
-      <td>159.22</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.746269</td>
-    </tr>
-    <tr>
-      <th>99</th>
-      <td>159.66</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.753731</td>
-    </tr>
-    <tr>
-      <th>100</th>
-      <td>159.84</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.761194</td>
-    </tr>
-    <tr>
-      <th>101</th>
-      <td>160.83</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.768657</td>
-    </tr>
-    <tr>
-      <th>102</th>
-      <td>161.76</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.776119</td>
-    </tr>
-    <tr>
-      <th>103</th>
-      <td>161.80</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.783582</td>
-    </tr>
-    <tr>
-      <th>104</th>
-      <td>161.86</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.791045</td>
-    </tr>
-    <tr>
-      <th>105</th>
-      <td>162.43</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.798507</td>
-    </tr>
-    <tr>
-      <th>106</th>
-      <td>163.96</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.805970</td>
-    </tr>
-    <tr>
-      <th>107</th>
-      <td>164.39</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.813433</td>
-    </tr>
-    <tr>
-      <th>108</th>
-      <td>164.69</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.820896</td>
-    </tr>
-    <tr>
-      <th>109</th>
-      <td>165.17</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.828358</td>
-    </tr>
-    <tr>
-      <th>110</th>
-      <td>165.18</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.835821</td>
-    </tr>
-    <tr>
-      <th>111</th>
-      <td>165.37</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.843284</td>
-    </tr>
-    <tr>
-      <th>112</th>
-      <td>165.75</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.850746</td>
-    </tr>
-    <tr>
-      <th>113</th>
-      <td>166.15</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.858209</td>
-    </tr>
-    <tr>
-      <th>114</th>
-      <td>166.76</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.865672</td>
-    </tr>
-    <tr>
-      <th>115</th>
-      <td>166.83</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.873134</td>
-    </tr>
-    <tr>
-      <th>116</th>
-      <td>168.00</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.880597</td>
-    </tr>
-    <tr>
-      <th>117</th>
-      <td>168.63</td>
-      <td>2</td>
-      <td>0.014925</td>
-      <td>0.895522</td>
-    </tr>
-    <tr>
-      <th>118</th>
-      <td>169.89</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.902985</td>
-    </tr>
-    <tr>
-      <th>119</th>
-      <td>170.20</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.910448</td>
-    </tr>
-    <tr>
-      <th>120</th>
-      <td>170.30</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.917910</td>
-    </tr>
-    <tr>
-      <th>121</th>
-      <td>170.55</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.925373</td>
-    </tr>
-    <tr>
-      <th>122</th>
-      <td>170.61</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.932836</td>
-    </tr>
-    <tr>
-      <th>123</th>
-      <td>172.30</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.940299</td>
-    </tr>
-    <tr>
-      <th>124</th>
-      <td>172.53</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.947761</td>
-    </tr>
-    <tr>
-      <th>125</th>
-      <td>174.46</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.955224</td>
-    </tr>
-    <tr>
-      <th>126</th>
-      <td>174.67</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.962687</td>
-    </tr>
-    <tr>
-      <th>127</th>
-      <td>175.45</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.970149</td>
-    </tr>
-    <tr>
-      <th>128</th>
-      <td>177.33</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.977612</td>
-    </tr>
-    <tr>
-      <th>129</th>
-      <td>181.34</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.985075</td>
-    </tr>
-    <tr>
-      <th>130</th>
-      <td>181.37</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.992537</td>
-    </tr>
-    <tr>
-      <th>131</th>
-      <td>187.77</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>1.000000</td>
-    </tr>
   </tbody>
 </table>
 </div>
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-02961ca9-bfda-44e9-98f7-aee18ae6b8d0')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-a15c8697-8556-4caa-a63c-bf2a72d2a188')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -5120,12 +2394,12 @@ Z(\omega_j) = h_j, \qquad P(Z=z_i)=p_i=\frac{n_i}{N}.
 
     <script>
       const buttonEl =
-        document.querySelector('#df-02961ca9-bfda-44e9-98f7-aee18ae6b8d0 button.colab-df-convert');
+        document.querySelector('#df-a15c8697-8556-4caa-a63c-bf2a72d2a188 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-02961ca9-bfda-44e9-98f7-aee18ae6b8d0');
+        const element = document.querySelector('#df-a15c8697-8556-4caa-a63c-bf2a72d2a188');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -5146,14 +2420,12 @@ Z(\omega_j) = h_j, \qquad P(Z=z_i)=p_i=\frac{n_i}{N}.
 
     </div>
   </div>
-</div></div>
+</div><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>... и еще 122 строк.
+</pre></div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+</div>
+</div>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">h_length_table</span> <span class="o">=</span> <span class="n">h_length_table</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">"h_length_mm"</span><span class="p">)</span>
 <span class="n">h_length_table</span><span class="p">[</span><span class="s2">"P"</span><span class="p">]</span> <span class="o">=</span> <span class="n">h_length_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">]</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span>
@@ -5168,17 +2440,11 @@ Z(\omega_j) = h_j, \qquad P(Z=z_i)=p_i=\frac{n_i}{N}.
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <img alt="_images/d88258211a97c0cea1d7322ae3cbfe62a34e16679823e89ecbda8a2f4896be75.png" src="_images/d88258211a97c0cea1d7322ae3cbfe62a34e16679823e89ecbda8a2f4896be75.png" />
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">expected_h_length</span> <span class="o">=</span> <span class="p">(</span><span class="n">h_length_table</span><span class="p">[</span><span class="s2">"h_length_mm"</span><span class="p">]</span> <span class="o">*</span> <span class="n">h_length_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 <span class="n">variance_h_length</span> <span class="o">=</span> <span class="p">((</span><span class="n">h_length_table</span><span class="p">[</span><span class="s2">"h_length_mm"</span><span class="p">]</span> <span class="o">-</span> <span class="n">h_length</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">h_length_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -5203,7 +2469,6 @@ Z(\omega_j) = h_j, \qquad P(Z=z_i)=p_i=\frac{n_i}{N}.
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Мат. ожидание по таблице частот, мм: 153.28
 Количество длин плечевых костей: 134.00
@@ -5224,12 +2489,7 @@ Cтандартное отклонение, мм: 11.20
 </div>
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rng</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
 <span class="n">population</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"R humeral max"</span><span class="p">]</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
@@ -5254,13 +2514,12 @@ Cтандартное отклонение, мм: 11.20
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Средняя длина плечевой кости в генеральной совокупности: 153.28 мм
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-8f7e4650-f1ff-49f4-8514-747a23c3b3bb" class="colab-df-container">
+  <div id="df-5d8695d1-98b0-452f-afa6-2a6655d0ccd0" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -5341,7 +2600,7 @@ Cтандартное отклонение, мм: 11.20
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-8f7e4650-f1ff-49f4-8514-747a23c3b3bb')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-5d8695d1-98b0-452f-afa6-2a6655d0ccd0')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -5393,12 +2652,12 @@ Cтандартное отклонение, мм: 11.20
 
     <script>
       const buttonEl =
-        document.querySelector('#df-8f7e4650-f1ff-49f4-8514-747a23c3b3bb button.colab-df-convert');
+        document.querySelector('#df-5d8695d1-98b0-452f-afa6-2a6655d0ccd0 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-8f7e4650-f1ff-49f4-8514-747a23c3b3bb');
+        const element = document.querySelector('#df-5d8695d1-98b0-452f-afa6-2a6655d0ccd0');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -5421,12 +2680,7 @@ Cтандартное отклонение, мм: 11.20
   </div>
 </div></div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">consistency_h_length</span><span class="p">[</span><span class="s2">"Размер выборки"</span><span class="p">],</span> <span class="n">consistency_h_length</span><span class="p">[</span><span class="s2">"RMSE, мм"</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s2">"o"</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">PALETTE</span><span class="p">[</span><span class="s2">"primary"</span><span class="p">])</span>
@@ -5440,17 +2694,11 @@ Cтандартное отклонение, мм: 11.20
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <img alt="_images/1852bde0e0c83299d31db9c26a9769ab52135ed660de14c900fae43e3c753466.png" src="_images/1852bde0e0c83299d31db9c26a9769ab52135ed660de14c900fae43e3c753466.png" />
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">h_with</span> <span class="o">=</span> <span class="n">sample_with</span><span class="p">[</span><span class="s2">"R humeral max"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество:"</span><span class="p">,</span> <span class="n">h_with</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
@@ -5465,7 +2713,6 @@ Cтандартное отклонение, мм: 11.20
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Количество: 50
 Среднее, мм: 154.21
@@ -5480,12 +2727,7 @@ Cтандартное отклонение, мм: 11.20
 </div>
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">h_without</span> <span class="o">=</span> <span class="n">sample_without</span><span class="p">[</span><span class="s2">"R humeral max"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество:"</span><span class="p">,</span> <span class="n">h_without</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
@@ -5500,7 +2742,6 @@ Cтандартное отклонение, мм: 11.20
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Количество: 50
 Среднее, мм: 151.67
@@ -5515,12 +2756,7 @@ Cтандартное отклонение, мм: 11.20
 </div>
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">h_males</span> <span class="o">=</span> <span class="n">sample_males</span><span class="p">[</span><span class="s2">"R humeral max"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество:"</span><span class="p">,</span> <span class="n">h_males</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
@@ -5535,7 +2771,6 @@ Cтандартное отклонение, мм: 11.20
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Количество: 42
 Среднее, мм: 166.36
@@ -5550,12 +2785,7 @@ Cтандартное отклонение, мм: 11.20
 </div>
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">h_females</span> <span class="o">=</span> <span class="n">sample_females</span><span class="p">[</span><span class="s2">"R humeral max"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество:"</span><span class="p">,</span> <span class="n">h_females</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
@@ -5570,7 +2800,6 @@ Cтандартное отклонение, мм: 11.20
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Количество: 92
 Среднее, мм: 147.31
@@ -5585,12 +2814,7 @@ Cтандартное отклонение, мм: 11.20
 </div>
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее генеральной совокупности, мм: </span><span class="si">{</span><span class="n">h_length</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее выборки с возвращением, мм: </span><span class="si">{</span><span class="n">h_with</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -5600,7 +2824,6 @@ Cтандартное отклонение, мм: 11.20
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Среднее генеральной совокупности, мм: 153.28
 Среднее выборки с возвращением, мм: 154.21
@@ -5611,12 +2834,7 @@ Cтандартное отклонение, мм: 11.20
 </div>
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">difference</span> <span class="o">=</span> <span class="n">h_males</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">-</span> <span class="n">h_females</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 <span class="n">relative_difference</span> <span class="o">=</span> <span class="n">difference</span> <span class="o">/</span> <span class="n">h_females</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">*</span> <span class="mi">100</span>
@@ -5628,7 +2846,6 @@ Cтандартное отклонение, мм: 11.20
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Среднее всей совокупности, мм: 153.28
 Среднее самцов, мм: 166.36
@@ -5651,12 +2868,7 @@ Cтандартное отклонение, мм: 11.20
 W(\omega_j) = f_j, \qquad P(W=w_i)=p_i=\frac{n_i}{N}.
 \]</div>
 <details>
-<summary style="cursor: pointer; color: #d4af37; font-weight: bold;">[ Показать/Скрыть код ]</summary><div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<summary style="cursor: pointer; color: #d4af37; font-weight: bold;">[ Показать/Скрыть код графиков бедренной кости ]</summary><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
@@ -5677,17 +2889,11 @@ W(\omega_j) = f_j, \qquad P(W=w_i)=p_i=\frac{n_i}{N}.
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <img alt="_images/f52551e9a3f07889de9741cb21a527661b02fae91eb2ee14de74ac9c2c6eb40a.png" src="_images/f52551e9a3f07889de9741cb21a527661b02fae91eb2ee14de74ac9c2c6eb40a.png" />
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -5707,17 +2913,11 @@ W(\omega_j) = f_j, \qquad P(W=w_i)=p_i=\frac{n_i}{N}.
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <img alt="_images/b4c0e3afc5115aa1d487ddc14d8313ff975ddb58c2d2801adc3d146eb1cd43ab.png" src="_images/b4c0e3afc5115aa1d487ddc14d8313ff975ddb58c2d2801adc3d146eb1cd43ab.png" />
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">f_length</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"R femoral max"</span><span class="p">]</span>
 <span class="n">f_length_table</span> <span class="o">=</span> <span class="n">f_length</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
@@ -5727,12 +2927,11 @@ W(\omega_j) = f_j, \qquad P(W=w_i)=p_i=\frac{n_i}{N}.
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество длин бедренных костей:"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">f_length</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество уникальных длин бедренных костей:"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">f_length_table</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Сумма относительных частот:"</span><span class="p">,</span> <span class="n">f_length_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
-<span class="k">with</span> <span class="n">pd</span><span class="o">.</span><span class="n">option_context</span><span class="p">(</span><span class="s2">"display.max_rows"</span><span class="p">,</span> <span class="kc">None</span><span class="p">):</span>
-    <span class="n">display</span><span class="p">(</span><span class="n">f_length_table</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">f_length_table</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"... и еще </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">f_length_table</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">10</span><span class="si">}</span><span class="s2"> строк."</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Количество длин бедренных костей: 134
 Количество уникальных длин бедренных костей: 131
@@ -5740,7 +2939,7 @@ W(\omega_j) = f_j, \qquad P(W=w_i)=p_i=\frac{n_i}{N}.
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-cacfa279-2866-4dca-b611-78cad91f6b1a" class="colab-df-container">
+  <div id="df-834584da-ef97-48e3-a7e1-0798a9eb893b" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -5836,860 +3035,13 @@ W(\omega_j) = f_j, \qquad P(W=w_i)=p_i=\frac{n_i}{N}.
       <td>0.007463</td>
       <td>0.074627</td>
     </tr>
-    <tr>
-      <th>10</th>
-      <td>159.29</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.082090</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>160.10</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.089552</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>161.14</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.097015</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>161.30</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.104478</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>161.74</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.111940</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>162.16</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.119403</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>162.22</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.126866</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>162.35</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.134328</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>163.26</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.141791</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>163.40</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.149254</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>163.61</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.156716</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>163.75</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.164179</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>164.26</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.171642</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>164.80</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.179104</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>165.06</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.186567</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>165.11</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.194030</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>165.58</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.201493</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>165.80</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.208955</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>166.34</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.216418</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>166.41</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.223881</td>
-    </tr>
-    <tr>
-      <th>30</th>
-      <td>166.54</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.231343</td>
-    </tr>
-    <tr>
-      <th>31</th>
-      <td>166.67</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.238806</td>
-    </tr>
-    <tr>
-      <th>32</th>
-      <td>166.87</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.246269</td>
-    </tr>
-    <tr>
-      <th>33</th>
-      <td>167.12</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.253731</td>
-    </tr>
-    <tr>
-      <th>34</th>
-      <td>167.56</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.261194</td>
-    </tr>
-    <tr>
-      <th>35</th>
-      <td>167.97</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.268657</td>
-    </tr>
-    <tr>
-      <th>36</th>
-      <td>168.40</td>
-      <td>2</td>
-      <td>0.014925</td>
-      <td>0.283582</td>
-    </tr>
-    <tr>
-      <th>37</th>
-      <td>168.87</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.291045</td>
-    </tr>
-    <tr>
-      <th>38</th>
-      <td>169.28</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.298507</td>
-    </tr>
-    <tr>
-      <th>39</th>
-      <td>169.47</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.305970</td>
-    </tr>
-    <tr>
-      <th>40</th>
-      <td>169.58</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.313433</td>
-    </tr>
-    <tr>
-      <th>41</th>
-      <td>169.62</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.320896</td>
-    </tr>
-    <tr>
-      <th>42</th>
-      <td>169.64</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.328358</td>
-    </tr>
-    <tr>
-      <th>43</th>
-      <td>169.72</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.335821</td>
-    </tr>
-    <tr>
-      <th>44</th>
-      <td>169.82</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.343284</td>
-    </tr>
-    <tr>
-      <th>45</th>
-      <td>170.21</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.350746</td>
-    </tr>
-    <tr>
-      <th>46</th>
-      <td>170.23</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.358209</td>
-    </tr>
-    <tr>
-      <th>47</th>
-      <td>170.29</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.365672</td>
-    </tr>
-    <tr>
-      <th>48</th>
-      <td>170.58</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.373134</td>
-    </tr>
-    <tr>
-      <th>49</th>
-      <td>170.72</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.380597</td>
-    </tr>
-    <tr>
-      <th>50</th>
-      <td>171.02</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.388060</td>
-    </tr>
-    <tr>
-      <th>51</th>
-      <td>171.25</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.395522</td>
-    </tr>
-    <tr>
-      <th>52</th>
-      <td>171.49</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.402985</td>
-    </tr>
-    <tr>
-      <th>53</th>
-      <td>171.56</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.410448</td>
-    </tr>
-    <tr>
-      <th>54</th>
-      <td>171.81</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.417910</td>
-    </tr>
-    <tr>
-      <th>55</th>
-      <td>172.22</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.425373</td>
-    </tr>
-    <tr>
-      <th>56</th>
-      <td>172.44</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.432836</td>
-    </tr>
-    <tr>
-      <th>57</th>
-      <td>172.53</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.440299</td>
-    </tr>
-    <tr>
-      <th>58</th>
-      <td>172.58</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.447761</td>
-    </tr>
-    <tr>
-      <th>59</th>
-      <td>172.69</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.455224</td>
-    </tr>
-    <tr>
-      <th>60</th>
-      <td>172.76</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.462687</td>
-    </tr>
-    <tr>
-      <th>61</th>
-      <td>172.87</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.470149</td>
-    </tr>
-    <tr>
-      <th>62</th>
-      <td>173.09</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.477612</td>
-    </tr>
-    <tr>
-      <th>63</th>
-      <td>173.25</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.485075</td>
-    </tr>
-    <tr>
-      <th>64</th>
-      <td>173.30</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.492537</td>
-    </tr>
-    <tr>
-      <th>65</th>
-      <td>173.47</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.500000</td>
-    </tr>
-    <tr>
-      <th>66</th>
-      <td>173.56</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.507463</td>
-    </tr>
-    <tr>
-      <th>67</th>
-      <td>173.84</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.514925</td>
-    </tr>
-    <tr>
-      <th>68</th>
-      <td>174.18</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.522388</td>
-    </tr>
-    <tr>
-      <th>69</th>
-      <td>174.42</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.529851</td>
-    </tr>
-    <tr>
-      <th>70</th>
-      <td>174.66</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.537313</td>
-    </tr>
-    <tr>
-      <th>71</th>
-      <td>176.06</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.544776</td>
-    </tr>
-    <tr>
-      <th>72</th>
-      <td>176.17</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.552239</td>
-    </tr>
-    <tr>
-      <th>73</th>
-      <td>176.92</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.559701</td>
-    </tr>
-    <tr>
-      <th>74</th>
-      <td>177.09</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.567164</td>
-    </tr>
-    <tr>
-      <th>75</th>
-      <td>178.66</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.574627</td>
-    </tr>
-    <tr>
-      <th>76</th>
-      <td>179.04</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.582090</td>
-    </tr>
-    <tr>
-      <th>77</th>
-      <td>179.10</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.589552</td>
-    </tr>
-    <tr>
-      <th>78</th>
-      <td>179.34</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.597015</td>
-    </tr>
-    <tr>
-      <th>79</th>
-      <td>180.38</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.604478</td>
-    </tr>
-    <tr>
-      <th>80</th>
-      <td>180.45</td>
-      <td>2</td>
-      <td>0.014925</td>
-      <td>0.619403</td>
-    </tr>
-    <tr>
-      <th>81</th>
-      <td>180.74</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.626866</td>
-    </tr>
-    <tr>
-      <th>82</th>
-      <td>180.92</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.634328</td>
-    </tr>
-    <tr>
-      <th>83</th>
-      <td>181.25</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.641791</td>
-    </tr>
-    <tr>
-      <th>84</th>
-      <td>181.65</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.649254</td>
-    </tr>
-    <tr>
-      <th>85</th>
-      <td>181.80</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.656716</td>
-    </tr>
-    <tr>
-      <th>86</th>
-      <td>182.35</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.664179</td>
-    </tr>
-    <tr>
-      <th>87</th>
-      <td>182.37</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.671642</td>
-    </tr>
-    <tr>
-      <th>88</th>
-      <td>182.43</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.679104</td>
-    </tr>
-    <tr>
-      <th>89</th>
-      <td>183.16</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.686567</td>
-    </tr>
-    <tr>
-      <th>90</th>
-      <td>183.17</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.694030</td>
-    </tr>
-    <tr>
-      <th>91</th>
-      <td>183.21</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.701493</td>
-    </tr>
-    <tr>
-      <th>92</th>
-      <td>183.80</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.708955</td>
-    </tr>
-    <tr>
-      <th>93</th>
-      <td>185.62</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.716418</td>
-    </tr>
-    <tr>
-      <th>94</th>
-      <td>185.80</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.723881</td>
-    </tr>
-    <tr>
-      <th>95</th>
-      <td>186.85</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.731343</td>
-    </tr>
-    <tr>
-      <th>96</th>
-      <td>186.88</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.738806</td>
-    </tr>
-    <tr>
-      <th>97</th>
-      <td>188.68</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.746269</td>
-    </tr>
-    <tr>
-      <th>98</th>
-      <td>189.06</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.753731</td>
-    </tr>
-    <tr>
-      <th>99</th>
-      <td>189.19</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.761194</td>
-    </tr>
-    <tr>
-      <th>100</th>
-      <td>189.30</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.768657</td>
-    </tr>
-    <tr>
-      <th>101</th>
-      <td>189.83</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.776119</td>
-    </tr>
-    <tr>
-      <th>102</th>
-      <td>190.12</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.783582</td>
-    </tr>
-    <tr>
-      <th>103</th>
-      <td>191.28</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.791045</td>
-    </tr>
-    <tr>
-      <th>104</th>
-      <td>191.76</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.798507</td>
-    </tr>
-    <tr>
-      <th>105</th>
-      <td>191.95</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.805970</td>
-    </tr>
-    <tr>
-      <th>106</th>
-      <td>192.18</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.813433</td>
-    </tr>
-    <tr>
-      <th>107</th>
-      <td>192.56</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.820896</td>
-    </tr>
-    <tr>
-      <th>108</th>
-      <td>194.52</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.828358</td>
-    </tr>
-    <tr>
-      <th>109</th>
-      <td>194.63</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.835821</td>
-    </tr>
-    <tr>
-      <th>110</th>
-      <td>196.18</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.843284</td>
-    </tr>
-    <tr>
-      <th>111</th>
-      <td>196.36</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.850746</td>
-    </tr>
-    <tr>
-      <th>112</th>
-      <td>196.68</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.858209</td>
-    </tr>
-    <tr>
-      <th>113</th>
-      <td>196.99</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.865672</td>
-    </tr>
-    <tr>
-      <th>114</th>
-      <td>197.23</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.873134</td>
-    </tr>
-    <tr>
-      <th>115</th>
-      <td>198.14</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.880597</td>
-    </tr>
-    <tr>
-      <th>116</th>
-      <td>198.65</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.888060</td>
-    </tr>
-    <tr>
-      <th>117</th>
-      <td>198.98</td>
-      <td>2</td>
-      <td>0.014925</td>
-      <td>0.902985</td>
-    </tr>
-    <tr>
-      <th>118</th>
-      <td>199.63</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.910448</td>
-    </tr>
-    <tr>
-      <th>119</th>
-      <td>201.10</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.917910</td>
-    </tr>
-    <tr>
-      <th>120</th>
-      <td>201.21</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.925373</td>
-    </tr>
-    <tr>
-      <th>121</th>
-      <td>202.04</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.932836</td>
-    </tr>
-    <tr>
-      <th>122</th>
-      <td>202.44</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.940299</td>
-    </tr>
-    <tr>
-      <th>123</th>
-      <td>202.60</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.947761</td>
-    </tr>
-    <tr>
-      <th>124</th>
-      <td>202.68</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.955224</td>
-    </tr>
-    <tr>
-      <th>125</th>
-      <td>205.06</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.962687</td>
-    </tr>
-    <tr>
-      <th>126</th>
-      <td>205.35</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.970149</td>
-    </tr>
-    <tr>
-      <th>127</th>
-      <td>205.46</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.977612</td>
-    </tr>
-    <tr>
-      <th>128</th>
-      <td>208.16</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.985075</td>
-    </tr>
-    <tr>
-      <th>129</th>
-      <td>214.48</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>0.992537</td>
-    </tr>
-    <tr>
-      <th>130</th>
-      <td>217.33</td>
-      <td>1</td>
-      <td>0.007463</td>
-      <td>1.000000</td>
-    </tr>
   </tbody>
 </table>
 </div>
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-cacfa279-2866-4dca-b611-78cad91f6b1a')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-834584da-ef97-48e3-a7e1-0798a9eb893b')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -6741,12 +3093,12 @@ W(\omega_j) = f_j, \qquad P(W=w_i)=p_i=\frac{n_i}{N}.
 
     <script>
       const buttonEl =
-        document.querySelector('#df-cacfa279-2866-4dca-b611-78cad91f6b1a button.colab-df-convert');
+        document.querySelector('#df-834584da-ef97-48e3-a7e1-0798a9eb893b button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-cacfa279-2866-4dca-b611-78cad91f6b1a');
+        const element = document.querySelector('#df-834584da-ef97-48e3-a7e1-0798a9eb893b');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -6767,14 +3119,12 @@ W(\omega_j) = f_j, \qquad P(W=w_i)=p_i=\frac{n_i}{N}.
 
     </div>
   </div>
-</div></div>
+</div><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>... и еще 121 строк.
+</pre></div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+</div>
+</div>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">f_length_table</span> <span class="o">=</span> <span class="n">f_length_table</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">"f_length_mm"</span><span class="p">)</span>
 <span class="n">f_length_table</span><span class="p">[</span><span class="s2">"P"</span><span class="p">]</span> <span class="o">=</span> <span class="n">f_length_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">]</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span>
@@ -6789,17 +3139,11 @@ W(\omega_j) = f_j, \qquad P(W=w_i)=p_i=\frac{n_i}{N}.
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <img alt="_images/84c10cbc719bfd2a62b770f09553dcdb33c7739042a804a8e2928a451a047e0f.png" src="_images/84c10cbc719bfd2a62b770f09553dcdb33c7739042a804a8e2928a451a047e0f.png" />
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">expected_f_length</span> <span class="o">=</span> <span class="p">(</span><span class="n">f_length_table</span><span class="p">[</span><span class="s2">"f_length_mm"</span><span class="p">]</span> <span class="o">*</span> <span class="n">f_length_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 <span class="n">variance_f_length</span> <span class="o">=</span> <span class="p">((</span><span class="n">f_length_table</span><span class="p">[</span><span class="s2">"f_length_mm"</span><span class="p">]</span> <span class="o">-</span> <span class="n">f_length</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">f_length_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
@@ -6823,7 +3167,6 @@ W(\omega_j) = f_j, \qquad P(W=w_i)=p_i=\frac{n_i}{N}.
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Мат. ожидание по таблице частот, мм: 177.78
 Сумма длин бедренных костей, мм: 23822.72
@@ -6843,12 +3186,7 @@ Cтандартное отклонение, мм: 14.50
 </div>
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rng</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
 <span class="n">population</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"R femoral max"</span><span class="p">]</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
@@ -6873,13 +3211,12 @@ Cтандартное отклонение, мм: 14.50
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Средняя длина бедренной кости в генеральной совокупности: 177.78 мм
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-7336d7a3-540d-4e40-9de6-3366cef967bb" class="colab-df-container">
+  <div id="df-4e278646-1b65-42d8-bc81-d6a6ccb0203e" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -6960,7 +3297,7 @@ Cтандартное отклонение, мм: 14.50
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-7336d7a3-540d-4e40-9de6-3366cef967bb')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-4e278646-1b65-42d8-bc81-d6a6ccb0203e')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -7012,12 +3349,12 @@ Cтандартное отклонение, мм: 14.50
 
     <script>
       const buttonEl =
-        document.querySelector('#df-7336d7a3-540d-4e40-9de6-3366cef967bb button.colab-df-convert');
+        document.querySelector('#df-4e278646-1b65-42d8-bc81-d6a6ccb0203e button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-7336d7a3-540d-4e40-9de6-3366cef967bb');
+        const element = document.querySelector('#df-4e278646-1b65-42d8-bc81-d6a6ccb0203e');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -7040,12 +3377,7 @@ Cтандартное отклонение, мм: 14.50
   </div>
 </div></div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">consistency_f_length</span><span class="p">[</span><span class="s2">"Размер выборки"</span><span class="p">],</span> <span class="n">consistency_f_length</span><span class="p">[</span><span class="s2">"RMSE, мм"</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s2">"o"</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">PALETTE</span><span class="p">[</span><span class="s2">"primary"</span><span class="p">])</span>
@@ -7059,17 +3391,11 @@ Cтандартное отклонение, мм: 14.50
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <img alt="_images/7ba6aacfed57818f7cb1a8f01ebbdeb0b9d71789c0adc0c166e945e029e69583.png" src="_images/7ba6aacfed57818f7cb1a8f01ebbdeb0b9d71789c0adc0c166e945e029e69583.png" />
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">f_with</span> <span class="o">=</span> <span class="n">sample_with</span><span class="p">[</span><span class="s2">"R femoral max"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество:"</span><span class="p">,</span> <span class="n">f_with</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
@@ -7084,7 +3410,6 @@ Cтандартное отклонение, мм: 14.50
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Количество: 50
 Среднее, мм: 178.25
@@ -7099,12 +3424,7 @@ Cтандартное отклонение, мм: 14.50
 </div>
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">f_without</span> <span class="o">=</span> <span class="n">sample_without</span><span class="p">[</span><span class="s2">"R femoral max"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество:"</span><span class="p">,</span> <span class="n">f_without</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
@@ -7119,7 +3439,6 @@ Cтандартное отклонение, мм: 14.50
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Количество: 50
 Среднее, мм: 175.43
@@ -7134,12 +3453,7 @@ Cтандартное отклонение, мм: 14.50
 </div>
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">f_males</span> <span class="o">=</span> <span class="n">sample_males</span><span class="p">[</span><span class="s2">"R femoral max"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество:"</span><span class="p">,</span> <span class="n">f_males</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
@@ -7154,7 +3468,6 @@ Cтандартное отклонение, мм: 14.50
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Количество: 42
 Среднее, мм: 195.65
@@ -7169,12 +3482,7 @@ Cтандартное отклонение, мм: 14.50
 </div>
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">f_females</span> <span class="o">=</span> <span class="n">sample_females</span><span class="p">[</span><span class="s2">"R femoral max"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество:"</span><span class="p">,</span> <span class="n">f_females</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
@@ -7189,7 +3497,6 @@ Cтандартное отклонение, мм: 14.50
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Количество: 92
 Среднее, мм: 169.62
@@ -7204,12 +3511,7 @@ Cтандартное отклонение, мм: 14.50
 </div>
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее генеральной совокупности, мм: </span><span class="si">{</span><span class="n">f_length</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее выборки с возвращением, мм: </span><span class="si">{</span><span class="n">f_with</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -7219,7 +3521,6 @@ Cтандартное отклонение, мм: 14.50
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Среднее генеральной совокупности, мм: 177.78
 Среднее выборки с возвращением, мм: 178.25
@@ -7230,12 +3531,7 @@ Cтандартное отклонение, мм: 14.50
 </div>
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">difference</span> <span class="o">=</span> <span class="n">f_males</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">-</span> <span class="n">f_females</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 <span class="n">relative_difference</span> <span class="o">=</span> <span class="n">difference</span> <span class="o">/</span> <span class="n">f_females</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">*</span> <span class="mi">100</span>
@@ -7247,7 +3543,6 @@ Cтандартное отклонение, мм: 14.50
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Среднее всей совокупности, мм: 177.78
 Среднее самцов, мм: 195.65
@@ -7266,12 +3561,7 @@ Cтандартное отклонение, мм: 14.50
 </div>
 <p>Попарные диаграммы рассеяния. Если величины независимы, то для событий <span class="math notranslate nohighlight">\(A=\{X\le\text{med}_X\}\)</span> и <span class="math notranslate nohighlight">\(B=\{Y\le\text{med}_Y\}\)</span> должно выполняться <span class="math notranslate nohighlight">\(P(A\cap B)=P(A)\,P(B)\)</span>.</p>
 <details>
-<summary style="cursor: pointer; color: #d4af37; font-weight: bold;">[ Показать/Скрыть код ]</summary><div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<summary style="cursor: pointer; color: #d4af37; font-weight: bold;">[ Показать/Скрыть код графиков рассеяния ]</summary><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">mass</span><span class="p">,</span> <span class="n">b_length</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
@@ -7284,17 +3574,11 @@ Cтандартное отклонение, мм: 14.50
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <img alt="_images/2943a995fb84474b1d9f09dcb785acaab8dd9d765b84c3a2611733782b07e9d9.png" src="_images/2943a995fb84474b1d9f09dcb785acaab8dd9d765b84c3a2611733782b07e9d9.png" />
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">mass</span><span class="p">,</span> <span class="n">h_length</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
@@ -7307,17 +3591,11 @@ Cтандартное отклонение, мм: 14.50
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <img alt="_images/d10e8092aaa33369d0c79fbc483e25c52ff39c596fae005f25fc398ab46daf89.png" src="_images/d10e8092aaa33369d0c79fbc483e25c52ff39c596fae005f25fc398ab46daf89.png" />
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">mass</span><span class="p">,</span> <span class="n">f_length</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
@@ -7330,17 +3608,11 @@ Cтандартное отклонение, мм: 14.50
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <img alt="_images/b50a5a0d6245e14078e0dfb1c2cc7b62ce6bb19fa3273f471951580e84200417.png" src="_images/b50a5a0d6245e14078e0dfb1c2cc7b62ce6bb19fa3273f471951580e84200417.png" />
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">b_length</span><span class="p">,</span> <span class="n">h_length</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
@@ -7353,17 +3625,11 @@ Cтандартное отклонение, мм: 14.50
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <img alt="_images/5f04a82f9555b20b1ac638ac51d143351563507d65ad4cf666877823ed59d9c0.png" src="_images/5f04a82f9555b20b1ac638ac51d143351563507d65ad4cf666877823ed59d9c0.png" />
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">b_length</span><span class="p">,</span> <span class="n">f_length</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
@@ -7376,17 +3642,11 @@ Cтандартное отклонение, мм: 14.50
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <img alt="_images/c7250c5e3b3181ac2dd6813fcd11e28684fdc684cb634d75913aa99c03029829.png" src="_images/c7250c5e3b3181ac2dd6813fcd11e28684fdc684cb634d75913aa99c03029829.png" />
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">h_length</span><span class="p">,</span> <span class="n">f_length</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
@@ -7399,17 +3659,11 @@ Cтандартное отклонение, мм: 14.50
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <img alt="_images/d758e8f1c814313804ae1ee2f2051629d8866c2da2cfbcdc99555d7a3adc2ec9.png" src="_images/d758e8f1c814313804ae1ee2f2051629d8866c2da2cfbcdc99555d7a3adc2ec9.png" />
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ancestry</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"Chinese Ancestry"</span><span class="p">]</span>
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
@@ -7423,17 +3677,11 @@ Cтандартное отклонение, мм: 14.50
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <img alt="_images/79bb26246fe3e87cd384d85226729c1bf43c57ae7bcca079af93976d426791a9.png" src="_images/79bb26246fe3e87cd384d85226729c1bf43c57ae7bcca079af93976d426791a9.png" />
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ancestry</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"Chinese Ancestry"</span><span class="p">]</span>
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
@@ -7447,17 +3695,11 @@ Cтандартное отклонение, мм: 14.50
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <img alt="_images/e135cda2b286c6e07245c4d98523bae1ef276f50aa77f63dd279e08289a5804c.png" src="_images/e135cda2b286c6e07245c4d98523bae1ef276f50aa77f63dd279e08289a5804c.png" />
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ancestry</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"Chinese Ancestry"</span><span class="p">]</span>
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
@@ -7471,17 +3713,11 @@ Cтандартное отклонение, мм: 14.50
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <img alt="_images/7d4a0e419b5699948984948f4fdd32a4e46d3eb1cbbd8133713a1860b8f9f65c.png" src="_images/7d4a0e419b5699948984948f4fdd32a4e46d3eb1cbbd8133713a1860b8f9f65c.png" />
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ancestry</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"Chinese Ancestry"</span><span class="p">]</span>
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
@@ -7495,17 +3731,11 @@ Cтандартное отклонение, мм: 14.50
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <img alt="_images/f74b6001d517ca24eb91c6310feb1d05b46738ad4b6ea985ebd86818b97d15dd.png" src="_images/f74b6001d517ca24eb91c6310feb1d05b46738ad4b6ea985ebd86818b97d15dd.png" />
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mass</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"kg"</span><span class="p">]</span>
 <span class="n">b_length</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"C-R curved"</span><span class="p">]</span>
@@ -7550,7 +3780,6 @@ Cтандартное отклонение, мм: 14.50
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Масса и длина тела
 Порог первой величины: 9.815000000000001
@@ -7655,12 +3884,7 @@ P(A) · P(B): 0.3209
 </div>
 </div>
 </div>
-<div class="cell tag_hide-input docutils container">
-<details class="admonition hide above-input">
-<summary aria-label="Toggle hidden content">
-<p class="collapsed admonition-title">Show code cell source</p>
-<p class="expanded admonition-title">Hide code cell source</p>
-</summary>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
@@ -7682,7 +3906,6 @@ P(A) · P(B): 0.3209
 </pre></div>
 </div>
 </div>
-</details>
 <div class="cell_output docutils container">
 <img alt="_images/cfd3a8f53227ccc04bffe4e1241db02196489e7672ac87280e88e208f744fc15.png" src="_images/cfd3a8f53227ccc04bffe4e1241db02196489e7672ac87280e88e208f744fc15.png" />
 </div>
