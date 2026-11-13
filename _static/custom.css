@@ -46,12 +46,3 @@ div.cell_output table th {
 .prev-next-footer, .prev-next-area {
     display: none !important;
 }
-
-.jupyter-widgets, .widget-container, .cell_output .output_area {
-    background-color: transparent !important;
-    color: #e0e0e0 !important;
-}
-.cell_output .output_subarea pre {
-    background-color: transparent !important;
-    color: #888888 !important;
-}
