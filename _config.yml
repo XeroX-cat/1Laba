@@ -5,16 +5,17 @@ only_build_toc_files: true
 
 execute:
   execute_notebooks: "off"
-  
+
 html:
   use_repository_button: true
   repo_url: https://github.com/XeroX-cat/1Laba
   static_path: ["_static"]
   extra_css: ["_static/custom.css"]
   home_page_in_navbar: true
-  navigation_with_keys: false 
+  # Эти две строки убирают лишние подписи и чинят меню
+  navigation_with_keys: false
   announcement: ""
-
-repository:
-  url: https://github.com/XeroX-cat/1Laba
-  branch: main
+  # Ограничиваем глубину меню слева до 1 уровня
+  html_theme_options:
+    navigation_depth: 1
+    collapse_navigation: true
