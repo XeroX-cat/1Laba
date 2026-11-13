@@ -17,6 +17,7 @@ div.cell_output pre {
     line-height: 1.6 !important;
     color: #e0e0e0 !important;
     background-color: transparent !important;
+    border: none !important;
 }
 
 div.cell_output table {
@@ -46,12 +47,11 @@ div.cell_output table th {
     display: none !important;
 }
 
-.widget-container, .jupyter-widgets {
-    background-color: #222222 !important;
+.jupyter-widgets, .widget-container, .cell_output .output_area {
+    background-color: transparent !important;
     color: #e0e0e0 !important;
-    border-radius: 8px;
-    padding: 10px;
 }
-.widget-label, .widget-readout {
-    color: #e0e0e0 !important;
+.cell_output .output_subarea pre {
+    background-color: transparent !important;
+    color: #888888 !important;
 }
