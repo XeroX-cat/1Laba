@@ -4,13 +4,6 @@ a { color: #d4af37; }
 a:hover { color: #9b2226; }
 .bd-sidebar, .bd-sidebar-primary { background-color: #222222; border-right: 1px solid #333; }
 
-article, .bd-article, .bd-content {
-    color: #e0e0e0 !important;
-}
-article h1, article h2, article h3, article h4, article p, article li {
-    color: #e0e0e0 !important;
-}
-
 div.cell_output {
     background-color: #1a1a1a !important;
     border-left: 3px solid #9b2226;
@@ -26,6 +19,7 @@ div.cell_output pre {
     background-color: transparent !important;
     border: none !important;
 }
+
 div.cell_output table {
     background-color: #222222 !important;
     color: #e0e0e0 !important;
@@ -53,16 +47,11 @@ div.cell_output table th {
     display: none !important;
 }
 
-:root {
-    --jp-widgets-color: #e0e0e0;
-    --jp-widgets-background-color: #222222;
-    --jp-widgets-border-color: #333333;
-    --jp-widgets-label-color: #e0e0e0;
-    --jp-widgets-slider-handle-color: #d4af37;
-    --jp-widgets-slider-track-color: #333333;
-}
-
-.jupyter-widgets, .widget-container, .widget-subarea {
-    background-color: #222222 !important;
+.jupyter-widgets, .widget-container, .cell_output .output_area {
+    background-color: transparent !important;
     color: #e0e0e0 !important;
 }
+
+.cell_output .output_subarea pre {
+    background-color: transparent !important;
+    color: #888888 !important;
