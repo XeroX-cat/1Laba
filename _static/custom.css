@@ -47,11 +47,7 @@ div.cell_output table th {
     display: none !important;
 }
 
-:root {
-    --jp-widgets-color: #e0e0e0;
-    --jp-widgets-background-color: #222222;
-    --jp-widgets-border-color: #333333;
-    --jp-widgets-label-color: #e0e0e0;
-    --jp-widgets-slider-handle-color: #d4af37;
-    --jp-widgets-slider-track-color: #333333;
+html body div.cell_output div.output_area div.jupyter-widgets {
+    background: #1a1a1a !important;
+    color: #e0e0e0 !important;
 }
