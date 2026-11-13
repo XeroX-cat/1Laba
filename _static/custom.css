@@ -1,9 +1,26 @@
+/* Общий фон и шрифты */
 body { background-color: #1a1a1a; color: #e0e0e0; font-family: 'Georgia', serif; }
 h1, h2, h3 { font-family: 'Arial Black', Impact, sans-serif; color: #e0e0e0; }
 a { color: #d4af37; }
 a:hover { color: #9b2226; }
 .bd-sidebar, .bd-sidebar-primary { background-color: #222222; border-right: 1px solid #333; }
 
+/* Принудительно делаем текст в основном контенте светлым */
+article, .bd-article, .bd-content {
+    color: #e0e0e0 !important;
+}
+article h1, article h2, article h3, article h4, article p, article li {
+    color: #e0e0e0 !important;
+}
+
+/* Выравниваем все заголовки под один стиль */
+article h2, article h3, article h4 {
+    font-family: 'Arial Black', Impact, sans-serif !important;
+    color: #e0e0e0 !important;
+    margin-top: 1.5em;
+}
+
+/* Оформление блоков вывода (текст, print) */
 div.cell_output {
     background-color: #1a1a1a !important;
     border-left: 3px solid #9b2226;
@@ -20,13 +37,15 @@ div.cell_output pre {
     border: none !important;
 }
 
+/* Таблицы: темный фон и прокрутка */
 div.cell_output table {
     background-color: #222222 !important;
     color: #e0e0e0 !important;
     border-collapse: collapse;
     width: 100%;
     display: block;
-    max-height: 400px;
+    overflow-x: auto;
+    max-height: 500px;
     overflow-y: auto;
     font-family: 'Courier New', monospace;
 }
@@ -43,15 +62,7 @@ div.cell_output table th {
     z-index: 10;
 }
 
+/* Скрываем нижние кнопки навигации */
 .prev-next-footer, .prev-next-area {
     display: none !important;
 }
-
-.jupyter-widgets, .widget-container, .cell_output .output_area {
-    background-color: transparent !important;
-    color: #e0e0e0 !important;
-}
-
-.cell_output .output_subarea pre {
-    background-color: transparent !important;
-    color: #888888 !important;
