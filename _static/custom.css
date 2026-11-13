@@ -4,20 +4,19 @@ a { color: #d4af37; }
 a:hover { color: #9b2226; }
 .bd-sidebar, .bd-sidebar-primary { background-color: #222222; border-right: 1px solid #333; }
 
-div.cell_output, div.cell_output pre, div.output_area {
+div.cell_output {
+    background-color: #1a1a1a !important;
+    border-left: 3px solid #9b2226;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+div.cell_output pre {
     font-family: 'Georgia', serif !important;
     font-size: 1.05em !important;
     line-height: 1.6 !important;
     color: #e0e0e0 !important;
     background-color: transparent !important;
-}
-
-div.cell_output {
-    border-left: 3px solid #9b2226;
-    padding: 10px 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    background-color: #1a1a1a;
 }
 
 div.cell_output table {
@@ -28,11 +27,11 @@ div.cell_output table {
     display: block;
     max-height: 400px;
     overflow-y: auto;
+    font-family: 'Courier New', monospace;
 }
 div.cell_output table th, div.cell_output table td {
     border: 1px solid #333333 !important;
     padding: 8px;
-    font-family: 'Courier New', monospace;
 }
 div.cell_output table th {
     background-color: #111 !important;
@@ -43,4 +42,16 @@ div.cell_output table th {
     z-index: 10;
 }
 
-.cell_input .toggle-button { display: none !important; }
+.prev-next-footer, .prev-next-area {
+    display: none !important;
+}
+
+.widget-container, .jupyter-widgets {
+    background-color: #222222 !important;
+    color: #e0e0e0 !important;
+    border-radius: 8px;
+    padding: 10px;
+}
+.widget-label, .widget-readout {
+    color: #e0e0e0 !important;
+}
