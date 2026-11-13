@@ -1,6 +1,6 @@
 title: Лабораторная работа 01
 author: XeroX-cat
-copyright: "2026"
+copyright: "2025"
 only_build_toc_files: true
 
 execute:
@@ -12,10 +12,3 @@ html:
   static_path: ["_static"]
   extra_css: ["_static/custom.css"]
   home_page_in_navbar: true
-  # Эти две строки убирают лишние подписи и чинят меню
-  navigation_with_keys: false
-  announcement: ""
-  # Ограничиваем глубину меню слева до 1 уровня
-  html_theme_options:
-    navigation_depth: 1
-    collapse_navigation: true
