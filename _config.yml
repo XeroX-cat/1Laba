@@ -12,3 +12,5 @@ html:
   static_path: ["_static"]
   extra_css: ["_static/custom.css"]
   home_page_in_navbar: true
+  navigation_with_keys: false 
+  announcement: ""
