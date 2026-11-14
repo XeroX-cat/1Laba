@@ -69,3 +69,10 @@ div.cell_output table th {
 div.cell_output table tbody tr:has(td:contains("...")) {
     display: none !important;
 }
+
+/* Принудительно красим всё внутри вывода в темный */
+div.cell_output, 
+div.cell_output * {
+    background-color: transparent !important;
+    color: #e0e0e0 !important;
+}
