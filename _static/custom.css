@@ -6,19 +6,7 @@ a:hover { color: #9b2226; }
 .bd-sidebar, .bd-sidebar-primary { background-color: #222222; border-right: 1px solid #333; }
 
 /* Принудительно делаем текст в основном контенте светлым */
-article, .bd-article, .bd-content {
-    color: #e0e0e0 !important;
-}
-article h1, article h2, article h3, article h4, article p, article li {
-    color: #e0e0e0 !important;
-}
-
-/* Выравниваем все заголовки под один стиль */
-article h2, article h3, article h4 {
-    font-family: 'Arial Black', Impact, sans-serif !important;
-    color: #e0e0e0 !important;
-    margin-top: 1.5em;
-}
+article, .bd-article, .bd-content { color: #e0e0e0 !important; }
 
 /* Оформление блоков вывода (текст, print) */
 div.cell_output {
