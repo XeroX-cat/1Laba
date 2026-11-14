@@ -25,8 +25,7 @@ div.cell_output pre {
     border: none !important;
 }
 
-/* === ГЛАВНОЕ ИСПРАВЛЕНИЕ ТАБЛИЦ === */
-/* Контейнер для прокрутки */
+/* Таблицы: темный фон, прокрутка и ПРИНУДИТЕЛЬНЫЙ показ всех строк */
 div.cell_output table {
     background-color: #222222 !important;
     color: #e0e0e0 !important;
@@ -38,13 +37,11 @@ div.cell_output table {
     overflow-y: auto;
     font-family: 'Courier New', monospace;
 }
-
-/* Показываем скрытые строки, которые Pandas обрезал */
+/* Это правило перебивает многоточия Pandas */
 div.cell_output table tbody tr {
     display: table-row !important;
 }
 
-/* Стили ячеек */
 div.cell_output table th, div.cell_output table td {
     border: 1px solid #333333 !important;
     padding: 8px;
@@ -58,7 +55,17 @@ div.cell_output table th {
     z-index: 10;
 }
 
+/* Возвращаем стили для виджетов (фон) */
+.jupyter-widgets, .widget-container, .widget-subarea {
+    background-color: transparent !important;
+    color: #e0e0e0 !important;
+}
+
 /* Скрываем нижние кнопки навигации */
 .prev-next-footer, .prev-next-area {
+    display: none !important;
+}
+
+div.cell_output table tbody tr:has(td:contains("...")) {
     display: none !important;
 }
