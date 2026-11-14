@@ -5,6 +5,9 @@ a { color: #d4af37; }
 a:hover { color: #9b2226; }
 .bd-sidebar, .bd-sidebar-primary { background-color: #222222; border-right: 1px solid #333; }
 
+/* Принудительно делаем текст в основном контенте светлым */
+article, .bd-article, .bd-content { color: #e0e0e0 !important; }
+
 /* Оформление блоков вывода (текст, print) */
 div.cell_output {
     background-color: #1a1a1a !important;
@@ -29,7 +32,8 @@ div.cell_output table {
     border-collapse: collapse;
     width: 100%;
     display: block;
-    max-height: 400px;
+    overflow-x: auto;
+    max-height: 500px;
     overflow-y: auto;
     font-family: 'Courier New', monospace;
 }
@@ -49,16 +53,4 @@ div.cell_output table th {
 /* Скрываем нижние кнопки навигации */
 .prev-next-footer, .prev-next-area {
     display: none !important;
-}
-
-/* === ИСПРАВЛЕНИЕ ВИДЖЕТОВ И СИСТЕМНЫХ ВЫВОДОВ === */
-/* Убираем белый фон у интерактивных элементов и контейнеров */
-.jupyter-widgets, .widget-container, .cell_output .output_area {
-    background-color: transparent !important;
-    color: #e0e0e0 !important;
-}
-/* Убираем белый фон у текста «explore_generator» */
-.cell_output .output_subarea pre {
-    background-color: transparent !important;
-    color: #888888 !important; /* Делаем его чуть тусклее, чтобы не отвлекал */
 }
