@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Индекс разделов &#8212; Лабораторная работа 01</title>
+    <title>Lab01 - sprint 1 &#8212; Лабораторная работа 01</title>
   
   
   
@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=afdbd494" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=501cd951" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -177,32 +177,7 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Индекс разделов</a></li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Спринт 1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="1Laba_sprint2.html">Индекс разделов</a></li>
 
 </ul>
@@ -358,7 +333,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Индекс разделов</h1>
+    <h1>Lab01 - sprint 1</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -368,98 +343,116 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Индекс разделов</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Выборка с возвращением и без возвращения</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#description">Description (природа события)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#eda-distribution">EDA &amp; Distribution</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Была построена гистограмма распределения масс животных.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-x-x-1">Создание таблицы: какая масса и сколько раз встретилась, доли этих масс, вероятность события P(X &lt;= x) и проверка (не 1 из-за машинной точности).</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Построение графиков функции распределения массы</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Вычисление разных статистик масс (математического ожидания, среднего, дисперсии, стандратного отклонения, моды и тд)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-preparation">Dataset preparation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-description">General description (природа событий)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Выборка с возвращением и без возвращения</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#independence-estimations">Independence &amp; Estimations</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Состоятельность оценки</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Ошибка оценки среднего от размера выборки</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Вычисление разных статистик масс тел в выборке с возвращением</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Вычисление разных статистик масс тел в выборке без возвращения</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Вычисление разных статистик масс тел в выборке самцов</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Вычисление разных статистик масс тел в выборке самок</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Сравнение средних генеральной совокупности, выборки с и без возвращения</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Сравнение средней массы тела самок и самцов</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#random-variable-mass">Random Variable Mass</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#description">Description (природа события)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eda-distribution">EDA &amp; Distribution</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Была построена гистограмма распределения масс животных.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#p-x-x-1">Создание таблицы: какая масса и сколько раз встретилась, доли этих масс, вероятность события P(X &lt;= x) и проверка (не 1 из-за машинной точности).</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Построение графиков функции распределения массы</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Вычисление разных статистик масс (математического ожидания, среднего, дисперсии, стандратного отклонения, моды и тд)</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Description (природа события)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">EDA &amp; Distribution</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Была построена гистограмма распределения длин плечевых костей животных.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-y-y-1">Создание таблицы: какая длина тела и сколько раз встретилась, доли этих длин, вероятность события P(Y &lt;= y) и проверка (не 1 из-за машинной точности).</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Построение графиков функции распределения длины тел</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Вычисление разных статистик длин тел (математического ожидания, среднего, дисперсии, стандратного отклонения, моды и тд)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#independence-estimations">Independence &amp; Estimations</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Состоятельность оценки</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Ошибка оценки среднего от размера выборки</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Вычисление разных статистик масс тел в выборке с возвращением</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Вычисление разных статистик масс тел в выборке без возвращения</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Вычисление разных статистик масс тел в выборке самцов</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Вычисление разных статистик масс тел в выборке самок</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Сравнение средних генеральной совокупности, выборки с и без возвращения</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Сравнение средней массы тела самок и самцов</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Independence &amp; Estimations</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Состоятельность оценки</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Ошибка оценки среднего от размера выборки</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Вычисление разных статистик длин тел в выборке с возвращением</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Вычисление разных статистик длин тел в выборке без возвращения</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">Вычисление разных статистик длин тел в выборке самцов</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">Вычисление разных статистик длин тел в выборке самок</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">Сравнение средних генеральной совокупности, выборки с и без возвращения</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">Сравнение средней длины тела самок и самцов</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">Description (природа события)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">EDA &amp; Distribution</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">Была построена гистограмма распределения длин плечевых костей животных.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-z-z">Создание таблицы: какая длина плечевой кости и сколько раз встретилась, доли этих длин, вероятность события P(Z &lt;= z) и проверка.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">Построение графиков функции распределения длины плечевых костей</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">Вычисление разных статистик длин плечевых костей (математического ожидания, среднего, дисперсии, стандратного отклонения, моды и тд)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#random-variable-body-lenght">Random Variable Body Lenght</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Description (природа события)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">EDA &amp; Distribution</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Была построена гистограмма распределения длин плечевых костей животных.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#p-y-y-1">Создание таблицы: какая длина тела и сколько раз встретилась, доли этих длин, вероятность события P(Y &lt;= y) и проверка (не 1 из-за машинной точности).</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Построение графиков функции распределения длины тел</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Вычисление разных статистик длин тел (математического ожидания, среднего, дисперсии, стандратного отклонения, моды и тд)</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">Independence &amp; Estimations</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">Состоятельность оценки</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">Ошибка оценки среднего от размера выборки</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id36">Вычисление разных статистик длин плечевых костей в выборке с возвращением</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id37">Вычисление разных статистик длин плечевых костей в выборке без возвращения</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id38">Вычисление разных статистик длин плечевых костей в выборке самцов</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id39">Вычисление разных статистик длин плечевых костей в выборке самок</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id40">Сравнение средних генеральной совокупности, выборки с и без возвращения</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id41">Сравнение средней длины плечевой кости самок и самцов</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Independence &amp; Estimations</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Состоятельность оценки</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Ошибка оценки среднего от размера выборки</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Вычисление разных статистик длин тел в выборке с возвращением</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Вычисление разных статистик длин тел в выборке без возвращения</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Вычисление разных статистик длин тел в выборке самцов</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">Вычисление разных статистик длин тел в выборке самок</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">Сравнение средних генеральной совокупности, выборки с и без возвращения</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">Сравнение средней длины тела самок и самцов</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id42">Description (природа события)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id43">EDA &amp; Distribution</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id44">Была построена гистограмма распределения длин бедренных костей животных.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-w-w">Создание таблицы: какая длина бедренной кости и сколько раз встретилась, доли этих масс, вероятность события P(W &lt;= w) и проверка.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id45">Построение графиков функции распределения длины бедренных костей</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id46">Вычисление разных статистик длин бедренных костей (математического ожидания, среднего, дисперсии, стандратного отклонения, моды и тд)</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id47">Independence &amp; Estimations</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id48">Состоятельность оценки</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id49">Ошибка оценки среднего от размера выборки</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id50">Вычисление разных статистик длин бедренных костей в выборке с возвращением</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id51">Вычисление разных статистик длин бедренных костей в выборке без возвращения</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id52">Вычисление разных статистик длин бедренных костей в выборке самцов</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id53">Вычисление разных статистик длин бедренных костей в выборке самок</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id54">Сравнение средних генеральной совокупности, выборки с и без возвращения</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id55">Сравнение средней длины бедренной кости самок и самцов</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#random-variable-humerus-length">Random Variable Humerus Length</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">Description (природа события)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">EDA &amp; Distribution</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">Была построена гистограмма распределения длин плечевых костей животных.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#p-z-z">Создание таблицы: какая длина плечевой кости и сколько раз встретилась, доли этих длин, вероятность события P(Z &lt;= z) и проверка.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">Построение графиков функции распределения длины плечевых костей</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">Вычисление разных статистик длин плечевых костей (математического ожидания, среднего, дисперсии, стандратного отклонения, моды и тд)</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id56">Масса и длина тела</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id57">Масса тела и длина плечевой кости</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id58">Масса тела и длина бедренной кости</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id59">Длина тела и длина плечевой кости</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id60">Длина тела и длина бедренной кости</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id61">Длина плечевой и длина бедренной костей</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id62">Масса тела и доля китайского происхождения</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id63">Длина тела и доля китайского происхождения</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id64">Длина плечевой кости и доля китайского происхождения</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id65">Длина бедренной кости и доля китайского происхождения</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id66">Проверка зависимости</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id67">Нормализация. Диаграмма размаха</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">Independence &amp; Estimations</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">Состоятельность оценки</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">Ошибка оценки среднего от размера выборки</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">Вычисление разных статистик длин плечевых костей в выборке с возвращением</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id36">Вычисление разных статистик длин плечевых костей в выборке без возвращения</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id37">Вычисление разных статистик длин плечевых костей в выборке самцов</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id38">Вычисление разных статистик длин плечевых костей в выборке самок</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id39">Сравнение средних генеральной совокупности, выборки с и без возвращения</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id40">Сравнение средней длины плечевой кости самок и самцов</a></li>
 </ul>
-
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#random-variable-femural-length">Random Variable Femural Length</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id41">Description (природа события)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id42">EDA &amp; Distribution</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id43">Была построена гистограмма распределения длин бедренных костей животных.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#p-w-w">Создание таблицы: какая длина бедренной кости и сколько раз встретилась, доли этих масс, вероятность события P(W &lt;= w) и проверка.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id44">Построение графиков функции распределения длины бедренных костей</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id45">Вычисление разных статистик длин бедренных костей (математического ожидания, среднего, дисперсии, стандратного отклонения, моды и тд)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id46">Independence &amp; Estimations</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id47">Состоятельность оценки</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id48">Ошибка оценки среднего от размера выборки</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id49">Вычисление разных статистик длин бедренных костей в выборке с возвращением</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id50">Вычисление разных статистик длин бедренных костей в выборке без возвращения</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id51">Вычисление разных статистик длин бедренных костей в выборке самцов</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id52">Вычисление разных статистик длин бедренных костей в выборке самок</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id53">Сравнение средних генеральной совокупности, выборки с и без возвращения</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id54">Сравнение средней длины бедренной кости самок и самцов</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id55">Выделение зависимостей</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id56">Масса и длина тела</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id57">Масса тела и длина плечевой кости</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id58">Масса тела и длина бедренной кости</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id59">Длина тела и длина плечевой кости</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id60">Длина тела и длина бедренной кости</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id61">Длина плечевой и длина бедренной костей</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id62">Масса тела и доля китайского происхождения</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id63">Длина тела и доля китайского происхождения</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id64">Длина плечевой кости и доля китайского происхождения</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id65">Длина бедренной кости и доля китайского происхождения</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id66">Проверка зависимости</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id67">Нормализация. Диаграмма размаха</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-resume">Lab resume</a></li>
+</ul>
             </nav>
         </div>
     </div>
@@ -478,47 +471,28 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>--2026-11-13 20:46:29--  https://raw.githubusercontent.com/XeroX-cat/1Laba/main/%D0%9C%D0%B0%D0%BA%D0%B0%D0%BA%D0%B8.xlsx
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>--2026-11-14 14:59:27--  https://raw.githubusercontent.com/XeroX-cat/1Laba/main/%D0%9C%D0%B0%D0%BA%D0%B0%D0%BA%D0%B8.xlsx
 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 43969 (43K) [application/octet-stream]
 Saving to: ‘Макаки.xlsx’
 
-Макаки.xlsx         100%[===================&gt;]  42.94K  --.-KB/s    in 0.005s  
 
-2026-11-13 20:46:29 (9.30 MB/s) - ‘Макаки.xlsx’ saved [43969/43969]
+Макаки.xlsx           0%[                    ]       0  --.-KB/s               
+Макаки.xlsx         100%[===================&gt;]  42.94K  --.-KB/s    in 0.008s  
+
+2026-11-14 14:59:27 (5.36 MB/s) - ‘Макаки.xlsx’ saved [43969/43969]
 </pre></div>
 </div>
 </div>
 </div>
-<p><a id="s1-top"></a></p>
-<div style="font-family: 'Georgia', serif; max-width: 900px; margin: 0 auto; padding: 40px; background-color: #1a1a1a; color: #e0e0e0; border-top: 4px solid #d4af37; border-bottom: 2px solid #333;">
-    <div style="font-size: 12px; letter-spacing: 4px; color: #9b2226; text-transform: uppercase; font-weight: bold;">Lab 01 // Sprint 01</div>
-    <h1 style="font-weight: 400; font-size: 48px; margin: 10px 0 5px; line-height: 1.1; color: #e0e0e0;">Случайные величины<br>в морфометрии макак</h1>
-    <div style="font-size: 16px; color: #888; font-style: italic; margin-bottom: 20px;">описательная статистика, EDA, проверка гипотез</div>
-    <div style="height: 1px; background: #333; margin: 20px 0;"></div>
-    <div style="font-size: 12px; color: #888; letter-spacing: 1px;">
-        <a href="https://github.com/XeroX-cat/1Laba" style="color: #d4af37; text-decoration: none;">github.com/XeroX-cat/1Laba</a>
-    </div>
-</div>
-<section id="id1">
-<h1>Индекс разделов<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<ol class="arabic simple">
-<li><p><a class="reference internal" href="#s1-dataset"><span class="xref myst">Подготовка датасета</span></a></p></li>
-<li><p><a class="reference internal" href="#s1-nature"><span class="xref myst">Природа события</span></a></p></li>
-<li><p><a class="reference internal" href="#s1-mass"><span class="xref myst">Величина 01: Масса</span></a></p></li>
-<li><p><a class="reference internal" href="#s1-blength"><span class="xref myst">Величина 02: Длина тела</span></a></p></li>
-<li><p><a class="reference internal" href="#s1-humerus"><span class="xref myst">Величина 03: Плечевая кость</span></a></p></li>
-<li><p><a class="reference internal" href="#s1-femur"><span class="xref myst">Величина 04: Бедренная кость</span></a></p></li>
-<li><p><a class="reference internal" href="#s1-deps"><span class="xref myst">Зависимости и нормализация</span></a></p></li>
-<li><p><a class="reference internal" href="#s1-resume"><span class="xref myst">Выводы</span></a></p></li>
-</ol>
-<p><a id="s1-dataset"></a></p>
-<div style="font-family: 'Georgia', serif; border-left: 4px solid #d4af37; padding-left: 20px; margin: 40px 0 20px;">
-    <div style="font-size: 12px; letter-spacing: 2px; color: #888;">РАЗДЕЛ 1</div>
-    <h2 style="margin: 5px 0 0; color: #e0e0e0; font-weight: 400;">Dataset preparation</h2>
-</div>
+<section class="tex2jax_ignore mathjax_ignore" id="lab01-sprint-1">
+<h1>Lab01 - sprint 1<a class="headerlink" href="#lab01-sprint-1" title="Link to this heading">#</a></h1>
+<p>Вопросы/гипотезы: зависят ли масса тела, длина тела, длина плечевой кости и длина бедренной кости от пола и доли китайсеого происхождения у макак?, есть ли зависимости между этими величинами?
+Для ответа исследуем четыре случайные случайные величины: массу тела, длину тела, длину плечевой кости и длину бедренной кости.</p>
+<section id="dataset-preparation">
+<h2>Dataset preparation<a class="headerlink" href="#dataset-preparation" title="Link to this heading">#</a></h2>
 <p>Подключение библиотек и загрузка датасета: <a class="reference external" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3403949/?utm_source=chatgpt.com#sec25">https://pmc.ncbi.nlm.nih.gov/articles/PMC3403949/?utm_source=chatgpt.com#sec25</a></p>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
@@ -538,7 +512,7 @@ Saving to: ‘Макаки.xlsx’
 </details>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-aa188e90-01ec-4301-bf96-79cda93cd200" class="colab-df-container">
+  <div id="df-d0216e9a-c9ea-4662-b51c-90ca82302e52" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -641,7 +615,7 @@ Saving to: ‘Макаки.xlsx’
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-aa188e90-01ec-4301-bf96-79cda93cd200')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-d0216e9a-c9ea-4662-b51c-90ca82302e52')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -693,12 +667,12 @@ Saving to: ‘Макаки.xlsx’
 
     <script>
       const buttonEl =
-        document.querySelector('#df-aa188e90-01ec-4301-bf96-79cda93cd200 button.colab-df-convert');
+        document.querySelector('#df-d0216e9a-c9ea-4662-b51c-90ca82302e52 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-aa188e90-01ec-4301-bf96-79cda93cd200');
+        const element = document.querySelector('#df-d0216e9a-c9ea-4662-b51c-90ca82302e52');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -870,11 +844,9 @@ memory usage: 10.6+ KB
 </div>
 </div>
 </div>
-<p><a id="s1-nature"></a></p>
-<div style="font-family: 'Georgia', serif; border-left: 4px solid #d4af37; padding-left: 20px; margin: 40px 0 20px;">
-    <div style="font-size: 12px; letter-spacing: 2px; color: #888;">РАЗДЕЛ 2</div>
-    <h2 style="margin: 5px 0 0; color: #e0e0e0; font-weight: 400;">General description (природа событий)</h2>
-</div>
+</section>
+<section id="general-description">
+<h2>General description (природа событий)<a class="headerlink" href="#general-description" title="Link to this heading">#</a></h2>
 <p>Из 134 строки с полными данными равновероятно выбирается одна строка о конкретном животном. Животное не выбрано, пока не выбрана строка с данными. Каждой строке соответствуют фиксированные, конкретные значения массы тела, длины тела, плечевой и бедренной кости. 134 строки - это генеральная совокупность.</p>
 <div class="math notranslate nohighlight">
 \[
@@ -886,9 +858,8 @@ P(\omega_j) = \frac{1}{134}, \qquad j=1,\ldots,134.
 \[
 P(X=x_i)=p_i=\frac{n_i}{N},\qquad N=134.
 \]</div>
-</section>
-<section id="id2">
-<h1>Выборка с возвращением и без возвращения<a class="headerlink" href="#id2" title="Link to this heading">#</a></h1>
+<section id="id1">
+<h3>Выборка с возвращением и без возвращения<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <p>Из генеральной совокупности выбирается выборка размером n.</p>
 <p>При отборе с возвращением: после взятия животного в выборку, оно остаётся доступным, чтобы вязть его снова. То есть конкретное данное животное в выборке может встретиться несколько раз. Выбор животного остаётся одинаковым для каждого животного. Число животных в выборке может быть больше, чем число животных в генерельной совокупности.</p>
 <p>При отборе без возвращения: после взятия животного в выборку, оно становится недоступным, чтобы взять его снова. То есть любое животное в выборке может встретиться только один раз. Число животных в выборке не может быть больше, чем число животных в генерельной совокупности.</p>
@@ -912,14 +883,12 @@ $<span class="math notranslate nohighlight">\(
 \sigma_{\bar X,\;\text{без возвращения}}^{2}
 =\frac{\sigma^2}{n}\cdot\frac{N-n}{N-1}
 \]</div>
-<p><a id="s1-mass"></a></p>
-<div style="font-family: 'Georgia', serif; border-left: 4px solid #d4af37; padding-left: 20px; margin: 40px 0 20px;">
-    <div style="font-size: 12px; letter-spacing: 2px; color: #888;">РАЗДЕЛ 3</div>
-    <h2 style="margin: 5px 0 0; color: #e0e0e0; font-weight: 400;">Random Variable Mass</h2>
-</div>
 </section>
+</section>
+<section id="random-variable-mass">
+<h2>Random Variable Mass<a class="headerlink" href="#random-variable-mass" title="Link to this heading">#</a></h2>
 <section id="description">
-<h1>Description (природа события)<a class="headerlink" href="#description" title="Link to this heading">#</a></h1>
+<h3>Description (природа события)<a class="headerlink" href="#description" title="Link to this heading">#</a></h3>
 <p>Случайная величина (X) - масса тела животного в выбранной строке с единицей измерения [кг].
 Только после выбора строки можно узнать массу, то есть величина заранее не известна. Но каждой конкретной строке соответствует одна масса. Это соответствует определению случайной величины у Н.Ш.Кремера (стр.89-90).</p>
 <div class="math notranslate nohighlight">
@@ -928,15 +897,15 @@ X(\omega_j) = m_j
 \]</div>
 </section>
 <section id="eda-distribution">
-<h1>EDA &amp; Distribution<a class="headerlink" href="#eda-distribution" title="Link to this heading">#</a></h1>
+<h3>EDA &amp; Distribution<a class="headerlink" href="#eda-distribution" title="Link to this heading">#</a></h3>
 <p>До случайного выбора животного неизвестно, какое значение примет (X).</p>
 <div class="math notranslate nohighlight">
 \[
 P(X=x_i)=p_i=\frac{n_i}{N}, \qquad
 p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 \]</div>
-<section id="id3">
-<h2>Была построена гистограмма распределения масс животных.<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<section id="id2">
+<h4>Была построена гистограмма распределения масс животных.<a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
 <p>Распределение в исходной гистограмме масс животных визуально не является нормальным, поэтому массы были прологарифмированы (взят десятичный логарифм). Распределение на логарифмируемом графике визуально похоже на нормальное. Сделано предположение, что распределение логнормальное.</p>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
@@ -1047,7 +1016,7 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 </div>
 </section>
 <section id="p-x-x-1">
-<h2>Создание таблицы: какая масса и сколько раз встретилась, доли этих масс, вероятность события P(X &lt;= x) и проверка (не 1 из-за машинной точности).<a class="headerlink" href="#p-x-x-1" title="Link to this heading">#</a></h2>
+<h4>Создание таблицы: какая масса и сколько раз встретилась, доли этих масс, вероятность события P(X &lt;= x) и проверка (не 1 из-за машинной точности).<a class="headerlink" href="#p-x-x-1" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -1075,7 +1044,7 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-edc5d609-9528-4ad8-a37b-a6aecf73717a" class="colab-df-container">
+  <div id="df-385dabc1-288a-4e50-8c15-55f7f305cffc" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1185,7 +1154,7 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-edc5d609-9528-4ad8-a37b-a6aecf73717a')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-385dabc1-288a-4e50-8c15-55f7f305cffc')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -1237,12 +1206,12 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 
     <script>
       const buttonEl =
-        document.querySelector('#df-edc5d609-9528-4ad8-a37b-a6aecf73717a button.colab-df-convert');
+        document.querySelector('#df-385dabc1-288a-4e50-8c15-55f7f305cffc button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-edc5d609-9528-4ad8-a37b-a6aecf73717a');
+        const element = document.querySelector('#df-385dabc1-288a-4e50-8c15-55f7f305cffc');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1266,8 +1235,8 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 </div></div>
 </div>
 </section>
-<section id="id4">
-<h2>Построение графиков функции распределения массы<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<section id="id3">
+<h4>Построение графиков функции распределения массы<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -1294,8 +1263,8 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 </div>
 </div>
 </section>
-<section id="id5">
-<h2>Вычисление разных статистик масс (математического ожидания, среднего, дисперсии, стандратного отклонения, моды и тд)<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<section id="id4">
+<h4>Вычисление разных статистик масс (математического ожидания, среднего, дисперсии, стандратного отклонения, моды и тд)<a class="headerlink" href="#id4" title="Link to this heading">#</a></h4>
 <div class="math notranslate nohighlight">
 \[
 \mu_X=E[X]=\sum_{i=1}^{k}x_i p_i, \qquad
@@ -1362,11 +1331,11 @@ Cтандартное отклонение, кг: 3.47
 </section>
 </section>
 <section id="independence-estimations">
-<h1>Independence &amp; Estimations<a class="headerlink" href="#independence-estimations" title="Link to this heading">#</a></h1>
+<h3>Independence &amp; Estimations<a class="headerlink" href="#independence-estimations" title="Link to this heading">#</a></h3>
 <p>Средняя масса в генеральной совокупности составляет 10,38 кг. В выборке с возвращением она равна 10.09 кг — завышение на 2.74%, а без возвращения — 9.78 кг, занижение на 5.76%. Медиана в выборке с возвращением (9.43 кг) была ближе к медиане и генеральной выборки (9.82 кг), чем медиана без возвращения (9.42 кг). Стандартное отклонение без возвращения (3.15 кг) было ближе к стандартному отклонению генеральной выборки (3.47 кг), чем стандартное отклонение с возвращением (3.14 кг).</p>
 <p>Масса тела зависит от пола: самцы тяжелее самок на 4.7 кг или на 52.83%.</p>
-<section id="id6">
-<h2>Состоятельность оценки<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<section id="id5">
+<h4>Состоятельность оценки<a class="headerlink" href="#id5" title="Link to this heading">#</a></h4>
 <p>134 масса - это генеральная совокупность. Её средняя масса известна и используется как контроль.
 Берём данные из генеральной выборки, получаем выборки с возвращением с разным количеством масс.
 Для каждой новой выборки повторяем исследование 1000 раз, вычисляя выборочное среднее. Проверяем, уменьшается ли
@@ -1407,7 +1376,7 @@ Cтандартное отклонение, кг: 3.47
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-2633de16-4041-4cf7-8cd1-881a9d15c37b" class="colab-df-container">
+  <div id="df-a00f0d6c-3e95-4e87-923a-6e3fd02ada3e" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1488,7 +1457,7 @@ Cтандартное отклонение, кг: 3.47
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-2633de16-4041-4cf7-8cd1-881a9d15c37b')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-a00f0d6c-3e95-4e87-923a-6e3fd02ada3e')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -1540,12 +1509,12 @@ Cтандартное отклонение, кг: 3.47
 
     <script>
       const buttonEl =
-        document.querySelector('#df-2633de16-4041-4cf7-8cd1-881a9d15c37b button.colab-df-convert');
+        document.querySelector('#df-a00f0d6c-3e95-4e87-923a-6e3fd02ada3e button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-2633de16-4041-4cf7-8cd1-881a9d15c37b');
+        const element = document.querySelector('#df-a00f0d6c-3e95-4e87-923a-6e3fd02ada3e');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1569,8 +1538,8 @@ Cтандартное отклонение, кг: 3.47
 </div></div>
 </div>
 </section>
-<section id="id7">
-<h2>Ошибка оценки среднего от размера выборки<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
+<section id="id6">
+<h4>Ошибка оценки среднего от размера выборки<a class="headerlink" href="#id6" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -1596,8 +1565,8 @@ Cтандартное отклонение, кг: 3.47
 </div>
 </div>
 </section>
-<section id="id8">
-<h2>Вычисление разных статистик масс тел в выборке с возвращением<a class="headerlink" href="#id8" title="Link to this heading">#</a></h2>
+<section id="id7">
+<h4>Вычисление разных статистик масс тел в выборке с возвращением<a class="headerlink" href="#id7" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -1634,8 +1603,8 @@ Cтандартное отклонение, кг: 3.47
 </div>
 </div>
 </section>
-<section id="id9">
-<h2>Вычисление разных статистик масс тел в выборке без возвращения<a class="headerlink" href="#id9" title="Link to this heading">#</a></h2>
+<section id="id8">
+<h4>Вычисление разных статистик масс тел в выборке без возвращения<a class="headerlink" href="#id8" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -1672,8 +1641,8 @@ Cтандартное отклонение, кг: 3.47
 </div>
 </div>
 </section>
-<section id="id10">
-<h2>Вычисление разных статистик масс тел в выборке самцов<a class="headerlink" href="#id10" title="Link to this heading">#</a></h2>
+<section id="id9">
+<h4>Вычисление разных статистик масс тел в выборке самцов<a class="headerlink" href="#id9" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -1710,8 +1679,8 @@ Cтандартное отклонение, кг: 3.47
 </div>
 </div>
 </section>
-<section id="id11">
-<h2>Вычисление разных статистик масс тел в выборке самок<a class="headerlink" href="#id11" title="Link to this heading">#</a></h2>
+<section id="id10">
+<h4>Вычисление разных статистик масс тел в выборке самок<a class="headerlink" href="#id10" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -1748,8 +1717,8 @@ Cтандартное отклонение, кг: 3.47
 </div>
 </div>
 </section>
-<section id="id12">
-<h2>Сравнение средних генеральной совокупности, выборки с и без возвращения<a class="headerlink" href="#id12" title="Link to this heading">#</a></h2>
+<section id="id11">
+<h4>Сравнение средних генеральной совокупности, выборки с и без возвращения<a class="headerlink" href="#id11" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -1777,8 +1746,8 @@ Cтандартное отклонение, кг: 3.47
 </div>
 </div>
 </section>
-<section id="id13">
-<h2>Сравнение средней массы тела самок и самцов<a class="headerlink" href="#id13" title="Link to this heading">#</a></h2>
+<section id="id12">
+<h4>Сравнение средней массы тела самок и самцов<a class="headerlink" href="#id12" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -1807,15 +1776,13 @@ Cтандартное отклонение, кг: 3.47
 </div>
 </div>
 </div>
-<p><a id="s1-blength"></a></p>
-<div style="font-family: 'Georgia', serif; border-left: 4px solid #d4af37; padding-left: 20px; margin: 40px 0 20px;">
-    <div style="font-size: 12px; letter-spacing: 2px; color: #888;">РАЗДЕЛ 4</div>
-    <h2 style="margin: 5px 0 0; color: #e0e0e0; font-weight: 400;">Random Variable Body Lenght</h2>
-</div>
 </section>
 </section>
-<section id="id14">
-<h1>Description (природа события)<a class="headerlink" href="#id14" title="Link to this heading">#</a></h1>
+</section>
+<section id="random-variable-body-lenght">
+<h2>Random Variable Body Lenght<a class="headerlink" href="#random-variable-body-lenght" title="Link to this heading">#</a></h2>
+<section id="id13">
+<h3>Description (природа события)<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
 <p>Случайная величина (Y) - длина тела животного в выбранной строке с единицей измерения [мм].
 Только после выбора строки можно узнать длину тела, то есть величина заранее не известна. Но каждой конкретной строке соответствует одна длина. Это соответствует определению случайной величины у Н.Ш.Кремера (стр.89-90).</p>
 <div class="math notranslate nohighlight">
@@ -1823,16 +1790,16 @@ Cтандартное отклонение, кг: 3.47
 Y(\omega_j) = b_j
 \]</div>
 </section>
-<section id="id15">
-<h1>EDA &amp; Distribution<a class="headerlink" href="#id15" title="Link to this heading">#</a></h1>
+<section id="id14">
+<h3>EDA &amp; Distribution<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
 <p>До случайного выбора животного неизвестно, какое значение примет (Y).</p>
 <div class="math notranslate nohighlight">
 \[
 P(Y=y_i)=p_i=\frac{n_i}{N}, \qquad
 p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 \]</div>
-<section id="id16">
-<h2>Была построена гистограмма распределения длин плечевых костей животных.<a class="headerlink" href="#id16" title="Link to this heading">#</a></h2>
+<section id="id15">
+<h4>Была построена гистограмма распределения длин плечевых костей животных.<a class="headerlink" href="#id15" title="Link to this heading">#</a></h4>
 <p>Распределение в исходной гистограмме длин тел животных визуально не является нормальным, поэтому длины были прологарифмированы (взят десятичный логарифм). Распределение на логарифмируемом графике визуально не похоже на нормальное. Сделано предположение, что это распределение Фишера.</p>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
@@ -1898,7 +1865,7 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 </div>
 </section>
 <section id="p-y-y-1">
-<h2>Создание таблицы: какая длина тела и сколько раз встретилась, доли этих длин, вероятность события P(Y &lt;= y) и проверка (не 1 из-за машинной точности).<a class="headerlink" href="#p-y-y-1" title="Link to this heading">#</a></h2>
+<h4>Создание таблицы: какая длина тела и сколько раз встретилась, доли этих длин, вероятность события P(Y &lt;= y) и проверка (не 1 из-за машинной точности).<a class="headerlink" href="#p-y-y-1" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -1926,7 +1893,7 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-c0dca926-1635-4b72-a90e-205f59f09020" class="colab-df-container">
+  <div id="df-0b416e9f-0a02-414b-863a-6384137b861b" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -2036,7 +2003,7 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-c0dca926-1635-4b72-a90e-205f59f09020')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-0b416e9f-0a02-414b-863a-6384137b861b')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -2088,12 +2055,12 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 
     <script>
       const buttonEl =
-        document.querySelector('#df-c0dca926-1635-4b72-a90e-205f59f09020 button.colab-df-convert');
+        document.querySelector('#df-0b416e9f-0a02-414b-863a-6384137b861b button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-c0dca926-1635-4b72-a90e-205f59f09020');
+        const element = document.querySelector('#df-0b416e9f-0a02-414b-863a-6384137b861b');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -2117,8 +2084,8 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 </div></div>
 </div>
 </section>
-<section id="id17">
-<h2>Построение графиков функции распределения длины тел<a class="headerlink" href="#id17" title="Link to this heading">#</a></h2>
+<section id="id16">
+<h4>Построение графиков функции распределения длины тел<a class="headerlink" href="#id16" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -2145,8 +2112,8 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 </div>
 </div>
 </section>
-<section id="id18">
-<h2>Вычисление разных статистик длин тел (математического ожидания, среднего, дисперсии, стандратного отклонения, моды и тд)<a class="headerlink" href="#id18" title="Link to this heading">#</a></h2>
+<section id="id17">
+<h4>Вычисление разных статистик длин тел (математического ожидания, среднего, дисперсии, стандратного отклонения, моды и тд)<a class="headerlink" href="#id17" title="Link to this heading">#</a></h4>
 <div class="math notranslate nohighlight">
 \[
 \mu_Y=E[Y]=\sum_{i=1}^{k}y_i p_i, \qquad
@@ -2206,12 +2173,12 @@ Cтандартное отклонение, мм: 32.43
 </div>
 </section>
 </section>
-<section id="id19">
-<h1>Independence &amp; Estimations<a class="headerlink" href="#id19" title="Link to this heading">#</a></h1>
+<section id="id18">
+<h3>Independence &amp; Estimations<a class="headerlink" href="#id18" title="Link to this heading">#</a></h3>
 <p>Средняя длина тела в генеральной совокупности составляет 528.11 мм. В выборке с возвращением она равна 531.46 мм — завышение на 0.64%, а без возвращения — 523.53 мм, занижение на 0.87%. Медиана в выборке с возвращением (518.75 мм) была ближе к медиане и генеральной выборки (520.80 мм), чем медиана без возвращения (518.0 мм). Стандартное отклонение с возвращения (32.52 мм) было ближе к стандартному отклонению генеральной выборки (32.43 мм), чем стандартное отклонение без возвращением (30.57 мм).</p>
 <p>Длина тела зависит от пола: самцы длинее самок на 47.72 мм или на 9.3%.</p>
-<section id="id20">
-<h2>Состоятельность оценки<a class="headerlink" href="#id20" title="Link to this heading">#</a></h2>
+<section id="id19">
+<h4>Состоятельность оценки<a class="headerlink" href="#id19" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -2248,7 +2215,7 @@ Cтандартное отклонение, мм: 32.43
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-6ca31bf8-9cc7-443b-90b9-e50b32a08c50" class="colab-df-container">
+  <div id="df-3b7cd39d-098a-4f26-a6db-b259f13ac014" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -2329,7 +2296,7 @@ Cтандартное отклонение, мм: 32.43
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-6ca31bf8-9cc7-443b-90b9-e50b32a08c50')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-3b7cd39d-098a-4f26-a6db-b259f13ac014')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -2381,12 +2348,12 @@ Cтандартное отклонение, мм: 32.43
 
     <script>
       const buttonEl =
-        document.querySelector('#df-6ca31bf8-9cc7-443b-90b9-e50b32a08c50 button.colab-df-convert');
+        document.querySelector('#df-3b7cd39d-098a-4f26-a6db-b259f13ac014 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-6ca31bf8-9cc7-443b-90b9-e50b32a08c50');
+        const element = document.querySelector('#df-3b7cd39d-098a-4f26-a6db-b259f13ac014');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -2410,8 +2377,8 @@ Cтандартное отклонение, мм: 32.43
 </div></div>
 </div>
 </section>
-<section id="id21">
-<h2>Ошибка оценки среднего от размера выборки<a class="headerlink" href="#id21" title="Link to this heading">#</a></h2>
+<section id="id20">
+<h4>Ошибка оценки среднего от размера выборки<a class="headerlink" href="#id20" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -2437,8 +2404,8 @@ Cтандартное отклонение, мм: 32.43
 </div>
 </div>
 </section>
-<section id="id22">
-<h2>Вычисление разных статистик длин тел в выборке с возвращением<a class="headerlink" href="#id22" title="Link to this heading">#</a></h2>
+<section id="id21">
+<h4>Вычисление разных статистик длин тел в выборке с возвращением<a class="headerlink" href="#id21" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -2475,8 +2442,8 @@ Cтандартное отклонение, мм: 32.43
 </div>
 </div>
 </section>
-<section id="id23">
-<h2>Вычисление разных статистик длин тел в выборке без возвращения<a class="headerlink" href="#id23" title="Link to this heading">#</a></h2>
+<section id="id22">
+<h4>Вычисление разных статистик длин тел в выборке без возвращения<a class="headerlink" href="#id22" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -2513,8 +2480,8 @@ Cтандартное отклонение, мм: 32.43
 </div>
 </div>
 </section>
-<section id="id24">
-<h2>Вычисление разных статистик длин тел в выборке самцов<a class="headerlink" href="#id24" title="Link to this heading">#</a></h2>
+<section id="id23">
+<h4>Вычисление разных статистик длин тел в выборке самцов<a class="headerlink" href="#id23" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -2551,8 +2518,8 @@ Cтандартное отклонение, мм: 32.43
 </div>
 </div>
 </section>
-<section id="id25">
-<h2>Вычисление разных статистик длин тел в выборке самок<a class="headerlink" href="#id25" title="Link to this heading">#</a></h2>
+<section id="id24">
+<h4>Вычисление разных статистик длин тел в выборке самок<a class="headerlink" href="#id24" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -2589,8 +2556,8 @@ Cтандартное отклонение, мм: 32.43
 </div>
 </div>
 </section>
-<section id="id26">
-<h2>Сравнение средних генеральной совокупности, выборки с и без возвращения<a class="headerlink" href="#id26" title="Link to this heading">#</a></h2>
+<section id="id25">
+<h4>Сравнение средних генеральной совокупности, выборки с и без возвращения<a class="headerlink" href="#id25" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -2618,8 +2585,8 @@ Cтандартное отклонение, мм: 32.43
 </div>
 </div>
 </section>
-<section id="id27">
-<h2>Сравнение средней длины тела самок и самцов<a class="headerlink" href="#id27" title="Link to this heading">#</a></h2>
+<section id="id26">
+<h4>Сравнение средней длины тела самок и самцов<a class="headerlink" href="#id26" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -2648,15 +2615,13 @@ Cтандартное отклонение, мм: 32.43
 </div>
 </div>
 </div>
-<p><a id="s1-humerus"></a></p>
-<div style="font-family: 'Georgia', serif; border-left: 4px solid #d4af37; padding-left: 20px; margin: 40px 0 20px;">
-    <div style="font-size: 12px; letter-spacing: 2px; color: #888;">РАЗДЕЛ 5</div>
-    <h2 style="margin: 5px 0 0; color: #e0e0e0; font-weight: 400;">Random Variable Humerus Length</h2>
-</div>
 </section>
 </section>
-<section id="id28">
-<h1>Description (природа события)<a class="headerlink" href="#id28" title="Link to this heading">#</a></h1>
+</section>
+<section id="random-variable-humerus-length">
+<h2>Random Variable Humerus Length<a class="headerlink" href="#random-variable-humerus-length" title="Link to this heading">#</a></h2>
+<section id="id27">
+<h3>Description (природа события)<a class="headerlink" href="#id27" title="Link to this heading">#</a></h3>
 <p>Случайная величина (Z) - длина плечевой кости животного в выбранной строке с единицей измерения [мм].
 Только после выбора строки можно узнать длину плечевой кости, то есть величина заранее не известна. Но каждой конкретной строке соответствует одна длина. Это соответствует определению случайной величины у Н.Ш.Кремера (стр.89-90).</p>
 <div class="math notranslate nohighlight">
@@ -2664,16 +2629,16 @@ Cтандартное отклонение, мм: 32.43
 Z(\omega_j) = h_j
 \]</div>
 </section>
-<section id="id29">
-<h1>EDA &amp; Distribution<a class="headerlink" href="#id29" title="Link to this heading">#</a></h1>
+<section id="id28">
+<h3>EDA &amp; Distribution<a class="headerlink" href="#id28" title="Link to this heading">#</a></h3>
 <p>До случайного выбора животного неизвестно, какое значение примет (Z).</p>
 <div class="math notranslate nohighlight">
 \[
 P(Z=z_i)=p_i=\frac{n_i}{N}, \qquad
 p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 \]</div>
-<section id="id30">
-<h2>Была построена гистограмма распределения длин плечевых костей животных.<a class="headerlink" href="#id30" title="Link to this heading">#</a></h2>
+<section id="id29">
+<h4>Была построена гистограмма распределения длин плечевых костей животных.<a class="headerlink" href="#id29" title="Link to this heading">#</a></h4>
 <p>Распределение в исходной гистограмме длин плечевых костей животных визуально не является нормальным, поэтому длины были прологарифмированы (взят десятичный логарифм). Распределение на логарифмируемом графике визуально не похоже на нормальное. Сделано предположение, что это распределение Фишера.</p>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
@@ -2739,7 +2704,7 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 </div>
 </section>
 <section id="p-z-z">
-<h2>Создание таблицы: какая длина плечевой кости и сколько раз встретилась, доли этих длин, вероятность события P(Z &lt;= z) и проверка.<a class="headerlink" href="#p-z-z" title="Link to this heading">#</a></h2>
+<h4>Создание таблицы: какая длина плечевой кости и сколько раз встретилась, доли этих длин, вероятность события P(Z &lt;= z) и проверка.<a class="headerlink" href="#p-z-z" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -2767,7 +2732,7 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-b60a1cf8-f8a7-4363-a7ab-9a5170fc0a16" class="colab-df-container">
+  <div id="df-629a2e19-98c9-49ba-bc96-7edc55237909" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -2877,7 +2842,7 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-b60a1cf8-f8a7-4363-a7ab-9a5170fc0a16')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-629a2e19-98c9-49ba-bc96-7edc55237909')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -2929,12 +2894,12 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 
     <script>
       const buttonEl =
-        document.querySelector('#df-b60a1cf8-f8a7-4363-a7ab-9a5170fc0a16 button.colab-df-convert');
+        document.querySelector('#df-629a2e19-98c9-49ba-bc96-7edc55237909 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-b60a1cf8-f8a7-4363-a7ab-9a5170fc0a16');
+        const element = document.querySelector('#df-629a2e19-98c9-49ba-bc96-7edc55237909');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -2958,8 +2923,8 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 </div></div>
 </div>
 </section>
-<section id="id31">
-<h2>Построение графиков функции распределения длины плечевых костей<a class="headerlink" href="#id31" title="Link to this heading">#</a></h2>
+<section id="id30">
+<h4>Построение графиков функции распределения длины плечевых костей<a class="headerlink" href="#id30" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -2986,8 +2951,8 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 </div>
 </div>
 </section>
-<section id="id32">
-<h2>Вычисление разных статистик длин плечевых костей (математического ожидания, среднего, дисперсии, стандратного отклонения, моды и тд)<a class="headerlink" href="#id32" title="Link to this heading">#</a></h2>
+<section id="id31">
+<h4>Вычисление разных статистик длин плечевых костей (математического ожидания, среднего, дисперсии, стандратного отклонения, моды и тд)<a class="headerlink" href="#id31" title="Link to this heading">#</a></h4>
 <div class="math notranslate nohighlight">
 \[
 \mu_Z=E[Z]=\sum_{i=1}^{k}z_i p_i, \qquad
@@ -3047,12 +3012,12 @@ Cтандартное отклонение, мм: 11.20
 </div>
 </section>
 </section>
-<section id="id33">
-<h1>Independence &amp; Estimations<a class="headerlink" href="#id33" title="Link to this heading">#</a></h1>
+<section id="id32">
+<h3>Independence &amp; Estimations<a class="headerlink" href="#id32" title="Link to this heading">#</a></h3>
 <p>Средняя длина плечевой кости в генеральной совокупности составляет 153.28 мм. В выборке с возвращением она равна 154.21 мм — завышение на 0.60%, а без возвращения — 151.67 мм, занижение на 1.05%. Медиана в выборке с возвращением (153.07 мм) была ближе к медиане и генеральной выборки (152.06 мм), чем медиана без возвращения (152.25 мм). Стандартное отклонение с возвращения (11.78 мм) было ближе к стандартному отклонению генеральной выборки (11.20 мм), чем стандартное отклонение без возвращением (10.05 мм).</p>
 <p>Длина плечевых костей зависит от пола: кости самцов длинее самок на 19.04 мм или на 12.93%.</p>
-<section id="id34">
-<h2>Состоятельность оценки<a class="headerlink" href="#id34" title="Link to this heading">#</a></h2>
+<section id="id33">
+<h4>Состоятельность оценки<a class="headerlink" href="#id33" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -3089,7 +3054,7 @@ Cтандартное отклонение, мм: 11.20
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-dd1d8c5f-8a12-4aae-8417-a8a43d905f35" class="colab-df-container">
+  <div id="df-50f33278-71ba-4a28-92e7-19200875269b" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -3170,7 +3135,7 @@ Cтандартное отклонение, мм: 11.20
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-dd1d8c5f-8a12-4aae-8417-a8a43d905f35')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-50f33278-71ba-4a28-92e7-19200875269b')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -3222,12 +3187,12 @@ Cтандартное отклонение, мм: 11.20
 
     <script>
       const buttonEl =
-        document.querySelector('#df-dd1d8c5f-8a12-4aae-8417-a8a43d905f35 button.colab-df-convert');
+        document.querySelector('#df-50f33278-71ba-4a28-92e7-19200875269b button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-dd1d8c5f-8a12-4aae-8417-a8a43d905f35');
+        const element = document.querySelector('#df-50f33278-71ba-4a28-92e7-19200875269b');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -3251,8 +3216,8 @@ Cтандартное отклонение, мм: 11.20
 </div></div>
 </div>
 </section>
-<section id="id35">
-<h2>Ошибка оценки среднего от размера выборки<a class="headerlink" href="#id35" title="Link to this heading">#</a></h2>
+<section id="id34">
+<h4>Ошибка оценки среднего от размера выборки<a class="headerlink" href="#id34" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -3278,8 +3243,8 @@ Cтандартное отклонение, мм: 11.20
 </div>
 </div>
 </section>
-<section id="id36">
-<h2>Вычисление разных статистик длин плечевых костей в выборке с возвращением<a class="headerlink" href="#id36" title="Link to this heading">#</a></h2>
+<section id="id35">
+<h4>Вычисление разных статистик длин плечевых костей в выборке с возвращением<a class="headerlink" href="#id35" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -3316,8 +3281,8 @@ Cтандартное отклонение, мм: 11.20
 </div>
 </div>
 </section>
-<section id="id37">
-<h2>Вычисление разных статистик длин плечевых костей в выборке без возвращения<a class="headerlink" href="#id37" title="Link to this heading">#</a></h2>
+<section id="id36">
+<h4>Вычисление разных статистик длин плечевых костей в выборке без возвращения<a class="headerlink" href="#id36" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -3354,8 +3319,8 @@ Cтандартное отклонение, мм: 11.20
 </div>
 </div>
 </section>
-<section id="id38">
-<h2>Вычисление разных статистик длин плечевых костей в выборке самцов<a class="headerlink" href="#id38" title="Link to this heading">#</a></h2>
+<section id="id37">
+<h4>Вычисление разных статистик длин плечевых костей в выборке самцов<a class="headerlink" href="#id37" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -3392,8 +3357,8 @@ Cтандартное отклонение, мм: 11.20
 </div>
 </div>
 </section>
-<section id="id39">
-<h2>Вычисление разных статистик длин плечевых костей в выборке самок<a class="headerlink" href="#id39" title="Link to this heading">#</a></h2>
+<section id="id38">
+<h4>Вычисление разных статистик длин плечевых костей в выборке самок<a class="headerlink" href="#id38" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -3430,8 +3395,8 @@ Cтандартное отклонение, мм: 11.20
 </div>
 </div>
 </section>
-<section id="id40">
-<h2>Сравнение средних генеральной совокупности, выборки с и без возвращения<a class="headerlink" href="#id40" title="Link to this heading">#</a></h2>
+<section id="id39">
+<h4>Сравнение средних генеральной совокупности, выборки с и без возвращения<a class="headerlink" href="#id39" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -3459,8 +3424,8 @@ Cтандартное отклонение, мм: 11.20
 </div>
 </div>
 </section>
-<section id="id41">
-<h2>Сравнение средней длины плечевой кости самок и самцов<a class="headerlink" href="#id41" title="Link to this heading">#</a></h2>
+<section id="id40">
+<h4>Сравнение средней длины плечевой кости самок и самцов<a class="headerlink" href="#id40" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -3489,15 +3454,13 @@ Cтандартное отклонение, мм: 11.20
 </div>
 </div>
 </div>
-<p><a id="s1-femur"></a></p>
-<div style="font-family: 'Georgia', serif; border-left: 4px solid #d4af37; padding-left: 20px; margin: 40px 0 20px;">
-    <div style="font-size: 12px; letter-spacing: 2px; color: #888;">РАЗДЕЛ 6</div>
-    <h2 style="margin: 5px 0 0; color: #e0e0e0; font-weight: 400;">Random Variable Femural Length</h2>
-</div>
 </section>
 </section>
-<section id="id42">
-<h1>Description (природа события)<a class="headerlink" href="#id42" title="Link to this heading">#</a></h1>
+</section>
+<section id="random-variable-femural-length">
+<h2>Random Variable Femural Length<a class="headerlink" href="#random-variable-femural-length" title="Link to this heading">#</a></h2>
+<section id="id41">
+<h3>Description (природа события)<a class="headerlink" href="#id41" title="Link to this heading">#</a></h3>
 <p>Случайная величина (Z) - длина бедренной кости животного в выбранной строке с единицей измерения [мм].
 Только после выбора строки можно узнать длину бедренной кости, то есть величина заранее не известна. Но каждой конкретной строке соответствует одна длина. Это соответствует определению случайной величины у Н.Ш.Кремера (стр.89-90). До случайного выбора животного неизвестно, какое значение примет (W).</p>
 <div class="math notranslate nohighlight">
@@ -3505,15 +3468,15 @@ Cтандартное отклонение, мм: 11.20
 W(\omega_j) = f_j
 \]</div>
 </section>
-<section id="id43">
-<h1>EDA &amp; Distribution<a class="headerlink" href="#id43" title="Link to this heading">#</a></h1>
+<section id="id42">
+<h3>EDA &amp; Distribution<a class="headerlink" href="#id42" title="Link to this heading">#</a></h3>
 <div class="math notranslate nohighlight">
 \[
 P(W=w_i)=p_i=\frac{n_i}{N}, \qquad
 p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 \]</div>
-<section id="id44">
-<h2>Была построена гистограмма распределения длин бедренных костей животных.<a class="headerlink" href="#id44" title="Link to this heading">#</a></h2>
+<section id="id43">
+<h4>Была построена гистограмма распределения длин бедренных костей животных.<a class="headerlink" href="#id43" title="Link to this heading">#</a></h4>
 <p>Распределение в исходной гистограмме длин бедренных костей животных визуально не является нормальным, поэтому длины были прологарифмированы (взят десятичный логарифм). Распределение на логарифмируемом графике визуально не похоже на нормальное. Сделано предположение, что это распределение Фишера.</p>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
@@ -3579,7 +3542,7 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 </div>
 </section>
 <section id="p-w-w">
-<h2>Создание таблицы: какая длина бедренной кости и сколько раз встретилась, доли этих масс, вероятность события P(W &lt;= w) и проверка.<a class="headerlink" href="#p-w-w" title="Link to this heading">#</a></h2>
+<h4>Создание таблицы: какая длина бедренной кости и сколько раз встретилась, доли этих масс, вероятность события P(W &lt;= w) и проверка.<a class="headerlink" href="#p-w-w" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -3607,7 +3570,7 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-1b316373-d513-497d-abc4-8c9ed9344dc1" class="colab-df-container">
+  <div id="df-f0f5eee9-6c2e-4f34-bcca-23cfc47c8a2f" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -3717,7 +3680,7 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
     <div class="colab-df-buttons">
 
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-1b316373-d513-497d-abc4-8c9ed9344dc1')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-f0f5eee9-6c2e-4f34-bcca-23cfc47c8a2f')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
 
@@ -3769,12 +3732,12 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 
     <script>
       const buttonEl =
-        document.querySelector('#df-1b316373-d513-497d-abc4-8c9ed9344dc1 button.colab-df-convert');
+        document.querySelector('#df-f0f5eee9-6c2e-4f34-bcca-23cfc47c8a2f button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-1b316373-d513-497d-abc4-8c9ed9344dc1');
+        const element = document.querySelector('#df-f0f5eee9-6c2e-4f34-bcca-23cfc47c8a2f');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -3798,8 +3761,8 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 </div></div>
 </div>
 </section>
-<section id="id45">
-<h2>Построение графиков функции распределения длины бедренных костей<a class="headerlink" href="#id45" title="Link to this heading">#</a></h2>
+<section id="id44">
+<h4>Построение графиков функции распределения длины бедренных костей<a class="headerlink" href="#id44" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -3826,8 +3789,8 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 </div>
 </div>
 </section>
-<section id="id46">
-<h2>Вычисление разных статистик длин бедренных костей (математического ожидания, среднего, дисперсии, стандратного отклонения, моды и тд)<a class="headerlink" href="#id46" title="Link to this heading">#</a></h2>
+<section id="id45">
+<h4>Вычисление разных статистик длин бедренных костей (математического ожидания, среднего, дисперсии, стандратного отклонения, моды и тд)<a class="headerlink" href="#id45" title="Link to this heading">#</a></h4>
 <div class="math notranslate nohighlight">
 \[
 \mu_W=E[W]=\sum_{i=1}^{k}w_i p_i, \qquad
@@ -3885,12 +3848,12 @@ Cтандартное отклонение, мм: 14.50
 </div>
 </section>
 </section>
-<section id="id47">
-<h1>Independence &amp; Estimations<a class="headerlink" href="#id47" title="Link to this heading">#</a></h1>
+<section id="id46">
+<h3>Independence &amp; Estimations<a class="headerlink" href="#id46" title="Link to this heading">#</a></h3>
 <p>Средняя длина бедренной кости в генеральной совокупности составляет 177.78 мм. В выборке с возвращением она равна 178.24 мм — завышение на 0.26%, а без возвращения — 175.43 мм, занижение на 1.32%. Медиана в выборке без возвращения (172.93 мм) была ближе к медиане и генеральной выборки (173.51 мм), чем медиана с возвращением (175.55 мм). Стандартное отклонение с возвращением (15.30 мм) было ближе к стандартному отклонению генеральной выборки (14.50 мм), чем стандартное отклонение без возвращения (13.54 мм).</p>
 <p>Длина плечевых костей зависит от пола: кости самцов длинее самок на 26.02 мм или на 15.34%.</p>
-<section id="id48">
-<h2>Состоятельность оценки<a class="headerlink" href="#id48" title="Link to this heading">#</a></h2>
+<section id="id47">
+<h4>Состоятельность оценки<a class="headerlink" href="#id47" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -3922,10 +3885,175 @@ Cтандартное отклонение, мм: 14.50
 </div>
 </div>
 </details>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Средняя длина бедренной кости в генеральной совокупности: 177.78 мм
+</pre></div>
+</div>
+<div class="output text_html">
+  <div id="df-92d841e4-3115-49b2-af11-6e99d5fb8621" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Размер выборки</th>
+      <th>Среднее оценок, мм</th>
+      <th>RMSE, мм</th>
+      <th>Нижняя граница 95% оценок, мм</th>
+      <th>Верхняя граница 95% оценок, мм</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>10</td>
+      <td>177.683603</td>
+      <td>4.719891</td>
+      <td>169.108575</td>
+      <td>187.080375</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>30</td>
+      <td>177.657856</td>
+      <td>2.623208</td>
+      <td>172.673433</td>
+      <td>182.833158</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>100</td>
+      <td>177.758506</td>
+      <td>1.433534</td>
+      <td>174.780640</td>
+      <td>180.615217</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>300</td>
+      <td>177.796254</td>
+      <td>0.861866</td>
+      <td>176.072113</td>
+      <td>179.558403</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1000</td>
+      <td>177.776169</td>
+      <td>0.454804</td>
+      <td>176.889205</td>
+      <td>178.649505</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>3000</td>
+      <td>177.771446</td>
+      <td>0.256152</td>
+      <td>177.262889</td>
+      <td>178.271903</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-92d841e4-3115-49b2-af11-6e99d5fb8621')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-92d841e4-3115-49b2-af11-6e99d5fb8621 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-92d841e4-3115-49b2-af11-6e99d5fb8621');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+    </div>
+  </div>
+</div></div>
 </div>
 </section>
-<section id="id49">
-<h2>Ошибка оценки среднего от размера выборки<a class="headerlink" href="#id49" title="Link to this heading">#</a></h2>
+<section id="id48">
+<h4>Ошибка оценки среднего от размера выборки<a class="headerlink" href="#id48" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -3946,10 +4074,13 @@ Cтандартное отклонение, мм: 14.50
 </div>
 </div>
 </details>
+<div class="cell_output docutils container">
+<img alt="_images/7ba6aacfed57818f7cb1a8f01ebbdeb0b9d71789c0adc0c166e945e029e69583.png" src="_images/7ba6aacfed57818f7cb1a8f01ebbdeb0b9d71789c0adc0c166e945e029e69583.png" />
+</div>
 </div>
 </section>
-<section id="id50">
-<h2>Вычисление разных статистик длин бедренных костей в выборке с возвращением<a class="headerlink" href="#id50" title="Link to this heading">#</a></h2>
+<section id="id49">
+<h4>Вычисление разных статистик длин бедренных костей в выборке с возвращением<a class="headerlink" href="#id49" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -3971,10 +4102,23 @@ Cтандартное отклонение, мм: 14.50
 </div>
 </div>
 </details>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Количество: 50
+Среднее, мм: 178.25
+Медиана, мм: 175.55
+Минимум, мм: 154.97
+Максимум, мм: 214.48
+Стандартное отклонение, мм: 15.30
+Первый квартиль, мм: 166.53
+Третий квартиль, мм: 185.30
+95-й перцентиль, мм: 204.04
+</pre></div>
+</div>
+</div>
 </div>
 </section>
-<section id="id51">
-<h2>Вычисление разных статистик длин бедренных костей в выборке без возвращения<a class="headerlink" href="#id51" title="Link to this heading">#</a></h2>
+<section id="id50">
+<h4>Вычисление разных статистик длин бедренных костей в выборке без возвращения<a class="headerlink" href="#id50" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -3996,10 +4140,23 @@ Cтандартное отклонение, мм: 14.50
 </div>
 </div>
 </details>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Количество: 50
+Среднее, мм: 175.43
+Медиана, мм: 172.93
+Минимум, мм: 151.99
+Максимум, мм: 217.33
+Стандартное отклонение, мм: 13.54
+Первый квартиль, мм: 169.65
+Третий квартиль, мм: 182.18
+95-й перцентиль, мм: 200.06
+</pre></div>
+</div>
+</div>
 </div>
 </section>
-<section id="id52">
-<h2>Вычисление разных статистик длин бедренных костей в выборке самцов<a class="headerlink" href="#id52" title="Link to this heading">#</a></h2>
+<section id="id51">
+<h4>Вычисление разных статистик длин бедренных костей в выборке самцов<a class="headerlink" href="#id51" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -4021,10 +4178,23 @@ Cтандартное отклонение, мм: 14.50
 </div>
 </div>
 </details>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Количество: 42
+Среднее, мм: 195.65
+Медиана, мм: 196.27
+Минимум, мм: 181.25
+Максимум, мм: 217.33
+Стандартное отклонение, мм: 8.26
+Первый квартиль, мм: 189.35
+Третий квартиль, мм: 201.18
+95-й перцентиль, мм: 208.02
+</pre></div>
+</div>
+</div>
 </div>
 </section>
-<section id="id53">
-<h2>Вычисление разных статистик длин бедренных костей в выборке самок<a class="headerlink" href="#id53" title="Link to this heading">#</a></h2>
+<section id="id52">
+<h4>Вычисление разных статистик длин бедренных костей в выборке самок<a class="headerlink" href="#id52" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -4046,10 +4216,23 @@ Cтандартное отклонение, мм: 14.50
 </div>
 </div>
 </details>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Количество: 92
+Среднее, мм: 169.62
+Медиана, мм: 170.01
+Минимум, мм: 151.99
+Максимум, мм: 189.30
+Стандартное отклонение, мм: 7.93
+Первый квартиль, мм: 164.67
+Третий квартиль, мм: 173.93
+95-й перцентиль, мм: 182.06
+</pre></div>
+</div>
+</div>
 </div>
 </section>
-<section id="id54">
-<h2>Сравнение средних генеральной совокупности, выборки с и без возвращения<a class="headerlink" href="#id54" title="Link to this heading">#</a></h2>
+<section id="id53">
+<h4>Сравнение средних генеральной совокупности, выборки с и без возвращения<a class="headerlink" href="#id53" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -4066,10 +4249,19 @@ Cтандартное отклонение, мм: 14.50
 </div>
 </div>
 </details>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Среднее генеральной совокупности, мм: 177.78
+Среднее выборки с возвращением, мм: 178.25
+Среднее выборки без возвращения, мм: 175.43
+Ошибка среднего с возвращением, %: 0.26
+Ошибка среднего без возвращения, %: 1.32
+</pre></div>
+</div>
+</div>
 </div>
 </section>
-<section id="id55">
-<h2>Сравнение средней длины бедренной кости самок и самцов<a class="headerlink" href="#id55" title="Link to this heading">#</a></h2>
+<section id="id54">
+<h4>Сравнение средней длины бедренной кости самок и самцов<a class="headerlink" href="#id54" title="Link to this heading">#</a></h4>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -4088,16 +4280,23 @@ Cтандартное отклонение, мм: 14.50
 </div>
 </div>
 </details>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Среднее всей совокупности, мм: 177.78
+Среднее самцов, мм: 195.65
+Среднее самок, мм: 169.62
+Разность средних «самцы − самки», мм: 26.02
+Средняя длина бедренных костей самцов выше средней длины бедренных костей самок на 15.34%
+</pre></div>
 </div>
-<p><a id="s1-deps"></a></p>
-<div style="font-family: 'Georgia', serif; border-left: 4px solid #d4af37; padding-left: 20px; margin: 40px 0 20px;">
-    <div style="font-size: 12px; letter-spacing: 2px; color: #888;">РАЗДЕЛ 7</div>
-    <h2 style="margin: 5px 0 0; color: #e0e0e0; font-weight: 400;">Выделение зависимостей</h2>
+</div>
 </div>
 </section>
 </section>
+</section>
+<section id="id55">
+<h2>Выделение зависимостей<a class="headerlink" href="#id55" title="Link to this heading">#</a></h2>
 <section id="id56">
-<h1>Масса и длина тела<a class="headerlink" href="#id56" title="Link to this heading">#</a></h1>
+<h3>Масса и длина тела<a class="headerlink" href="#id56" title="Link to this heading">#</a></h3>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -4117,10 +4316,13 @@ Cтандартное отклонение, мм: 14.50
 </div>
 </div>
 </details>
+<div class="cell_output docutils container">
+<img alt="_images/2943a995fb84474b1d9f09dcb785acaab8dd9d765b84c3a2611733782b07e9d9.png" src="_images/2943a995fb84474b1d9f09dcb785acaab8dd9d765b84c3a2611733782b07e9d9.png" />
+</div>
 </div>
 </section>
 <section id="id57">
-<h1>Масса тела и длина плечевой кости<a class="headerlink" href="#id57" title="Link to this heading">#</a></h1>
+<h3>Масса тела и длина плечевой кости<a class="headerlink" href="#id57" title="Link to this heading">#</a></h3>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -4140,10 +4342,13 @@ Cтандартное отклонение, мм: 14.50
 </div>
 </div>
 </details>
+<div class="cell_output docutils container">
+<img alt="_images/d10e8092aaa33369d0c79fbc483e25c52ff39c596fae005f25fc398ab46daf89.png" src="_images/d10e8092aaa33369d0c79fbc483e25c52ff39c596fae005f25fc398ab46daf89.png" />
+</div>
 </div>
 </section>
 <section id="id58">
-<h1>Масса тела и длина бедренной кости<a class="headerlink" href="#id58" title="Link to this heading">#</a></h1>
+<h3>Масса тела и длина бедренной кости<a class="headerlink" href="#id58" title="Link to this heading">#</a></h3>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -4163,10 +4368,13 @@ Cтандартное отклонение, мм: 14.50
 </div>
 </div>
 </details>
+<div class="cell_output docutils container">
+<img alt="_images/b50a5a0d6245e14078e0dfb1c2cc7b62ce6bb19fa3273f471951580e84200417.png" src="_images/b50a5a0d6245e14078e0dfb1c2cc7b62ce6bb19fa3273f471951580e84200417.png" />
+</div>
 </div>
 </section>
 <section id="id59">
-<h1>Длина тела и длина плечевой кости<a class="headerlink" href="#id59" title="Link to this heading">#</a></h1>
+<h3>Длина тела и длина плечевой кости<a class="headerlink" href="#id59" title="Link to this heading">#</a></h3>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -4186,10 +4394,13 @@ Cтандартное отклонение, мм: 14.50
 </div>
 </div>
 </details>
+<div class="cell_output docutils container">
+<img alt="_images/5f04a82f9555b20b1ac638ac51d143351563507d65ad4cf666877823ed59d9c0.png" src="_images/5f04a82f9555b20b1ac638ac51d143351563507d65ad4cf666877823ed59d9c0.png" />
+</div>
 </div>
 </section>
 <section id="id60">
-<h1>Длина тела и длина бедренной кости<a class="headerlink" href="#id60" title="Link to this heading">#</a></h1>
+<h3>Длина тела и длина бедренной кости<a class="headerlink" href="#id60" title="Link to this heading">#</a></h3>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -4209,10 +4420,13 @@ Cтандартное отклонение, мм: 14.50
 </div>
 </div>
 </details>
+<div class="cell_output docutils container">
+<img alt="_images/c7250c5e3b3181ac2dd6813fcd11e28684fdc684cb634d75913aa99c03029829.png" src="_images/c7250c5e3b3181ac2dd6813fcd11e28684fdc684cb634d75913aa99c03029829.png" />
+</div>
 </div>
 </section>
 <section id="id61">
-<h1>Длина плечевой и длина бедренной костей<a class="headerlink" href="#id61" title="Link to this heading">#</a></h1>
+<h3>Длина плечевой и длина бедренной костей<a class="headerlink" href="#id61" title="Link to this heading">#</a></h3>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -4232,10 +4446,13 @@ Cтандартное отклонение, мм: 14.50
 </div>
 </div>
 </details>
+<div class="cell_output docutils container">
+<img alt="_images/d758e8f1c814313804ae1ee2f2051629d8866c2da2cfbcdc99555d7a3adc2ec9.png" src="_images/d758e8f1c814313804ae1ee2f2051629d8866c2da2cfbcdc99555d7a3adc2ec9.png" />
+</div>
 </div>
 </section>
 <section id="id62">
-<h1>Масса тела и доля китайского происхождения<a class="headerlink" href="#id62" title="Link to this heading">#</a></h1>
+<h3>Масса тела и доля китайского происхождения<a class="headerlink" href="#id62" title="Link to this heading">#</a></h3>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -4256,10 +4473,13 @@ Cтандартное отклонение, мм: 14.50
 </div>
 </div>
 </details>
+<div class="cell_output docutils container">
+<img alt="_images/79bb26246fe3e87cd384d85226729c1bf43c57ae7bcca079af93976d426791a9.png" src="_images/79bb26246fe3e87cd384d85226729c1bf43c57ae7bcca079af93976d426791a9.png" />
+</div>
 </div>
 </section>
 <section id="id63">
-<h1>Длина тела и доля китайского происхождения<a class="headerlink" href="#id63" title="Link to this heading">#</a></h1>
+<h3>Длина тела и доля китайского происхождения<a class="headerlink" href="#id63" title="Link to this heading">#</a></h3>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -4280,10 +4500,13 @@ Cтандартное отклонение, мм: 14.50
 </div>
 </div>
 </details>
+<div class="cell_output docutils container">
+<img alt="_images/e135cda2b286c6e07245c4d98523bae1ef276f50aa77f63dd279e08289a5804c.png" src="_images/e135cda2b286c6e07245c4d98523bae1ef276f50aa77f63dd279e08289a5804c.png" />
+</div>
 </div>
 </section>
 <section id="id64">
-<h1>Длина плечевой кости и доля китайского происхождения<a class="headerlink" href="#id64" title="Link to this heading">#</a></h1>
+<h3>Длина плечевой кости и доля китайского происхождения<a class="headerlink" href="#id64" title="Link to this heading">#</a></h3>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -4304,10 +4527,13 @@ Cтандартное отклонение, мм: 14.50
 </div>
 </div>
 </details>
+<div class="cell_output docutils container">
+<img alt="_images/7d4a0e419b5699948984948f4fdd32a4e46d3eb1cbbd8133713a1860b8f9f65c.png" src="_images/7d4a0e419b5699948984948f4fdd32a4e46d3eb1cbbd8133713a1860b8f9f65c.png" />
+</div>
 </div>
 </section>
 <section id="id65">
-<h1>Длина бедренной кости и доля китайского происхождения<a class="headerlink" href="#id65" title="Link to this heading">#</a></h1>
+<h3>Длина бедренной кости и доля китайского происхождения<a class="headerlink" href="#id65" title="Link to this heading">#</a></h3>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -4328,10 +4554,13 @@ Cтандартное отклонение, мм: 14.50
 </div>
 </div>
 </details>
+<div class="cell_output docutils container">
+<img alt="_images/f74b6001d517ca24eb91c6310feb1d05b46738ad4b6ea985ebd86818b97d15dd.png" src="_images/f74b6001d517ca24eb91c6310feb1d05b46738ad4b6ea985ebd86818b97d15dd.png" />
+</div>
 </div>
 </section>
 <section id="id66">
-<h1>Проверка зависимости<a class="headerlink" href="#id66" title="Link to this heading">#</a></h1>
+<h3>Проверка зависимости<a class="headerlink" href="#id66" title="Link to this heading">#</a></h3>
 <p>Если две случайные величины независимы, вероятность совместного выполнения двух условий равна произведению вероятностей каждого условия.</p>
 <div class="math notranslate nohighlight">
 \[ \boxed{P(A\cap B)\stackrel{?}{=}P(A)\cdot P(B)} \]</div>
@@ -4386,10 +4615,113 @@ Cтандартное отклонение, мм: 14.50
 </div>
 </div>
 </details>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Масса и длина тела
+Порог первой величины: 9.815000000000001
+Порог второй величины: 520.8
+P(A): 0.5000
+P(B): 0.5075
+P(A ∩ B): 0.3881
+P(A) · P(B): 0.2537
+Для выбранных событий равенство вероятностей нарушено.
+Это указывает на зависимость в модели данной таблицы, но не определяет её силу и достоверность для других макак данного вида.
+
+Масса тела и длина плечевой кости
+Порог первой величины: 9.815000000000001
+Порог второй величины: 152.065
+P(A): 0.5000
+P(B): 0.5000
+P(A ∩ B): 0.3358
+P(A) · P(B): 0.2500
+Для выбранных событий равенство вероятностей нарушено.
+Это указывает на зависимость в модели данной таблицы, но не определяет её силу и достоверность для других макак данного вида.
+
+Масса тела и длина бедренной кости
+Порог первой величины: 9.815000000000001
+Порог второй величины: 173.515
+P(A): 0.5000
+P(B): 0.5000
+P(A ∩ B): 0.3582
+P(A) · P(B): 0.2500
+Для выбранных событий равенство вероятностей нарушено.
+Это указывает на зависимость в модели данной таблицы, но не определяет её силу и достоверность для других макак данного вида.
+
+Длина тела и длина плечевой кости
+Порог первой величины: 520.8
+Порог второй величины: 152.065
+P(A): 0.5075
+P(B): 0.5000
+P(A ∩ B): 0.3806
+P(A) · P(B): 0.2537
+Для выбранных событий равенство вероятностей нарушено.
+Это указывает на зависимость в модели данной таблицы, но не определяет её силу и достоверность для других макак данного вида.
+
+Длина тела и длина бедренной кости
+Порог первой величины: 520.8
+Порог второй величины: 173.515
+P(A): 0.5075
+P(B): 0.5000
+P(A ∩ B): 0.3881
+P(A) · P(B): 0.2537
+Для выбранных событий равенство вероятностей нарушено.
+Это указывает на зависимость в модели данной таблицы, но не определяет её силу и достоверность для других макак данного вида.
+
+Длина плечевой и длина бедренной костей
+Порог первой величины: 152.065
+Порог второй величины: 173.515
+P(A): 0.5000
+P(B): 0.5000
+P(A ∩ B): 0.4552
+P(A) · P(B): 0.2500
+Для выбранных событий равенство вероятностей нарушено.
+Это указывает на зависимость в модели данной таблицы, но не определяет её силу и достоверность для других макак данного вида.
+
+Масса тела и доля китайского происхождения
+Порог первой величины: 9.815000000000001
+Порог второй величины: 0.25
+P(A): 0.5000
+P(B): 0.6418
+P(A ∩ B): 0.2836
+P(A) · P(B): 0.3209
+Для выбранных событий равенство вероятностей нарушено.
+Это указывает на зависимость в модели данной таблицы, но не определяет её силу и достоверность для других макак данного вида.
+
+Длина тела и доля китайского происхождения
+Порог первой величины: 520.8
+Порог второй величины: 0.25
+P(A): 0.5075
+P(B): 0.6418
+P(A ∩ B): 0.3134
+P(A) · P(B): 0.3257
+Для выбранных событий равенство вероятностей нарушено.
+Это указывает на зависимость в модели данной таблицы, но не определяет её силу и достоверность для других макак данного вида.
+
+Длина плечевой кости и доля китайского происхождения
+Порог первой величины: 152.065
+Порог второй величины: 0.25
+P(A): 0.5000
+P(B): 0.6418
+P(A ∩ B): 0.2985
+P(A) · P(B): 0.3209
+Для выбранных событий равенство вероятностей нарушено.
+Это указывает на зависимость в модели данной таблицы, но не определяет её силу и достоверность для других макак данного вида.
+
+Длина бедренной кости и доля китайского происхождения
+Порог первой величины: 173.515
+Порог второй величины: 0.25
+P(A): 0.5000
+P(B): 0.6418
+P(A ∩ B): 0.2910
+P(A) · P(B): 0.3209
+Для выбранных событий равенство вероятностей нарушено.
+Это указывает на зависимость в модели данной таблицы, но не определяет её силу и достоверность для других макак данного вида.
+</pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="id67">
-<h1>Нормализация. Диаграмма размаха<a class="headerlink" href="#id67" title="Link to this heading">#</a></h1>
+<h3>Нормализация. Диаграмма размаха<a class="headerlink" href="#id67" title="Link to this heading">#</a></h3>
 <p>На диаграмме размаха представлены масса тела, длина тела и длины плечевой и бедренной костей после min–max-нормализации. Каждая величина приведена к диапазону [0;1], что позволяет сопоставить положение медиан и межквартильные размахи относительно собственного диапазона величины.</p>
 <p>Прямоугольники показывают межквартильный диапазон, линия внутри показывают медиану.</p>
 <p>Медианы всех четырёх величин расположены ниже середины диапазона.</p>
@@ -4421,12 +4753,14 @@ Cтандартное отклонение, мм: 14.50
 </div>
 </div>
 </details>
+<div class="cell_output docutils container">
+<img alt="_images/cfd3a8f53227ccc04bffe4e1241db02196489e7672ac87280e88e208f744fc15.png" src="_images/cfd3a8f53227ccc04bffe4e1241db02196489e7672ac87280e88e208f744fc15.png" />
 </div>
-<p><a id="s1-resume"></a></p>
-<div style="font-family: 'Georgia', serif; border-left: 4px solid #2e9e6b; padding-left: 20px; margin: 40px 0 20px;">
-    <div style="font-size: 12px; letter-spacing: 2px; color: #888;">РАЗДЕЛ 8</div>
-    <h2 style="margin: 5px 0 0; color: #e0e0e0; font-weight: 400;">Lab resume</h2>
 </div>
+</section>
+</section>
+<section id="lab-resume">
+<h2>Lab resume<a class="headerlink" href="#lab-resume" title="Link to this heading">#</a></h2>
 <p>Было выявлено, что распределение массы тела похоже на логнормальное.
 Средняя масса и медиана в выборке с возвращением были ближе к генеральной совокупности, чем без возвращения, но стандартное отклонение в выборке без возвращения было ближе к генеральной совокупности, чем с возвращением.</p>
 <p>Было выявлено, что распределение длины тела похоже на распределение Фишера.
@@ -4437,6 +4771,7 @@ Cтандартное отклонение, мм: 14.50
 Средняя длина бедренной кости, медиана и стандартное отклонение в выборке с возвращением были ближе к генеральной совокупности, чем без возвращения.</p>
 <p>Было выявлено, что все величины (масса тела, длина тела, длина плечевой кости, длина бедренной кости) попарно зависимы.</p>
 <p>Было выявлено, что все 4 величины зависят и от пола (у самцов больше средние значения всех 4х величин), и от доли китайского происхождения: самый яркий пример: на диаграмме видно, что масса тела уменьшается с ростом доли китайского происхождения.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -4503,98 +4838,116 @@ Cтандартное отклонение, мм: 14.50
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Индекс разделов</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Выборка с возвращением и без возвращения</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#description">Description (природа события)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#eda-distribution">EDA &amp; Distribution</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Была построена гистограмма распределения масс животных.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-x-x-1">Создание таблицы: какая масса и сколько раз встретилась, доли этих масс, вероятность события P(X &lt;= x) и проверка (не 1 из-за машинной точности).</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Построение графиков функции распределения массы</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Вычисление разных статистик масс (математического ожидания, среднего, дисперсии, стандратного отклонения, моды и тд)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-preparation">Dataset preparation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-description">General description (природа событий)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Выборка с возвращением и без возвращения</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#independence-estimations">Independence &amp; Estimations</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Состоятельность оценки</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Ошибка оценки среднего от размера выборки</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Вычисление разных статистик масс тел в выборке с возвращением</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Вычисление разных статистик масс тел в выборке без возвращения</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Вычисление разных статистик масс тел в выборке самцов</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Вычисление разных статистик масс тел в выборке самок</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Сравнение средних генеральной совокупности, выборки с и без возвращения</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Сравнение средней массы тела самок и самцов</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#random-variable-mass">Random Variable Mass</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#description">Description (природа события)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eda-distribution">EDA &amp; Distribution</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Была построена гистограмма распределения масс животных.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#p-x-x-1">Создание таблицы: какая масса и сколько раз встретилась, доли этих масс, вероятность события P(X &lt;= x) и проверка (не 1 из-за машинной точности).</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Построение графиков функции распределения массы</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Вычисление разных статистик масс (математического ожидания, среднего, дисперсии, стандратного отклонения, моды и тд)</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Description (природа события)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">EDA &amp; Distribution</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Была построена гистограмма распределения длин плечевых костей животных.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-y-y-1">Создание таблицы: какая длина тела и сколько раз встретилась, доли этих длин, вероятность события P(Y &lt;= y) и проверка (не 1 из-за машинной точности).</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Построение графиков функции распределения длины тел</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Вычисление разных статистик длин тел (математического ожидания, среднего, дисперсии, стандратного отклонения, моды и тд)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#independence-estimations">Independence &amp; Estimations</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Состоятельность оценки</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Ошибка оценки среднего от размера выборки</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Вычисление разных статистик масс тел в выборке с возвращением</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Вычисление разных статистик масс тел в выборке без возвращения</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Вычисление разных статистик масс тел в выборке самцов</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Вычисление разных статистик масс тел в выборке самок</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Сравнение средних генеральной совокупности, выборки с и без возвращения</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Сравнение средней массы тела самок и самцов</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Independence &amp; Estimations</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Состоятельность оценки</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Ошибка оценки среднего от размера выборки</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Вычисление разных статистик длин тел в выборке с возвращением</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Вычисление разных статистик длин тел в выборке без возвращения</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">Вычисление разных статистик длин тел в выборке самцов</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">Вычисление разных статистик длин тел в выборке самок</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">Сравнение средних генеральной совокупности, выборки с и без возвращения</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">Сравнение средней длины тела самок и самцов</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">Description (природа события)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">EDA &amp; Distribution</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">Была построена гистограмма распределения длин плечевых костей животных.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-z-z">Создание таблицы: какая длина плечевой кости и сколько раз встретилась, доли этих длин, вероятность события P(Z &lt;= z) и проверка.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">Построение графиков функции распределения длины плечевых костей</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">Вычисление разных статистик длин плечевых костей (математического ожидания, среднего, дисперсии, стандратного отклонения, моды и тд)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#random-variable-body-lenght">Random Variable Body Lenght</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Description (природа события)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">EDA &amp; Distribution</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Была построена гистограмма распределения длин плечевых костей животных.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#p-y-y-1">Создание таблицы: какая длина тела и сколько раз встретилась, доли этих длин, вероятность события P(Y &lt;= y) и проверка (не 1 из-за машинной точности).</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Построение графиков функции распределения длины тел</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Вычисление разных статистик длин тел (математического ожидания, среднего, дисперсии, стандратного отклонения, моды и тд)</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">Independence &amp; Estimations</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">Состоятельность оценки</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">Ошибка оценки среднего от размера выборки</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id36">Вычисление разных статистик длин плечевых костей в выборке с возвращением</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id37">Вычисление разных статистик длин плечевых костей в выборке без возвращения</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id38">Вычисление разных статистик длин плечевых костей в выборке самцов</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id39">Вычисление разных статистик длин плечевых костей в выборке самок</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id40">Сравнение средних генеральной совокупности, выборки с и без возвращения</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id41">Сравнение средней длины плечевой кости самок и самцов</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Independence &amp; Estimations</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Состоятельность оценки</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Ошибка оценки среднего от размера выборки</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Вычисление разных статистик длин тел в выборке с возвращением</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Вычисление разных статистик длин тел в выборке без возвращения</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Вычисление разных статистик длин тел в выборке самцов</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">Вычисление разных статистик длин тел в выборке самок</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">Сравнение средних генеральной совокупности, выборки с и без возвращения</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">Сравнение средней длины тела самок и самцов</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id42">Description (природа события)</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id43">EDA &amp; Distribution</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id44">Была построена гистограмма распределения длин бедренных костей животных.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#p-w-w">Создание таблицы: какая длина бедренной кости и сколько раз встретилась, доли этих масс, вероятность события P(W &lt;= w) и проверка.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id45">Построение графиков функции распределения длины бедренных костей</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id46">Вычисление разных статистик длин бедренных костей (математического ожидания, среднего, дисперсии, стандратного отклонения, моды и тд)</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id47">Independence &amp; Estimations</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id48">Состоятельность оценки</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id49">Ошибка оценки среднего от размера выборки</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id50">Вычисление разных статистик длин бедренных костей в выборке с возвращением</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id51">Вычисление разных статистик длин бедренных костей в выборке без возвращения</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id52">Вычисление разных статистик длин бедренных костей в выборке самцов</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id53">Вычисление разных статистик длин бедренных костей в выборке самок</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id54">Сравнение средних генеральной совокупности, выборки с и без возвращения</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id55">Сравнение средней длины бедренной кости самок и самцов</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#random-variable-humerus-length">Random Variable Humerus Length</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">Description (природа события)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">EDA &amp; Distribution</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">Была построена гистограмма распределения длин плечевых костей животных.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#p-z-z">Создание таблицы: какая длина плечевой кости и сколько раз встретилась, доли этих длин, вероятность события P(Z &lt;= z) и проверка.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">Построение графиков функции распределения длины плечевых костей</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">Вычисление разных статистик длин плечевых костей (математического ожидания, среднего, дисперсии, стандратного отклонения, моды и тд)</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id56">Масса и длина тела</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id57">Масса тела и длина плечевой кости</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id58">Масса тела и длина бедренной кости</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id59">Длина тела и длина плечевой кости</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id60">Длина тела и длина бедренной кости</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id61">Длина плечевой и длина бедренной костей</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id62">Масса тела и доля китайского происхождения</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id63">Длина тела и доля китайского происхождения</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id64">Длина плечевой кости и доля китайского происхождения</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id65">Длина бедренной кости и доля китайского происхождения</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id66">Проверка зависимости</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id67">Нормализация. Диаграмма размаха</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id32">Independence &amp; Estimations</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id33">Состоятельность оценки</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id34">Ошибка оценки среднего от размера выборки</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id35">Вычисление разных статистик длин плечевых костей в выборке с возвращением</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id36">Вычисление разных статистик длин плечевых костей в выборке без возвращения</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id37">Вычисление разных статистик длин плечевых костей в выборке самцов</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id38">Вычисление разных статистик длин плечевых костей в выборке самок</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id39">Сравнение средних генеральной совокупности, выборки с и без возвращения</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id40">Сравнение средней длины плечевой кости самок и самцов</a></li>
 </ul>
-
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#random-variable-femural-length">Random Variable Femural Length</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id41">Description (природа события)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id42">EDA &amp; Distribution</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id43">Была построена гистограмма распределения длин бедренных костей животных.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#p-w-w">Создание таблицы: какая длина бедренной кости и сколько раз встретилась, доли этих масс, вероятность события P(W &lt;= w) и проверка.</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id44">Построение графиков функции распределения длины бедренных костей</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id45">Вычисление разных статистик длин бедренных костей (математического ожидания, среднего, дисперсии, стандратного отклонения, моды и тд)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id46">Independence &amp; Estimations</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id47">Состоятельность оценки</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id48">Ошибка оценки среднего от размера выборки</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id49">Вычисление разных статистик длин бедренных костей в выборке с возвращением</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id50">Вычисление разных статистик длин бедренных костей в выборке без возвращения</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id51">Вычисление разных статистик длин бедренных костей в выборке самцов</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id52">Вычисление разных статистик длин бедренных костей в выборке самок</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id53">Сравнение средних генеральной совокупности, выборки с и без возвращения</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id54">Сравнение средней длины бедренной кости самок и самцов</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id55">Выделение зависимостей</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id56">Масса и длина тела</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id57">Масса тела и длина плечевой кости</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id58">Масса тела и длина бедренной кости</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id59">Длина тела и длина плечевой кости</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id60">Длина тела и длина бедренной кости</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id61">Длина плечевой и длина бедренной костей</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id62">Масса тела и доля китайского происхождения</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id63">Длина тела и доля китайского происхождения</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id64">Длина плечевой кости и доля китайского происхождения</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id65">Длина бедренной кости и доля китайского происхождения</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id66">Проверка зависимости</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id67">Нормализация. Диаграмма размаха</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-resume">Lab resume</a></li>
+</ul>
   </nav></div>
 
 </div></div>
