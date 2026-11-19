@@ -18,3 +18,6 @@ html:
   home_page_in_navbar: true
   navigation_with_keys: false 
   announcement: ""
+
+launch_buttons:
+  thebe: true
