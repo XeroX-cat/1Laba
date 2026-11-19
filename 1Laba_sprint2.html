@@ -448,7 +448,7 @@ P(U \le F(x)) = F(x)
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># === СТИЛЬ ГРАФИКОВ ===</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># === СТИЛЬ ГРАФИКОВ ===</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mpl</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
@@ -484,6 +484,19 @@ P(U \le F(x)) = F(x)
 </div>
 </div>
 </details>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># === СТИЛЬ ГРАФИКОВ ===</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mpl</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named 'matplotlib'
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell tag_hide-input docutils container">
 <details class="admonition hide above-input">
@@ -492,7 +505,7 @@ P(U \le F(x)) = F(x)
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">scipy.stats</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">stats</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
@@ -553,7 +566,7 @@ P(U \le F(x)) = F(x)
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Проверим, что генератор возвращает ровно столько значений, сколько мы у него запросили.</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Проверим, что генератор возвращает ровно столько значений, сколько мы у него запросили.</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">test_output_length</span><span class="p">(</span><span class="n">n_test</span><span class="p">,</span> <span class="n">dfn</span><span class="p">,</span> <span class="n">dfd</span><span class="p">,</span> <span class="n">loc</span><span class="p">,</span> <span class="n">scale</span><span class="p">,</span> <span class="n">generate_func</span><span class="p">):</span>
     <span class="n">test_output</span> <span class="o">=</span> <span class="n">generate_func</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="n">n_test</span><span class="p">,</span> <span class="n">dfn</span><span class="o">=</span><span class="n">dfn</span><span class="p">,</span> <span class="n">dfd</span><span class="o">=</span><span class="n">dfd</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="n">loc</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">scale</span><span class="p">)</span>
     <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">test_output</span><span class="p">)</span> <span class="o">==</span> <span class="n">n_test</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"ОШИБКА: Ожидалось </span><span class="si">{</span><span class="n">n_test</span><span class="si">}</span><span class="s2"> значений, получено </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">test_output</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span>
@@ -598,7 +611,7 @@ P(U \le F(x)) = F(x)
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Вызываем функции по очереди</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Вызываем функции по очереди</span>
 <span class="n">test_output_length</span><span class="p">(</span><span class="n">n_test</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">dfn</span><span class="o">=</span><span class="n">dfn</span><span class="p">,</span> <span class="n">dfd</span><span class="o">=</span><span class="n">dfd</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="n">loc</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">scale</span><span class="p">,</span> <span class="n">generate_func</span><span class="o">=</span><span class="n">generate_fisher_inverse</span><span class="p">)</span>
 <span class="n">test_reproducibility</span><span class="p">(</span><span class="n">dfn</span><span class="o">=</span><span class="n">dfn</span><span class="p">,</span> <span class="n">dfd</span><span class="o">=</span><span class="n">dfd</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="n">loc</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">scale</span><span class="p">,</span> <span class="n">generate_func</span><span class="o">=</span><span class="n">generate_fisher_inverse</span><span class="p">)</span>
 <span class="n">test_theoretical_mean</span><span class="p">(</span><span class="n">dfn</span><span class="o">=</span><span class="n">dfn</span><span class="p">,</span> <span class="n">dfd</span><span class="o">=</span><span class="n">dfd</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="n">loc</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">scale</span><span class="p">,</span> <span class="n">generated_data</span><span class="o">=</span><span class="n">generated_values</span><span class="p">)</span>
@@ -631,7 +644,7 @@ P(U \le F(x)) = F(x)
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">scipy</span><span class="w"> </span><span class="kn">import</span> <span class="n">stats</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
@@ -667,7 +680,7 @@ P(U \le F(x)) = F(x)
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 2. СРАВНЕНИЕ ОПИСАТЕЛЬНЫХ СТАТИСТИК</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 2. СРАВНЕНИЕ ОПИСАТЕЛЬНЫХ СТАТИСТИК</span>
 <span class="n">stats_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
     <span class="s2">"Метрика"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Среднее"</span><span class="p">,</span> <span class="s2">"Медиана"</span><span class="p">,</span> <span class="s2">"Ст. отклонение"</span><span class="p">,</span> <span class="s2">"Минимум"</span><span class="p">,</span> <span class="s2">"Максимум"</span><span class="p">],</span>
     <span class="s2">"Реальные данные"</span><span class="p">:</span> <span class="p">[</span><span class="n">b_length</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">b_length</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span> <span class="n">b_length</span><span class="o">.</span><span class="n">std</span><span class="p">(),</span> <span class="n">b_length</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">b_length</span><span class="o">.</span><span class="n">max</span><span class="p">()],</span>
@@ -832,7 +845,7 @@ P(U \le F(x)) = F(x)
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 3. СТАТИСТИЧЕСКИЙ ТЕСТ (Колмогорова-Смирнова)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 3. СТАТИСТИЧЕСКИЙ ТЕСТ (Колмогорова-Смирнова)</span>
 <span class="n">ks_stat</span><span class="p">,</span> <span class="n">p_value</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">ks_2samp</span><span class="p">(</span><span class="n">b_length</span><span class="p">,</span> <span class="n">generated_values</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="se">\n</span><span class="s2">--- Тест Колмогорова-Смирнова ---"</span><span class="p">)</span>
@@ -869,7 +882,7 @@ P-value: 0.1888
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">ipywidgets</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">widgets</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">ipywidgets</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">widgets</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">clear_output</span>
 
 <span class="c1"># Функция, которая будет пересчитывать всё при движении ползунков</span>

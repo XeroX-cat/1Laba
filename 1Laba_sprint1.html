@@ -508,7 +508,7 @@ document.write(`
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># %pip install pandas xlrd</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># %pip install pandas xlrd</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 
 <span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">'display.max_rows'</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
@@ -520,189 +520,18 @@ document.write(`
 </div>
 </details>
 <div class="cell_output docutils container">
-<div class="output text_html">
-  <div id="df-8546a83c-2d33-4fc2-bfe2-403392f3884c" class="colab-df-container">
-    <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># %pip install pandas xlrd</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">'display.max_rows'</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">toque</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s2">"Макаки.xlsx"</span><span class="p">)</span>
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Specimen</th>
-      <th>Sex</th>
-      <th>Chinese Ancestry</th>
-      <th>kg</th>
-      <th>C-R curved</th>
-      <th>R humeral max</th>
-      <th>R femoral max</th>
-      <th>R Radial max</th>
-      <th>R tibial max</th>
-      <th>Note</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>29999</td>
-      <td>F</td>
-      <td>0.250</td>
-      <td>9.30</td>
-      <td>507.1</td>
-      <td>153.17</td>
-      <td>181.65</td>
-      <td>155.01</td>
-      <td>166.04</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>30797</td>
-      <td>F</td>
-      <td>0.125</td>
-      <td>8.49</td>
-      <td>531.6</td>
-      <td>156.21</td>
-      <td>179.04</td>
-      <td>154.70</td>
-      <td>166.48</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>31603</td>
-      <td>F</td>
-      <td>0.750</td>
-      <td>7.35</td>
-      <td>514.4</td>
-      <td>152.38</td>
-      <td>174.42</td>
-      <td>139.60</td>
-      <td>155.81</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>31692</td>
-      <td>F</td>
-      <td>0.750</td>
-      <td>7.70</td>
-      <td>531.7</td>
-      <td>147.33</td>
-      <td>165.06</td>
-      <td>144.37</td>
-      <td>152.57</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>32200</td>
-      <td>F</td>
-      <td>0.130</td>
-      <td>8.50</td>
-      <td>531.6</td>
-      <td>150.25</td>
-      <td>173.47</td>
-      <td>148.20</td>
-      <td>156.72</td>
-      <td>NaN</td>
-    </tr>
-  </tbody>
-</table>
+<span class="ne">ModuleNotFoundError</span>: No module named 'pandas'
+</pre></div>
 </div>
-    <div class="colab-df-buttons">
-
-  <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-8546a83c-2d33-4fc2-bfe2-403392f3884c')"
-            title="Convert this dataframe to an interactive table."
-            style="display:none;">
-
-  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
-    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
-  </svg>
-    </button>
-
-  <style>
-    .colab-df-container {
-      display:flex;
-      gap: 12px;
-    }
-
-    .colab-df-convert {
-      background-color: #E8F0FE;
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
-      display: none;
-      fill: #1967D2;
-      height: 32px;
-      padding: 0 0 0 0;
-      width: 32px;
-    }
-
-    .colab-df-convert:hover {
-      background-color: #E2EBFA;
-      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
-      fill: #174EA6;
-    }
-
-    .colab-df-buttons div {
-      margin-bottom: 4px;
-    }
-
-    [theme=dark] .colab-df-convert {
-      background-color: #3B4455;
-      fill: #D2E3FC;
-    }
-
-    [theme=dark] .colab-df-convert:hover {
-      background-color: #434B5C;
-      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
-      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
-      fill: #FFFFFF;
-    }
-  </style>
-
-    <script>
-      const buttonEl =
-        document.querySelector('#df-8546a83c-2d33-4fc2-bfe2-403392f3884c button.colab-df-convert');
-      buttonEl.style.display =
-        google.colab.kernel.accessAllowed ? 'block' : 'none';
-
-      async function convertToInteractive(key) {
-        const element = document.querySelector('#df-8546a83c-2d33-4fc2-bfe2-403392f3884c');
-        const dataTable =
-          await google.colab.kernel.invokeFunction('convertToInteractive',
-                                                    [key], {});
-        if (!dataTable) return;
-
-        const docLinkHtml = 'Like what you see? Visit the ' +
-          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
-          + ' to learn more about interactive tables.';
-        element.innerHTML = '';
-        dataTable['output_type'] = 'display_data';
-        await google.colab.output.renderOutput(dataTable, element);
-        const docLink = document.createElement('div');
-        docLink.innerHTML = docLinkHtml;
-        element.appendChild(docLink);
-      }
-    </script>
-  </div>
-
-    </div>
-  </div>
-</div></div>
+</div>
 </div>
 <p>Вывод первых нескольких строк (проверка)</p>
 <div class="cell tag_hide-input docutils container">
@@ -712,7 +541,7 @@ document.write(`
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">toque</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">toque</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -747,7 +576,7 @@ memory usage: 10.6+ KB
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">selected</span> <span class="o">=</span> <span class="n">toque</span><span class="p">[[</span><span class="s2">"Sex"</span><span class="p">,</span> <span class="s2">"Chinese Ancestry"</span><span class="p">,</span> <span class="s2">"kg"</span><span class="p">,</span> <span class="s2">"C-R curved"</span><span class="p">,</span> <span class="s2">"R humeral max"</span><span class="p">,</span> <span class="s2">"R femoral max"</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">selected</span> <span class="o">=</span> <span class="n">toque</span><span class="p">[[</span><span class="s2">"Sex"</span><span class="p">,</span> <span class="s2">"Chinese Ancestry"</span><span class="p">,</span> <span class="s2">"kg"</span><span class="p">,</span> <span class="s2">"C-R curved"</span><span class="p">,</span> <span class="s2">"R humeral max"</span><span class="p">,</span> <span class="s2">"R femoral max"</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="n">selected</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -812,7 +641,7 @@ memory usage: 10.6+ KB
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">complete</span> <span class="o">=</span> <span class="n">selected</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">complete</span> <span class="o">=</span> <span class="n">selected</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Всего строк:"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">selected</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Строк со всеми тремя измерениями:"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">complete</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Строк хотя бы с одним пропуском:"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">selected</span><span class="p">)</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">complete</span><span class="p">))</span>
@@ -836,7 +665,7 @@ memory usage: 10.6+ KB
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">sample_with</span> <span class="o">=</span> <span class="n">complete</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sample_with</span> <span class="o">=</span> <span class="n">complete</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
 <span class="n">sample_without</span> <span class="o">=</span> <span class="n">complete</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">43</span><span class="p">)</span>
 <span class="n">sample_males</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="n">complete</span><span class="p">[</span><span class="s2">"Sex"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"M"</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="n">sample_females</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="n">complete</span><span class="p">[</span><span class="s2">"Sex"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"F"</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -923,7 +752,7 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># === СТИЛЬ ГРАФИКОВ ===</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># === СТИЛЬ ГРАФИКОВ ===</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mpl</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
@@ -967,7 +796,7 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
 
@@ -1000,7 +829,7 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">scipy</span><span class="w"> </span><span class="kn">import</span> <span class="n">stats</span>
@@ -1033,7 +862,7 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mass</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"kg"</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mass</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"kg"</span><span class="p">]</span>
 <span class="n">mass_table</span> <span class="o">=</span> <span class="n">mass</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
 <span class="n">mass_table</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"mass_kg"</span><span class="p">,</span> <span class="s2">"count"</span><span class="p">]</span>
 <span class="n">mass_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">]</span> <span class="o">=</span> <span class="n">mass_table</span><span class="p">[</span><span class="s2">"count"</span><span class="p">]</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">mass</span><span class="p">)</span>
@@ -2071,7 +1900,7 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mass_table</span> <span class="o">=</span> <span class="n">mass_table</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">"mass_kg"</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mass_table</span> <span class="o">=</span> <span class="n">mass_table</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">"mass_kg"</span><span class="p">)</span>
 <span class="n">mass_table</span><span class="p">[</span><span class="s2">"P"</span><span class="p">]</span> <span class="o">=</span> <span class="n">mass_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">]</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span>
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">mass_table</span><span class="p">[</span><span class="s2">"mass_kg"</span><span class="p">],</span> <span class="n">mass_table</span><span class="p">[</span><span class="s2">"P"</span><span class="p">],</span> <span class="n">where</span><span class="o">=</span><span class="s2">"post"</span><span class="p">)</span>
@@ -2105,7 +1934,7 @@ D(X)=\sum_{i=1}^{k}(x_i-\mu_X)^2p_i,
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">expected_mass</span> <span class="o">=</span> <span class="p">(</span><span class="n">mass_table</span><span class="p">[</span><span class="s2">"mass_kg"</span><span class="p">]</span> <span class="o">*</span> <span class="n">mass_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">expected_mass</span> <span class="o">=</span> <span class="p">(</span><span class="n">mass_table</span><span class="p">[</span><span class="s2">"mass_kg"</span><span class="p">]</span> <span class="o">*</span> <span class="n">mass_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 <span class="n">variance_mass</span> <span class="o">=</span> <span class="p">((</span><span class="n">mass_table</span><span class="p">[</span><span class="s2">"mass_kg"</span><span class="p">]</span> <span class="o">-</span> <span class="n">mass</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">mass_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 <span class="n">std_mass</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">variance_mass</span><span class="p">)</span>
 <span class="n">modes_mass</span> <span class="o">=</span> <span class="n">mass</span><span class="o">.</span><span class="n">mode</span><span class="p">()</span>
@@ -2174,7 +2003,7 @@ Cтандартное отклонение, кг: 3.47
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rng</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rng</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
 <span class="n">population</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"kg"</span><span class="p">]</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
 <span class="n">true_mean</span> <span class="o">=</span> <span class="n">population</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 <span class="n">sample_sizes</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">3000</span><span class="p">]</span>
@@ -2374,7 +2203,7 @@ Cтандартное отклонение, кг: 3.47
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">consistency_mass</span><span class="p">[</span><span class="s2">"Размер выборки"</span><span class="p">],</span> <span class="n">consistency_mass</span><span class="p">[</span><span class="s2">"RMSE, кг"</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s2">"o"</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">PALETTE</span><span class="p">[</span><span class="s2">"primary"</span><span class="p">])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xscale</span><span class="p">(</span><span class="s2">"log"</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"Размер выборки, n"</span><span class="p">)</span>
@@ -2401,7 +2230,7 @@ Cтандартное отклонение, кг: 3.47
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mass_with</span> <span class="o">=</span> <span class="n">sample_with</span><span class="p">[</span><span class="s2">"kg"</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mass_with</span> <span class="o">=</span> <span class="n">sample_with</span><span class="p">[</span><span class="s2">"kg"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество:"</span><span class="p">,</span> <span class="n">mass_with</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее, кг: </span><span class="si">{</span><span class="n">mass_with</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Медиана, кг: </span><span class="si">{</span><span class="n">mass_with</span><span class="o">.</span><span class="n">median</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -2439,7 +2268,7 @@ Cтандартное отклонение, кг: 3.47
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mass_without</span> <span class="o">=</span> <span class="n">sample_without</span><span class="p">[</span><span class="s2">"kg"</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mass_without</span> <span class="o">=</span> <span class="n">sample_without</span><span class="p">[</span><span class="s2">"kg"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество:"</span><span class="p">,</span> <span class="n">mass_without</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее, кг: </span><span class="si">{</span><span class="n">mass_without</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Медиана, кг: </span><span class="si">{</span><span class="n">mass_without</span><span class="o">.</span><span class="n">median</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -2477,7 +2306,7 @@ Cтандартное отклонение, кг: 3.47
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mass_males</span> <span class="o">=</span> <span class="n">sample_males</span><span class="p">[</span><span class="s2">"kg"</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mass_males</span> <span class="o">=</span> <span class="n">sample_males</span><span class="p">[</span><span class="s2">"kg"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество:"</span><span class="p">,</span> <span class="n">mass_males</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее, кг: </span><span class="si">{</span><span class="n">mass_males</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Медиана, кг: </span><span class="si">{</span><span class="n">mass_males</span><span class="o">.</span><span class="n">median</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -2515,7 +2344,7 @@ Cтандартное отклонение, кг: 3.47
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mass_females</span> <span class="o">=</span> <span class="n">sample_females</span><span class="p">[</span><span class="s2">"kg"</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mass_females</span> <span class="o">=</span> <span class="n">sample_females</span><span class="p">[</span><span class="s2">"kg"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество:"</span><span class="p">,</span> <span class="n">mass_females</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее, кг: </span><span class="si">{</span><span class="n">mass_females</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Медиана, кг: </span><span class="si">{</span><span class="n">mass_females</span><span class="o">.</span><span class="n">median</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -2553,7 +2382,7 @@ Cтандартное отклонение, кг: 3.47
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее генеральной совокупности, кг: </span><span class="si">{</span><span class="n">mass</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее генеральной совокупности, кг: </span><span class="si">{</span><span class="n">mass</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее выборки с возвращением, кг: </span><span class="si">{</span><span class="n">mass_with</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее выборки без возвращения, кг: </span><span class="si">{</span><span class="n">mass_without</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Ошибка среднего с возвращением, %: </span><span class="si">{</span><span class="nb">abs</span><span class="p">(</span><span class="n">mass_with</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">mass</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">mass</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -2582,7 +2411,7 @@ Cтандартное отклонение, кг: 3.47
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">difference</span> <span class="o">=</span> <span class="n">mass_males</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">-</span> <span class="n">mass_females</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">difference</span> <span class="o">=</span> <span class="n">mass_males</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">-</span> <span class="n">mass_females</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 <span class="n">relative_difference</span> <span class="o">=</span> <span class="n">difference</span> <span class="o">/</span> <span class="n">mass_females</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">*</span> <span class="mi">100</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее всей совокупности, кг: </span><span class="si">{</span><span class="n">mass</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее самцов, кг: </span><span class="si">{</span><span class="n">mass_males</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -2635,7 +2464,7 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="n">b_length</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"C-R curved"</span><span class="p">]</span>
@@ -2667,7 +2496,7 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">scipy</span><span class="w"> </span><span class="kn">import</span> <span class="n">stats</span>
@@ -2700,7 +2529,7 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">b_length</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"C-R curved"</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">b_length</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"C-R curved"</span><span class="p">]</span>
 <span class="n">b_length_table</span> <span class="o">=</span> <span class="n">b_length</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
 <span class="n">b_length_table</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"b_length_mm"</span><span class="p">,</span> <span class="s2">"count"</span><span class="p">]</span>
 <span class="n">b_length_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">]</span> <span class="o">=</span> <span class="n">b_length_table</span><span class="p">[</span><span class="s2">"count"</span><span class="p">]</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">b_length</span><span class="p">)</span>
@@ -3738,7 +3567,7 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">b_length_table</span> <span class="o">=</span> <span class="n">b_length_table</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">"b_length_mm"</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">b_length_table</span> <span class="o">=</span> <span class="n">b_length_table</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">"b_length_mm"</span><span class="p">)</span>
 <span class="n">b_length_table</span><span class="p">[</span><span class="s2">"P"</span><span class="p">]</span> <span class="o">=</span> <span class="n">b_length_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">]</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span>
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">b_length_table</span><span class="p">[</span><span class="s2">"b_length_mm"</span><span class="p">],</span> <span class="n">b_length_table</span><span class="p">[</span><span class="s2">"P"</span><span class="p">],</span> <span class="n">where</span><span class="o">=</span><span class="s2">"post"</span><span class="p">)</span>
@@ -3772,7 +3601,7 @@ D(Y)=\sum_{i=1}^{k}(y_i-\mu_Y)^2p_i,
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">expected_b_length</span> <span class="o">=</span> <span class="p">(</span><span class="n">b_length_table</span><span class="p">[</span><span class="s2">"b_length_mm"</span><span class="p">]</span> <span class="o">*</span> <span class="n">b_length_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">expected_b_length</span> <span class="o">=</span> <span class="p">(</span><span class="n">b_length_table</span><span class="p">[</span><span class="s2">"b_length_mm"</span><span class="p">]</span> <span class="o">*</span> <span class="n">b_length_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 <span class="n">variance_b_length</span> <span class="o">=</span> <span class="p">((</span><span class="n">b_length_table</span><span class="p">[</span><span class="s2">"b_length_mm"</span><span class="p">]</span> <span class="o">-</span> <span class="n">b_length</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">b_length_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 <span class="n">std_b_length</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">variance_b_length</span><span class="p">)</span>
 <span class="n">modes_b_length</span> <span class="o">=</span> <span class="n">b_length</span><span class="o">.</span><span class="n">mode</span><span class="p">()</span>
@@ -3831,7 +3660,7 @@ Cтандартное отклонение, мм: 32.43
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rng</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rng</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
 <span class="n">population</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"C-R curved"</span><span class="p">]</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
 <span class="n">true_mean</span> <span class="o">=</span> <span class="n">population</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 <span class="n">sample_sizes</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">3000</span><span class="p">]</span>
@@ -4031,7 +3860,7 @@ Cтандартное отклонение, мм: 32.43
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">consistency_b_length</span><span class="p">[</span><span class="s2">"Размер выборки"</span><span class="p">],</span> <span class="n">consistency_b_length</span><span class="p">[</span><span class="s2">"RMSE, мм"</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s2">"o"</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">PALETTE</span><span class="p">[</span><span class="s2">"primary"</span><span class="p">])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xscale</span><span class="p">(</span><span class="s2">"log"</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"Размер выборки, n"</span><span class="p">)</span>
@@ -4058,7 +3887,7 @@ Cтандартное отклонение, мм: 32.43
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">b_with</span> <span class="o">=</span> <span class="n">sample_with</span><span class="p">[</span><span class="s2">"C-R curved"</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">b_with</span> <span class="o">=</span> <span class="n">sample_with</span><span class="p">[</span><span class="s2">"C-R curved"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество:"</span><span class="p">,</span> <span class="n">b_with</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее, мм: </span><span class="si">{</span><span class="n">b_with</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Медиана, мм: </span><span class="si">{</span><span class="n">b_with</span><span class="o">.</span><span class="n">median</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -4096,7 +3925,7 @@ Cтандартное отклонение, мм: 32.43
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">b_without</span> <span class="o">=</span> <span class="n">sample_without</span><span class="p">[</span><span class="s2">"C-R curved"</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">b_without</span> <span class="o">=</span> <span class="n">sample_without</span><span class="p">[</span><span class="s2">"C-R curved"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество:"</span><span class="p">,</span> <span class="n">b_without</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее, мм: </span><span class="si">{</span><span class="n">b_without</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Медиана, мм: </span><span class="si">{</span><span class="n">b_without</span><span class="o">.</span><span class="n">median</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -4134,7 +3963,7 @@ Cтандартное отклонение, мм: 32.43
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">b_males</span> <span class="o">=</span> <span class="n">sample_males</span><span class="p">[</span><span class="s2">"C-R curved"</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">b_males</span> <span class="o">=</span> <span class="n">sample_males</span><span class="p">[</span><span class="s2">"C-R curved"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество:"</span><span class="p">,</span> <span class="n">b_males</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее, мм: </span><span class="si">{</span><span class="n">b_males</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Медиана, мм: </span><span class="si">{</span><span class="n">b_males</span><span class="o">.</span><span class="n">median</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -4172,7 +4001,7 @@ Cтандартное отклонение, мм: 32.43
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">b_females</span> <span class="o">=</span> <span class="n">sample_females</span><span class="p">[</span><span class="s2">"C-R curved"</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">b_females</span> <span class="o">=</span> <span class="n">sample_females</span><span class="p">[</span><span class="s2">"C-R curved"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество:"</span><span class="p">,</span> <span class="n">b_females</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее, мм: </span><span class="si">{</span><span class="n">b_females</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Медиана, мм: </span><span class="si">{</span><span class="n">b_females</span><span class="o">.</span><span class="n">median</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -4210,7 +4039,7 @@ Cтандартное отклонение, мм: 32.43
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее генеральной совокупности, мм: </span><span class="si">{</span><span class="n">b_length</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее генеральной совокупности, мм: </span><span class="si">{</span><span class="n">b_length</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее выборки с возвращением, мм: </span><span class="si">{</span><span class="n">b_with</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее выборки без возвращения, мм: </span><span class="si">{</span><span class="n">b_without</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Ошибка среднего с возвращением, %: </span><span class="si">{</span><span class="nb">abs</span><span class="p">(</span><span class="n">b_with</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">b_length</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">b_length</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -4239,7 +4068,7 @@ Cтандартное отклонение, мм: 32.43
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">difference</span> <span class="o">=</span> <span class="n">b_males</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">-</span> <span class="n">b_females</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">difference</span> <span class="o">=</span> <span class="n">b_males</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">-</span> <span class="n">b_females</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 <span class="n">relative_difference</span> <span class="o">=</span> <span class="n">difference</span> <span class="o">/</span> <span class="n">b_females</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">*</span> <span class="mi">100</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее всей совокупности, мм: </span><span class="si">{</span><span class="n">b_length</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее самцов, мм: </span><span class="si">{</span><span class="n">b_males</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -4292,7 +4121,7 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="n">h_length</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"R humeral max"</span><span class="p">]</span>
@@ -4324,7 +4153,7 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">scipy</span><span class="w"> </span><span class="kn">import</span> <span class="n">stats</span>
@@ -4357,7 +4186,7 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">h_length</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"R humeral max"</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">h_length</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"R humeral max"</span><span class="p">]</span>
 <span class="n">h_length_table</span> <span class="o">=</span> <span class="n">h_length</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
 <span class="n">h_length_table</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"h_length_mm"</span><span class="p">,</span> <span class="s2">"count"</span><span class="p">]</span>
 <span class="n">h_length_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">]</span> <span class="o">=</span> <span class="n">h_length_table</span><span class="p">[</span><span class="s2">"count"</span><span class="p">]</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">h_length</span><span class="p">)</span>
@@ -5423,7 +5252,7 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">h_length_table</span> <span class="o">=</span> <span class="n">h_length_table</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">"h_length_mm"</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">h_length_table</span> <span class="o">=</span> <span class="n">h_length_table</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">"h_length_mm"</span><span class="p">)</span>
 <span class="n">h_length_table</span><span class="p">[</span><span class="s2">"P"</span><span class="p">]</span> <span class="o">=</span> <span class="n">h_length_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">]</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span>
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">h_length_table</span><span class="p">[</span><span class="s2">"h_length_mm"</span><span class="p">],</span> <span class="n">h_length_table</span><span class="p">[</span><span class="s2">"P"</span><span class="p">],</span> <span class="n">where</span><span class="o">=</span><span class="s2">"post"</span><span class="p">)</span>
@@ -5457,7 +5286,7 @@ D(Z)=\sum_{i=1}^{k}(z_i-\mu_Z)^2p_i,
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">expected_h_length</span> <span class="o">=</span> <span class="p">(</span><span class="n">h_length_table</span><span class="p">[</span><span class="s2">"h_length_mm"</span><span class="p">]</span> <span class="o">*</span> <span class="n">h_length_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">expected_h_length</span> <span class="o">=</span> <span class="p">(</span><span class="n">h_length_table</span><span class="p">[</span><span class="s2">"h_length_mm"</span><span class="p">]</span> <span class="o">*</span> <span class="n">h_length_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 <span class="n">variance_h_length</span> <span class="o">=</span> <span class="p">((</span><span class="n">h_length_table</span><span class="p">[</span><span class="s2">"h_length_mm"</span><span class="p">]</span> <span class="o">-</span> <span class="n">h_length</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">h_length_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 <span class="n">std_h_length</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">variance_h_length</span><span class="p">)</span>
 <span class="n">modes_h_length</span> <span class="o">=</span> <span class="n">h_length</span><span class="o">.</span><span class="n">mode</span><span class="p">()</span>
@@ -5516,7 +5345,7 @@ Cтандартное отклонение, мм: 11.20
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rng</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rng</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
 <span class="n">population</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"R humeral max"</span><span class="p">]</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
 <span class="n">true_mean</span> <span class="o">=</span> <span class="n">population</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 <span class="n">sample_sizes</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">3000</span><span class="p">]</span>
@@ -5716,7 +5545,7 @@ Cтандартное отклонение, мм: 11.20
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">consistency_h_length</span><span class="p">[</span><span class="s2">"Размер выборки"</span><span class="p">],</span> <span class="n">consistency_h_length</span><span class="p">[</span><span class="s2">"RMSE, мм"</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s2">"o"</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">PALETTE</span><span class="p">[</span><span class="s2">"primary"</span><span class="p">])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xscale</span><span class="p">(</span><span class="s2">"log"</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"Размер выборки, n"</span><span class="p">)</span>
@@ -5743,7 +5572,7 @@ Cтандартное отклонение, мм: 11.20
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">h_with</span> <span class="o">=</span> <span class="n">sample_with</span><span class="p">[</span><span class="s2">"R humeral max"</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">h_with</span> <span class="o">=</span> <span class="n">sample_with</span><span class="p">[</span><span class="s2">"R humeral max"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество:"</span><span class="p">,</span> <span class="n">h_with</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее, мм: </span><span class="si">{</span><span class="n">h_with</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Медиана, мм: </span><span class="si">{</span><span class="n">h_with</span><span class="o">.</span><span class="n">median</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -5781,7 +5610,7 @@ Cтандартное отклонение, мм: 11.20
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">h_without</span> <span class="o">=</span> <span class="n">sample_without</span><span class="p">[</span><span class="s2">"R humeral max"</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">h_without</span> <span class="o">=</span> <span class="n">sample_without</span><span class="p">[</span><span class="s2">"R humeral max"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество:"</span><span class="p">,</span> <span class="n">h_without</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее, мм: </span><span class="si">{</span><span class="n">h_without</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Медиана, мм: </span><span class="si">{</span><span class="n">h_without</span><span class="o">.</span><span class="n">median</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -5819,7 +5648,7 @@ Cтандартное отклонение, мм: 11.20
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">h_males</span> <span class="o">=</span> <span class="n">sample_males</span><span class="p">[</span><span class="s2">"R humeral max"</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">h_males</span> <span class="o">=</span> <span class="n">sample_males</span><span class="p">[</span><span class="s2">"R humeral max"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество:"</span><span class="p">,</span> <span class="n">h_males</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее, мм: </span><span class="si">{</span><span class="n">h_males</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Медиана, мм: </span><span class="si">{</span><span class="n">h_males</span><span class="o">.</span><span class="n">median</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -5857,7 +5686,7 @@ Cтандартное отклонение, мм: 11.20
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">h_females</span> <span class="o">=</span> <span class="n">sample_females</span><span class="p">[</span><span class="s2">"R humeral max"</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">h_females</span> <span class="o">=</span> <span class="n">sample_females</span><span class="p">[</span><span class="s2">"R humeral max"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество:"</span><span class="p">,</span> <span class="n">h_females</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее, мм: </span><span class="si">{</span><span class="n">h_females</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Медиана, мм: </span><span class="si">{</span><span class="n">h_females</span><span class="o">.</span><span class="n">median</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -5895,7 +5724,7 @@ Cтандартное отклонение, мм: 11.20
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее генеральной совокупности, мм: </span><span class="si">{</span><span class="n">h_length</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее генеральной совокупности, мм: </span><span class="si">{</span><span class="n">h_length</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее выборки с возвращением, мм: </span><span class="si">{</span><span class="n">h_with</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее выборки без возвращения, мм: </span><span class="si">{</span><span class="n">h_without</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Ошибка среднего с возвращением, %: </span><span class="si">{</span><span class="nb">abs</span><span class="p">(</span><span class="n">h_with</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">h_length</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">h_length</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -5924,7 +5753,7 @@ Cтандартное отклонение, мм: 11.20
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">difference</span> <span class="o">=</span> <span class="n">h_males</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">-</span> <span class="n">h_females</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">difference</span> <span class="o">=</span> <span class="n">h_males</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">-</span> <span class="n">h_females</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 <span class="n">relative_difference</span> <span class="o">=</span> <span class="n">difference</span> <span class="o">/</span> <span class="n">h_females</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">*</span> <span class="mi">100</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее всей совокупности, мм: </span><span class="si">{</span><span class="n">h_length</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее самцов, мм: </span><span class="si">{</span><span class="n">h_males</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -5976,7 +5805,7 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="n">f_length</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"R femoral max"</span><span class="p">]</span>
@@ -6008,7 +5837,7 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">scipy</span><span class="w"> </span><span class="kn">import</span> <span class="n">stats</span>
@@ -6041,7 +5870,7 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">f_length</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"R femoral max"</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f_length</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"R femoral max"</span><span class="p">]</span>
 <span class="n">f_length_table</span> <span class="o">=</span> <span class="n">f_length</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
 <span class="n">f_length_table</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"f_length_mm"</span><span class="p">,</span> <span class="s2">"count"</span><span class="p">]</span>
 <span class="n">f_length_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">]</span> <span class="o">=</span> <span class="n">f_length_table</span><span class="p">[</span><span class="s2">"count"</span><span class="p">]</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">f_length</span><span class="p">)</span>
@@ -7100,7 +6929,7 @@ p_i \geq 0, \qquad \sum_{i=1}^{k}p_i=1.
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">f_length_table</span> <span class="o">=</span> <span class="n">f_length_table</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">"f_length_mm"</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f_length_table</span> <span class="o">=</span> <span class="n">f_length_table</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">"f_length_mm"</span><span class="p">)</span>
 <span class="n">f_length_table</span><span class="p">[</span><span class="s2">"P"</span><span class="p">]</span> <span class="o">=</span> <span class="n">f_length_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">]</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span>
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">step</span><span class="p">(</span><span class="n">f_length_table</span><span class="p">[</span><span class="s2">"f_length_mm"</span><span class="p">],</span> <span class="n">f_length_table</span><span class="p">[</span><span class="s2">"P"</span><span class="p">],</span> <span class="n">where</span><span class="o">=</span><span class="s2">"post"</span><span class="p">)</span>
@@ -7134,7 +6963,7 @@ D(W)=\sum_{i=1}^{k}(w_i-\mu_W)^2p_i,
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">expected_f_length</span> <span class="o">=</span> <span class="p">(</span><span class="n">f_length_table</span><span class="p">[</span><span class="s2">"f_length_mm"</span><span class="p">]</span> <span class="o">*</span> <span class="n">f_length_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">expected_f_length</span> <span class="o">=</span> <span class="p">(</span><span class="n">f_length_table</span><span class="p">[</span><span class="s2">"f_length_mm"</span><span class="p">]</span> <span class="o">*</span> <span class="n">f_length_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 <span class="n">variance_f_length</span> <span class="o">=</span> <span class="p">((</span><span class="n">f_length_table</span><span class="p">[</span><span class="s2">"f_length_mm"</span><span class="p">]</span> <span class="o">-</span> <span class="n">f_length</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">f_length_table</span><span class="p">[</span><span class="s2">"p_i"</span><span class="p">])</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 <span class="n">std_f_length</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">variance_f_length</span><span class="p">)</span>
 <span class="n">modes_f_length</span> <span class="o">=</span> <span class="n">f_length</span><span class="o">.</span><span class="n">mode</span><span class="p">()</span>
@@ -7191,7 +7020,7 @@ Cтандартное отклонение, мм: 14.50
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rng</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rng</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">default_rng</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
 <span class="n">population</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"R femoral max"</span><span class="p">]</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
 <span class="n">true_mean</span> <span class="o">=</span> <span class="n">population</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 <span class="n">sample_sizes</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">300</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">3000</span><span class="p">]</span>
@@ -7391,7 +7220,7 @@ Cтандартное отклонение, мм: 14.50
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">consistency_f_length</span><span class="p">[</span><span class="s2">"Размер выборки"</span><span class="p">],</span> <span class="n">consistency_f_length</span><span class="p">[</span><span class="s2">"RMSE, мм"</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s2">"o"</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">PALETTE</span><span class="p">[</span><span class="s2">"primary"</span><span class="p">])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xscale</span><span class="p">(</span><span class="s2">"log"</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">"Размер выборки, n"</span><span class="p">)</span>
@@ -7418,7 +7247,7 @@ Cтандартное отклонение, мм: 14.50
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">f_with</span> <span class="o">=</span> <span class="n">sample_with</span><span class="p">[</span><span class="s2">"R femoral max"</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f_with</span> <span class="o">=</span> <span class="n">sample_with</span><span class="p">[</span><span class="s2">"R femoral max"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество:"</span><span class="p">,</span> <span class="n">f_with</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее, мм: </span><span class="si">{</span><span class="n">f_with</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Медиана, мм: </span><span class="si">{</span><span class="n">f_with</span><span class="o">.</span><span class="n">median</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -7456,7 +7285,7 @@ Cтандартное отклонение, мм: 14.50
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">f_without</span> <span class="o">=</span> <span class="n">sample_without</span><span class="p">[</span><span class="s2">"R femoral max"</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f_without</span> <span class="o">=</span> <span class="n">sample_without</span><span class="p">[</span><span class="s2">"R femoral max"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество:"</span><span class="p">,</span> <span class="n">f_without</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее, мм: </span><span class="si">{</span><span class="n">f_without</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Медиана, мм: </span><span class="si">{</span><span class="n">f_without</span><span class="o">.</span><span class="n">median</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -7494,7 +7323,7 @@ Cтандартное отклонение, мм: 14.50
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">f_males</span> <span class="o">=</span> <span class="n">sample_males</span><span class="p">[</span><span class="s2">"R femoral max"</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f_males</span> <span class="o">=</span> <span class="n">sample_males</span><span class="p">[</span><span class="s2">"R femoral max"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество:"</span><span class="p">,</span> <span class="n">f_males</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее, мм: </span><span class="si">{</span><span class="n">f_males</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Медиана, мм: </span><span class="si">{</span><span class="n">f_males</span><span class="o">.</span><span class="n">median</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -7532,7 +7361,7 @@ Cтандартное отклонение, мм: 14.50
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">f_females</span> <span class="o">=</span> <span class="n">sample_females</span><span class="p">[</span><span class="s2">"R femoral max"</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f_females</span> <span class="o">=</span> <span class="n">sample_females</span><span class="p">[</span><span class="s2">"R femoral max"</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Количество:"</span><span class="p">,</span> <span class="n">f_females</span><span class="o">.</span><span class="n">count</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее, мм: </span><span class="si">{</span><span class="n">f_females</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Медиана, мм: </span><span class="si">{</span><span class="n">f_females</span><span class="o">.</span><span class="n">median</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -7570,7 +7399,7 @@ Cтандартное отклонение, мм: 14.50
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее генеральной совокупности, мм: </span><span class="si">{</span><span class="n">f_length</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее генеральной совокупности, мм: </span><span class="si">{</span><span class="n">f_length</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее выборки с возвращением, мм: </span><span class="si">{</span><span class="n">f_with</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее выборки без возвращения, мм: </span><span class="si">{</span><span class="n">f_without</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Ошибка среднего с возвращением, %: </span><span class="si">{</span><span class="nb">abs</span><span class="p">(</span><span class="n">f_with</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">f_length</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">f_length</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">100</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -7599,7 +7428,7 @@ Cтандартное отклонение, мм: 14.50
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">difference</span> <span class="o">=</span> <span class="n">f_males</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">-</span> <span class="n">f_females</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">difference</span> <span class="o">=</span> <span class="n">f_males</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">-</span> <span class="n">f_females</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 <span class="n">relative_difference</span> <span class="o">=</span> <span class="n">difference</span> <span class="o">/</span> <span class="n">f_females</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">*</span> <span class="mi">100</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее всей совокупности, мм: </span><span class="si">{</span><span class="n">f_length</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Среднее самцов, мм: </span><span class="si">{</span><span class="n">f_males</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -7634,7 +7463,7 @@ Cтандартное отклонение, мм: 14.50
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">mass</span><span class="p">,</span> <span class="n">b_length</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">"Масса и длина тела"</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"Масса, кг"</span><span class="p">)</span>
@@ -7660,7 +7489,7 @@ Cтандартное отклонение, мм: 14.50
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">mass</span><span class="p">,</span> <span class="n">h_length</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">"Масса тела и длина плечевой кости"</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"Масса, кг"</span><span class="p">)</span>
@@ -7686,7 +7515,7 @@ Cтандартное отклонение, мм: 14.50
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">mass</span><span class="p">,</span> <span class="n">f_length</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">"Масса тела и длина бедренной кости"</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"Масса, кг"</span><span class="p">)</span>
@@ -7712,7 +7541,7 @@ Cтандартное отклонение, мм: 14.50
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">b_length</span><span class="p">,</span> <span class="n">h_length</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">"Длина тела и длина плечевой кости"</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"Длина тела, мм"</span><span class="p">)</span>
@@ -7738,7 +7567,7 @@ Cтандартное отклонение, мм: 14.50
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">b_length</span><span class="p">,</span> <span class="n">f_length</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">"Длина тела и длина бедренной кости"</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"Длина тела, мм"</span><span class="p">)</span>
@@ -7764,7 +7593,7 @@ Cтандартное отклонение, мм: 14.50
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">h_length</span><span class="p">,</span> <span class="n">f_length</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">"Длина плечевой и длина бедренной костей"</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">"Длина плечевой кости, мм"</span><span class="p">)</span>
@@ -7790,7 +7619,7 @@ Cтандартное отклонение, мм: 14.50
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ancestry</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"Chinese Ancestry"</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ancestry</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"Chinese Ancestry"</span><span class="p">]</span>
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">ancestry</span><span class="p">,</span> <span class="n">mass</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">"Масса тела и доля китайского происхождения"</span><span class="p">)</span>
@@ -7817,7 +7646,7 @@ Cтандартное отклонение, мм: 14.50
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ancestry</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"Chinese Ancestry"</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ancestry</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"Chinese Ancestry"</span><span class="p">]</span>
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">ancestry</span><span class="p">,</span> <span class="n">b_length</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">"Длина тела и доля китайского происхождения"</span><span class="p">)</span>
@@ -7844,7 +7673,7 @@ Cтандартное отклонение, мм: 14.50
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ancestry</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"Chinese Ancestry"</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ancestry</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"Chinese Ancestry"</span><span class="p">]</span>
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">ancestry</span><span class="p">,</span> <span class="n">h_length</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">"Длина плечевой кости и доля китайского происхождения"</span><span class="p">)</span>
@@ -7871,7 +7700,7 @@ Cтандартное отклонение, мм: 14.50
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ancestry</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"Chinese Ancestry"</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ancestry</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"Chinese Ancestry"</span><span class="p">]</span>
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">ancestry</span><span class="p">,</span> <span class="n">f_length</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">"Длина бедренной кости и доля китайского происхождения"</span><span class="p">)</span>
@@ -7901,7 +7730,7 @@ Cтандартное отклонение, мм: 14.50
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mass</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"kg"</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">mass</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"kg"</span><span class="p">]</span>
 <span class="n">b_length</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"C-R curved"</span><span class="p">]</span>
 <span class="n">h_length</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"R humeral max"</span><span class="p">]</span>
 <span class="n">f_length</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[</span><span class="s2">"R femoral max"</span><span class="p">]</span>
@@ -8062,7 +7891,7 @@ P(A) · P(B): 0.3209
 <p class="expanded admonition-title">Hide code cell source</p>
 </summary>
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="n">data</span> <span class="o">=</span> <span class="n">complete</span><span class="p">[[</span><span class="s2">"kg"</span><span class="p">,</span> <span class="s2">"C-R curved"</span><span class="p">,</span> <span class="s2">"R humeral max"</span><span class="p">,</span> <span class="s2">"R femoral max"</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="n">normalized</span> <span class="o">=</span> <span class="p">(</span><span class="n">data</span> <span class="o">-</span> <span class="n">data</span><span class="o">.</span><span class="n">min</span><span class="p">())</span> <span class="o">/</span> <span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">-</span> <span class="n">data</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
