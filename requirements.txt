@@ -1,9 +1,7 @@
 pandas
 numpy
 scipy
+openpyxl
+plotly
 matplotlib
 seaborn
-openpyxl
-ipywidgets
-git+https://github.com/TeachBooks/Sphinx-Thebe
-ipympl
