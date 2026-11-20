@@ -195,6 +195,8 @@ div.cell_output,
     padding: 15px 20px !important;
     margin-top: 15px !important;
     margin-bottom: 25px !important;
+    overflow-y: auto !important;
+    max-height: 600px !important;
 }
 div.cell_output pre,
 .output_text,
