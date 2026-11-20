@@ -1,21 +1,26 @@
 /* Шрифты */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
 
-/* Цветовая палитра */
+/* Переменные */
 :root,
 html[data-theme="light"], html[data-theme="dark"],
 html[data-mode="light"], html[data-mode="dark"] {
     --bg-color: #1c1c1c;
-    --bg-soft: #232323;
-    --text-color: #d4d4d4;
+    --text-color: #e0e4e8;
     --heading-color: #f0f0f0;
     --accent-color: #c9a961;
     --border-color: #333333;
-    --code-bg: #232323;
+    
+    /* Грязно-голубая палитра для светлых участков */
+    --blue-odd: #242e38;
+    --blue-even: #2a3542;
+    --blue-header: #1e2730;
+    --blue-output: #222c36;
+    --blue-code: #1a2026;
 
     --pst-color-background: #1c1c1c;
-    --pst-color-on-background: #d4d4d4;
-    --pst-color-text-base: #d4d4d4;
+    --pst-color-on-background: #e0e4e8;
+    --pst-color-text-base: #e0e4e8;
     --pst-color-text-muted: #b8b8b8;
     --pst-color-inline-code: #e0d6b8;
     --pst-color-border: #333333;
@@ -23,10 +28,10 @@ html[data-mode="light"], html[data-mode="dark"] {
     --pst-color-secondary: #c9a961;
     --pst-color-link: #c9a961;
     --pst-color-link-hover: #f0c040;
-    --pst-color-panel-background: #232323;
-    --pst-color-panel-background-hover: #2a2a2a;
-    --pst-color-surface: #232323;
-    --pst-color-on-surface: #d4d4d4;
+    --pst-color-panel-background: #222c36;
+    --pst-color-panel-background-hover: #2a3542;
+    --pst-color-surface: #222c36;
+    --pst-color-on-surface: #e0e4e8;
     --pst-color-muted: #888888;
     --pst-color-success: #a3be8c;
     --pst-color-warning: #c9a961;
@@ -91,14 +96,12 @@ strong {
     font-weight: 600; 
 }
 
-/* Сайдбар — заголовок и меню */
+/* Сайдбар */
 .bd-sidebar, .bd-sidebar-primary, .bd-sidebar-secondary {
     background-color: #141414 !important;
     border-right: 1px solid var(--border-color) !important;
     font-family: 'Lora', serif;
 }
-
-/* Заголовок сайдбара "Лабораторная работа 01" */
 .bd-sidebar-header,
 .bd-sidebar .navbar-brand,
 .bd-sidebar .site-logo,
@@ -106,8 +109,6 @@ strong {
 .sidebar-header a {
     color: var(--accent-color) !important;
 }
-
-/* Пункты меню */
 .bd-sidebar .nav-link,
 .bd-sidebar .nav-item > a,
 nav.bd-links .nav-link {
@@ -128,7 +129,6 @@ nav.bd-links .active > a {
     border-left: 3px solid var(--accent-color);
     background-color: rgba(201, 169, 97, 0.08) !important;
 }
-
 .navbar-brand, .site-logo, .bd-header .navbar-brand {
     color: var(--accent-color) !important;
 }
@@ -138,7 +138,7 @@ nav.bd-links .active > a {
     color: #d4d4d4 !important;
 }
 
-/* Блоки кода */
+/* Блоки кода (грязно-голубой фон) */
 div.cell_input,
 div.input,
 div.input_area,
@@ -148,7 +148,7 @@ div.highlight,
 .highlight,
 pre,
 code {
-    background-color: #1f1f1f !important;
+    background-color: var(--blue-code) !important;
     color: #e0d6b8 !important;
     font-family: 'JetBrains Mono', monospace !important;
     border: 1px solid var(--border-color) !important;
@@ -165,7 +165,7 @@ pre {
     color: #e0d6b8 !important;
 }
 p code, li code {
-    background-color: #232323 !important;
+    background-color: var(--blue-code) !important;
     color: var(--accent-color) !important;
     padding: 2px 6px !important;
     border: 1px solid var(--border-color) !important;
@@ -180,14 +180,14 @@ p code, li code {
 .highlight .mi, .highlight .mf { color: #d8a0a0 !important; }
 .highlight .o, .highlight .ow { color: #b8b8b8 !important; }
 
-/* Блоки вывода */
+/* Блоки вывода (грязно-голубой фон) */
 div.cell_output,
 .output_area,
 .output_subarea,
 .output_text,
 .jp-RenderedText,
 .rendered_html {
-    background-color: var(--code-bg) !important;
+    background-color: var(--blue-output) !important;
     color: var(--text-color) !important;
     border: 1px solid var(--border-color) !important;
     border-left: 3px solid var(--accent-color) !important;
@@ -208,7 +208,7 @@ div.cell_output pre,
     padding: 0 !important;
 }
 
-/* Таблицы — полное переопределение */
+/* Таблицы: контейнеры */
 div.cell_output .output_subarea,
 div.cell_output .rendered_html,
 div.cell_output .colab-df-container {
@@ -220,7 +220,7 @@ div.cell_output .colab-df-container {
     width: 100% !important;
 }
 
-/* Сама таблица — растягиваем на всю ширину */
+/* Сама таблица */
 div.cell_output table,
 table.dataframe,
 .dataframe,
@@ -240,13 +240,13 @@ table.dataframe,
     border-bottom: 2px solid var(--accent-color) !important;
 }
 
-/* Заголовки таблицы — перебиваем inline стили pandas */
+/* Шапка таблицы (темный грязно-голубой) */
 div.cell_output table th,
 table.dataframe th,
 .dataframe th,
 table.dataframe thead th,
 .dataframe thead th {
-    background-color: #232323 !important;
+    background-color: var(--blue-header) !important;
     color: var(--accent-color) !important;
     font-family: 'Playfair Display', serif !important;
     font-weight: 700 !important;
@@ -255,19 +255,19 @@ table.dataframe thead th,
     letter-spacing: 1px !important;
     border: none !important;
     border-bottom: 1px solid var(--accent-color) !important;
-    padding: 10px 14px !important;
+    padding: 12px 14px !important;
     text-align: left !important;
     vertical-align: middle !important;
 }
 
-/* Ячейки данных */
+/* Ячейки данных (зебра: грязно-голубой) */
 div.cell_output table td,
 table.dataframe td,
 .dataframe td {
-    background-color: transparent !important;
+    background-color: var(--blue-odd) !important;
     color: var(--text-color) !important;
     border: none !important;
-    padding: 8px 14px !important;
+    padding: 10px 14px !important;
     text-align: left !important;
     vertical-align: middle !important;
 }
@@ -276,33 +276,33 @@ table.dataframe td,
 div.cell_output table tbody th,
 table.dataframe tbody th,
 .dataframe tbody th {
-    background-color: transparent !important;
+    background-color: var(--blue-odd) !important;
     color: var(--accent-color) !important;
     font-weight: 600 !important;
     border: none !important;
-    padding: 8px 14px !important;
+    padding: 10px 14px !important;
     text-align: right !important;
 }
 
-/* Зебра */
+/* Зебра: четные строки (чуть светлее грязно-голубой) */
 div.cell_output table tbody tr:nth-child(even) td,
 div.cell_output table tbody tr:nth-child(even) th,
 table.dataframe tbody tr:nth-child(even) td,
 table.dataframe tbody tr:nth-child(even) th {
-    background-color: rgba(255, 255, 255, 0.03) !important;
+    background-color: var(--blue-even) !important;
 }
 
-/* Hover */
+/* Hover на строке */
 div.cell_output table tbody tr:hover td,
 table.dataframe tbody tr:hover td {
-    background-color: rgba(201, 169, 97, 0.08) !important;
+    background-color: rgba(201, 169, 97, 0.12) !important;
 }
 
 /* Кнопки Colab */
 .colab-df-container button,
 .colab-df-convert,
 .jupyter-button {
-    background-color: #232323 !important;
+    background-color: var(--blue-header) !important;
     color: var(--text-color) !important;
     border: 1px solid var(--border-color) !important;
     border-radius: 4px !important;
