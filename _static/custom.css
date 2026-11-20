@@ -1,151 +1,286 @@
-/* ===== Общий фон и шрифты ===== */
-body {
-    background-color: #2e3440 !important;   /* мягкий тёмно-серо-синий (Nord) */
-    color: #d8dee9 !important;
-    font-family: 'Georgia', serif;
+/* === ПОДКЛЮЧЕНИЕ АКАДЕМИЧЕСКИХ ШРИФТОВ === */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* === ОБЩИЕ ПЕРЕМЕННЫЕ И ФОН === */
+:root {
+    --bg-color: #1c1c1c;              /* чуть светлее, чем было */
+    --bg-soft: #232323;               /* фон блоков кода/вывода */
+    --text-color: #d4d4d4;
+    --heading-color: #f0f0f0;
+    --accent-color: #c9a961;          /* Благородное матовое золото */
+    --border-color: #333333;
+    --code-bg: #232323;
 }
 
+body, .bd-article, .bd-content {
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+    font-family: 'Lora', 'Georgia', serif !important;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    /* Тонкая "миллиметровка" + мягкое золотое свечение сверху */
+    background-image:
+        radial-gradient(circle at 50% 0%, rgba(201, 169, 97, 0.05) 0%, transparent 65%),
+        linear-gradient(rgba(255,255,255,0.022) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.022) 1px, transparent 1px);
+    background-size: auto, 28px 28px, 28px 28px;
+    background-attachment: fixed;
+}
+
+/* === ЗАГОЛОВКИ === */
 h1, h2, h3, h4 {
-    font-family: 'Arial Black', Impact, sans-serif;
-    color: #eceff4 !important;
+    font-family: 'Playfair Display', 'Times New Roman', serif !important;
+    color: var(--heading-color) !important;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-top: 1.5em;
+    margin-bottom: 0.6em;
 }
 
-a { color: #88c0d0; }
-a:hover { color: #8fbcbb; }
-
-/* ===== Боковая панель ===== */
-.bd-sidebar, .bd-sidebar-primary {
-    background-color: #3b4252 !important;
-    border-right: 1px solid #4c566a !important;
-    color: #d8dee9 !important;
+h1 {
+    font-size: 2.4rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+    display: inline-block;
 }
 
-/* ===== Основной контент ===== */
-article, .bd-article, .bd-content {
-    color: #d8dee9 !important;
-    background-color: #2e3440 !important;
+h2 {
+    font-size: 1.8rem;
+    color: var(--accent-color) !important;
+    font-style: italic;
 }
 
-/* ===== Блоки кода (input cells) ===== */
-div.cell_input, .jp-InputArea, .input {
-    background-color: #3b4252 !important;
-    border: 1px solid #4c566a !important;
-    border-left: 4px solid #88c0d0 !important;
+h3 {
+    font-size: 1.4rem;
+    border-left: 3px solid var(--accent-color);
+    padding-left: 12px;
+}
+
+/* === ССЫЛКИ И АКЦЕНТЫ === */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(201, 169, 97, 0.4);
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+strong {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* === БОКОВЫЕ ПАНЕЛИ И МЕНЮ === */
+.bd-sidebar, .bd-sidebar-primary, .bd-sidebar-secondary {
+    background-color: #141414 !important;
+    border-right: 1px solid var(--border-color) !important;
+    font-family: 'Lora', serif;
+}
+
+.bd-sidebar .nav-link {
+    color: #aaaaaa !important;
+    font-size: 0.95rem;
+}
+
+.bd-sidebar .nav-link.active {
+    color: var(--accent-color) !important;
+    font-weight: 600;
+    border-left: 3px solid var(--accent-color);
+    background-color: rgba(201, 169, 97, 0.05);
+}
+
+/* ============================================================
+   === ФИКС: БЛОКИ ВЫВОДА (раньше были белыми) ===
+   ============================================================ */
+div.cell_output,
+.output_area,
+.output_subarea,
+.output_text,
+.jp-RenderedText,
+.jp-RenderedHTMLCommon,
+.rendered_html,
+div.output_area pre,
+div.output_wrapper {
+    background-color: var(--code-bg) !important;
+    color: var(--text-color) !important;
+    border: 1px solid var(--border-color) !important;
+    border-left: 3px solid var(--accent-color) !important;
     border-radius: 6px !important;
-    padding: 12px !important;
-    margin: 10px 0 !important;
+    padding: 15px 20px !important;
+    margin-top: 15px !important;
+    margin-bottom: 25px !important;
 }
 
-div.cell_input pre, .jp-InputArea pre {
+/* Убираем белый фон у внутренних обёрток */
+div.cell_output .output_subarea,
+.output_area .output_text,
+.rendered_html {
+    background: transparent !important;
+    color: var(--text-color) !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Текст print() / stdout */
+div.cell_output pre,
+.output_text,
+.jp-RenderedText pre {
+    font-family: 'JetBrains Mono', monospace !important;
+    font-size: 0.9rem !important;
+    line-height: 1.55 !important;
     background-color: transparent !important;
-    color: #eceff4 !important;
-    font-family: 'Courier New', monospace !important;
-    font-size: 0.95em !important;
-}
-
-/* ===== Блоки вывода (output cells) ===== */
-div.cell_output, .jp-OutputArea {
-    background-color: #242933 !important;   /* чуть темнее, чем код */
-    border: 1px solid #4c566a !important;
-    border-left: 4px solid #a3be8c !important;  /* зелёная полоска — вывод */
-    border-radius: 6px !important;
-    padding: 15px !important;
-    margin: 10px 0 20px 0 !important;
-}
-
-div.cell_output pre {
-    font-family: 'Courier New', monospace !important;
-    font-size: 1em !important;
-    line-height: 1.6 !important;
-    color: #d8dee9 !important;
-    background-color: transparent !important;
+    color: var(--text-color) !important;
     border: none !important;
 }
 
-/* ===== Таблицы ===== */
-div.cell_output table {
-    background-color: #3b4252 !important;
-    color: #d8dee9 !important;
-    border-collapse: collapse;
-    width: 100%;
-    display: block;
-    overflow-x: auto;
-    max-height: 500px;
-    overflow-y: auto;
-    font-family: 'Courier New', monospace;
-    border: 1px solid #4c566a !important;
-    border-radius: 4px;
+/* ============================================================
+   === ФИКС: БЛОКИ КОДА (input cells / highlight) ===
+   ============================================================ */
+div.highlight,
+.highlight,
+div.input_area,
+.jp-InputArea-editor,
+.jp-CodeCell .jp-InputArea pre,
+pre,
+code {
+    background-color: #1f1f1f !important;
+    color: #e0d6b8 !important;
+    font-family: 'JetBrains Mono', monospace !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 6px !important;
 }
 
-div.cell_output table tbody tr {
-    display: table-row !important;
+div.highlight pre,
+.highlight pre {
+    background-color: transparent !important;
+    padding: 14px 16px !important;
+    border: none !important;
 }
 
+/* Токены подсветки синтаксиса (Pygments) — чтобы не были чёрными */
+.highlight .k, .highlight .kd, .highlight .kn { color: #c9a961 !important; }  /* keywords */
+.highlight .s, .highlight .s1, .highlight .s2 { color: #a3be8c !important; }  /* strings */
+.highlight .c, .highlight .c1, .highlight .cm { color: #7a7a7a !important; font-style: italic; }  /* comments */
+.highlight .nf, .highlight .nc { color: #e8e8e8 !important; }  /* functions/classes */
+.highlight .mi, .highlight .mf { color: #d8a0a0 !important; }  /* numbers */
+
+/* ============================================================
+   === ФИКС: ТАБЛИЦЫ (APA-стиль, перебиваем inline pandas) ===
+   ============================================================ */
+div.cell_output table,
+.dataframe,
+table.dataframe,
+.rendered_html table,
+.jp-RenderedHTMLCommon table {
+    background-color: transparent !important;
+    color: var(--text-color) !important;
+    border-collapse: collapse !important;
+    width: 100% !important;
+    font-family: 'JetBrains Mono', monospace !important;
+    font-size: 0.9rem !important;
+    margin: 1.5rem 0 !important;
+    border-top: 2px solid var(--accent-color) !important;
+    border-bottom: 2px solid var(--accent-color) !important;
+}
+
+/* Ячейки заголовков — перебиваем inline <style scoped> от pandas */
 div.cell_output table th,
-div.cell_output table td {
-    border: 1px solid #4c566a !important;
-    padding: 8px 12px;
-}
-
-div.cell_output table th {
-    background-color: #434c5e !important;
-    color: #88c0d0 !important;
-    font-family: 'Arial Black', sans-serif;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
-div.cell_output table tbody tr:nth-child(even) {
-    background-color: #3b4252 !important;
-}
-
-div.cell_output table tbody tr:nth-child(odd) {
-    background-color: #434c5e !important;
-}
-
-/* ===== Markdown-ячейки ===== */
-div.cell_markdown, .jp-MarkdownOutput {
+.dataframe thead th,
+.dataframe th,
+table.dataframe th {
     background-color: transparent !important;
-    color: #d8dee9 !important;
-    padding: 8px 0 !important;
+    color: #ffffff !important;
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    font-size: 0.85rem !important;
+    letter-spacing: 1px !important;
+    border-bottom: 1px solid var(--accent-color) !important;
+    border-top: none !important;
+    padding: 10px 8px !important;
+    text-align: left !important;
 }
 
-/* ===== Виджеты ===== */
-.jupyter-widgets, .widget-container, .widget-subarea {
+/* Ячейки данных */
+div.cell_output table td,
+.dataframe tbody td,
+.dataframe td,
+table.dataframe td {
     background-color: transparent !important;
-    color: #d8dee9 !important;
+    color: var(--text-color) !important;
+    border: none !important;
+    padding: 8px !important;
+    text-align: left !important;
 }
 
-/* ===== Скрыть нижние кнопки навигации ===== */
+/* Индексный столбец (левый <th>) */
+div.cell_output table tbody th,
+.dataframe tbody th {
+    background-color: transparent !important;
+    color: var(--accent-color) !important;
+    font-weight: 600 !important;
+    border: none !important;
+    padding: 8px !important;
+    text-align: right !important;
+}
+
+/* Зебра-эффект */
+div.cell_output table tbody tr:nth-child(even) td,
+div.cell_output table tbody tr:nth-child(even) th,
+.dataframe tbody tr:nth-child(even) td,
+.dataframe tbody tr:nth-child(even) th {
+    background-color: rgba(255, 255, 255, 0.025) !important;
+}
+
+/* Hover на строке */
+div.cell_output table tbody tr:hover td,
+.dataframe tbody tr:hover td {
+    background-color: rgba(201, 169, 97, 0.06) !important;
+}
+
+/* ============================================================
+   === Кнопки Colab (Convert to interactive table и т.п.) ===
+   ============================================================ */
+.colab-df-container button,
+.colab-df-convert,
+.jupyter-button {
+    background-color: #232323 !important;
+    color: var(--text-color) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 4px !important;
+}
+
+/* === ЦИТАТЫ И ПРИМЕЧАНИЯ === */
+blockquote {
+    border-left: 4px solid var(--accent-color);
+    background-color: rgba(201, 169, 97, 0.05);
+    padding: 10px 20px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #cccccc;
+    border-radius: 0 4px 4px 0;
+}
+
+/* === ГРАФИКИ === */
+div.cell_output img {
+    border: 1px solid #333;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    margin: 10px 0;
+    background-color: #1a1a1a;
+}
+
+/* === Скрыть нижние кнопки навигации === */
 .prev-next-footer, .prev-next-area {
     display: none !important;
 }
 
-/* ===== Скрыть многоточия в таблицах Pandas ===== */
-div.cell_output table tbody tr:has(td:contains("...")) {
-    display: none !important;
-}
-
-/* ===== Акцентные цвета для заголовков ===== */
-h1 { color: #88c0d0 !important; border-bottom: 2px solid #4c566a; padding-bottom: 8px; }
-h2 { color: #81a1c1 !important; }
-h3 { color: #a3be8c !important; }
-
-/* ===== Код внутри markdown (inline code) ===== */
-code {
-    background-color: #3b4252 !important;
-    color: #b48ead !important;
-    padding: 2px 6px !important;
-    border-radius: 4px !important;
-    font-size: 0.9em !important;
-}
-
-/* ===== Блоки <pre> вне ячеек ===== */
-pre {
-    background-color: #3b4252 !important;
-    color: #eceff4 !important;
-    border: 1px solid #4c566a !important;
-    border-radius: 6px !important;
-    padding: 10px !important;
+/* === Формулы MathJax — чтобы не были чёрными === */
+.MathJax, mjx-container {
+    color: var(--text-color) !important;
 }
