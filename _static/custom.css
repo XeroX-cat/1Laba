@@ -1,169 +1,151 @@
-/* === ПОДКЛЮЧЕНИЕ АКАДЕМИЧЕСКИХ ШРИФТОВ === */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
-
-/* === ОБЩИЕ ПЕРЕМЕННЫЕ И ФОН === */
-:root {
-    --bg-color: #151515;
-    --text-color: #d4d4d4;
-    --heading-color: #f0f0f0;
-    --accent-color: #c9a961; /* Благородное матовое золото */
-    --border-color: #333333;
-    --code-bg: #1e1e1e;
+/* ===== Общий фон и шрифты ===== */
+body {
+    background-color: #2e3440 !important;   /* мягкий тёмно-серо-синий (Nord) */
+    color: #d8dee9 !important;
+    font-family: 'Georgia', serif;
 }
 
-body, .bd-article, .bd-content {
-    background-color: var(--bg-color) !important;
-    color: var(--text-color) !important;
-    font-family: 'Lora', 'Georgia', serif !important;
-    font-size: 1.05rem;
-    line-height: 1.75; /* Увеличиваем межстрочный интервал для легкости чтения */
-    /* Легкая текстура "шума" или бумаги, чтобы фон не был плоским */
-    background-image: radial-gradient(circle at 50% 0%, rgba(201, 169, 97, 0.03) 0%, transparent 60%), 
-                      url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-64c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm58-20c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zM56 52c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zM88 16c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4z' fill='%23ffffff' fill-opacity='0.015' fill-rule='evenodd'/%3E%3C/svg%3E");
-}
-
-/* === ЗАГОЛОВКИ === */
 h1, h2, h3, h4 {
-    font-family: 'Playfair Display', 'Times New Roman', serif !important;
-    color: var(--heading-color) !important;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    margin-top: 1.5em;
-    margin-bottom: 0.6em;
+    font-family: 'Arial Black', Impact, sans-serif;
+    color: #eceff4 !important;
 }
 
-h1 {
-    font-size: 2.4rem;
-    border-bottom: 2px solid var(--accent-color);
-    padding-bottom: 10px;
-    display: inline-block;
+a { color: #88c0d0; }
+a:hover { color: #8fbcbb; }
+
+/* ===== Боковая панель ===== */
+.bd-sidebar, .bd-sidebar-primary {
+    background-color: #3b4252 !important;
+    border-right: 1px solid #4c566a !important;
+    color: #d8dee9 !important;
 }
 
-h2 {
-    font-size: 1.8rem;
-    color: var(--accent-color) !important;
-    font-style: italic;
+/* ===== Основной контент ===== */
+article, .bd-article, .bd-content {
+    color: #d8dee9 !important;
+    background-color: #2e3440 !important;
 }
 
-h3 {
-    font-size: 1.4rem;
-    border-left: 3px solid var(--accent-color);
-    padding-left: 12px;
+/* ===== Блоки кода (input cells) ===== */
+div.cell_input, .jp-InputArea, .input {
+    background-color: #3b4252 !important;
+    border: 1px solid #4c566a !important;
+    border-left: 4px solid #88c0d0 !important;
+    border-radius: 6px !important;
+    padding: 12px !important;
+    margin: 10px 0 !important;
 }
 
-/* === ССЫЛКИ И АКЦЕНТЫ === */
-a {
-    color: var(--accent-color);
-    text-decoration: none;
-    border-bottom: 1px dashed rgba(201, 169, 97, 0.4);
-    transition: all 0.2s ease;
-}
-
-a:hover {
-    color: #fff;
-    border-bottom: 1px solid #fff;
-}
-
-/* Выделение жирного текста (например, терминов) */
-strong {
-    color: #ffffff;
-    font-weight: 600;
-}
-
-/* === БОКОВЫЕ ПАНЕЛИ И МЕНЮ === */
-.bd-sidebar, .bd-sidebar-primary, .bd-sidebar-secondary {
-    background-color: #111111 !important;
-    border-right: 1px solid var(--border-color) !important;
-    font-family: 'Lora', serif;
-}
-
-.bd-sidebar .nav-link {
-    color: #aaaaaa !important;
-    font-size: 0.95rem;
-}
-
-.bd-sidebar .nav-link.active {
-    color: var(--accent-color) !important;
-    font-weight: 600;
-    border-left: 3px solid var(--accent-color);
-    background-color: rgba(201, 169, 97, 0.05);
-}
-
-/* === ТАБЛИЦЫ (Академический стиль APA) === */
-div.cell_output table {
+div.cell_input pre, .jp-InputArea pre {
     background-color: transparent !important;
-    color: var(--text-color) !important;
-    border-collapse: collapse;
-    width: 100%;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.9rem;
-    margin: 1.5rem 0;
-    border-top: 2px solid var(--accent-color); /* Линия сверху */
-    border-bottom: 2px solid var(--accent-color); /* Линия снизу */
+    color: #eceff4 !important;
+    font-family: 'Courier New', monospace !important;
+    font-size: 0.95em !important;
 }
 
-div.cell_output table th {
-    background-color: transparent !important;
-    color: #ffffff !important;
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 0.85rem;
-    letter-spacing: 1px;
-    border-bottom: 1px solid var(--accent-color); /* Линия под заголовком */
-    border-top: none;
-    padding: 10px 8px;
-    text-align: left;
-}
-
-div.cell_output table td {
-    border: none !important; /* Убираем вертикальные и лишние горизонтальные линии */
-    padding: 8px;
-}
-
-div.cell_output table tbody tr:nth-child(even) {
-    background-color: rgba(255, 255, 255, 0.02); /* Легкий зебра-эффект */
-}
-
-/* === БЛОКИ КОДА И ВЫВОДЫ === */
-div.cell_output {
-    background-color: rgba(255, 255, 255, 0.02) !important;
-    border-left: 3px solid var(--accent-color);
-    padding: 15px 20px;
-    margin-top: 15px;
-    margin-bottom: 25px;
-    border-radius: 4px;
+/* ===== Блоки вывода (output cells) ===== */
+div.cell_output, .jp-OutputArea {
+    background-color: #242933 !important;   /* чуть темнее, чем код */
+    border: 1px solid #4c566a !important;
+    border-left: 4px solid #a3be8c !important;  /* зелёная полоска — вывод */
+    border-radius: 6px !important;
+    padding: 15px !important;
+    margin: 10px 0 20px 0 !important;
 }
 
 div.cell_output pre {
-    font-family: 'JetBrains Mono', monospace !important;
-    font-size: 0.9rem !important;
-    line-height: 1.5 !important;
+    font-family: 'Courier New', monospace !important;
+    font-size: 1em !important;
+    line-height: 1.6 !important;
+    color: #d8dee9 !important;
     background-color: transparent !important;
+    border: none !important;
 }
 
-/* Скрываем нижние кнопки навигации */
+/* ===== Таблицы ===== */
+div.cell_output table {
+    background-color: #3b4252 !important;
+    color: #d8dee9 !important;
+    border-collapse: collapse;
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+    max-height: 500px;
+    overflow-y: auto;
+    font-family: 'Courier New', monospace;
+    border: 1px solid #4c566a !important;
+    border-radius: 4px;
+}
+
+div.cell_output table tbody tr {
+    display: table-row !important;
+}
+
+div.cell_output table th,
+div.cell_output table td {
+    border: 1px solid #4c566a !important;
+    padding: 8px 12px;
+}
+
+div.cell_output table th {
+    background-color: #434c5e !important;
+    color: #88c0d0 !important;
+    font-family: 'Arial Black', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+div.cell_output table tbody tr:nth-child(even) {
+    background-color: #3b4252 !important;
+}
+
+div.cell_output table tbody tr:nth-child(odd) {
+    background-color: #434c5e !important;
+}
+
+/* ===== Markdown-ячейки ===== */
+div.cell_markdown, .jp-MarkdownOutput {
+    background-color: transparent !important;
+    color: #d8dee9 !important;
+    padding: 8px 0 !important;
+}
+
+/* ===== Виджеты ===== */
+.jupyter-widgets, .widget-container, .widget-subarea {
+    background-color: transparent !important;
+    color: #d8dee9 !important;
+}
+
+/* ===== Скрыть нижние кнопки навигации ===== */
 .prev-next-footer, .prev-next-area {
     display: none !important;
 }
 
-/* === ЦИТАТЫ И ПРИМЕЧАНИЯ (Blockquotes) === */
-blockquote {
-    border-left: 4px solid var(--accent-color);
-    background-color: rgba(201, 169, 97, 0.05);
-    padding: 10px 20px;
-    margin: 20px 0;
-    font-style: italic;
-    color: #cccccc;
-    border-radius: 0 4px 4px 0;
+/* ===== Скрыть многоточия в таблицах Pandas ===== */
+div.cell_output table tbody tr:has(td:contains("...")) {
+    display: none !important;
 }
 
-/* === ГРАФИКИ (Matplotlib/Seaborn) === */
-/* Добавляем легкую тень и рамку, чтобы графики выделялись на темном фоне */
-div.cell_output img {
-    border: 1px solid #333;
-    border-radius: 4px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-    margin: 10px 0;
-    background-color: #1a1a1a; /* Фон под графиками, если они прозрачные */
+/* ===== Акцентные цвета для заголовков ===== */
+h1 { color: #88c0d0 !important; border-bottom: 2px solid #4c566a; padding-bottom: 8px; }
+h2 { color: #81a1c1 !important; }
+h3 { color: #a3be8c !important; }
+
+/* ===== Код внутри markdown (inline code) ===== */
+code {
+    background-color: #3b4252 !important;
+    color: #b48ead !important;
+    padding: 2px 6px !important;
+    border-radius: 4px !important;
+    font-size: 0.9em !important;
+}
+
+/* ===== Блоки <pre> вне ячеек ===== */
+pre {
+    background-color: #3b4252 !important;
+    color: #eceff4 !important;
+    border: 1px solid #4c566a !important;
+    border-radius: 6px !important;
+    padding: 10px !important;
 }
