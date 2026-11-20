@@ -239,6 +239,7 @@ table.dataframe,
     border-top: 2px solid var(--accent-color) !important;
     border-bottom: 2px solid var(--accent-color) !important;
     overflow-y: auto !important;
+    max-height: 500px !important;
 }
 
 /* Шапка таблицы (темный грязно-голубой) */
