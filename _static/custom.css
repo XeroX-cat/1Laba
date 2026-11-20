@@ -388,3 +388,61 @@ details summary {
     color: #d4d4d4 !important;
     padding: 8px 12px;
 }
+/* Лейблы и значения ползунков ipywidgets */
+.widget-label,
+.widget-label .widget-label-text,
+.widget-readout,
+.widget-slider .widget-label,
+.jupyter-widgets .widget-label,
+.jupyter-widgets .widget-readout {
+    color: #e0e4e8 !important;
+    font-family: 'JetBrains Mono', monospace !important;
+    font-size: 0.9rem !important;
+}
+
+/* Сам контейнер виджета */
+.jupyter-widgets,
+.widget-container,
+.widget-subarea,
+.output_widget,
+.widget-area {
+    background-color: transparent !important;
+    color: #e0e4e8 !important;
+}
+
+/* Ползунок (track) */
+.widget-slider .ui-slider,
+.widget-slider .slider-track,
+.slider-track {
+    background-color: #3a4048 !important;
+}
+
+/* Кнопка ползунка (thumb) — делаем её золотой в тон теме */
+.widget-slider .ui-slider-handle,
+.slider-handle {
+    background-color: #c9a961 !important;
+    border-color: #c9a961 !important;
+}
+
+/* Кнопка "Show code cell source" (свёрнутый блок) */
+details,
+details.cell_details,
+details.jp-Details {
+    background-color: #242e38 !important;
+    border: 1px solid #4a4d55 !important;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+details summary {
+    background-color: #2a3542 !important;
+    color: #e0e4e8 !important;
+    padding: 10px 14px;
+    font-family: 'Lora', serif;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+details summary:hover {
+    background-color: #303b48 !important;
+}
