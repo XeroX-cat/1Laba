@@ -341,3 +341,50 @@ div.cell_output img {
 .prev-next-footer, .prev-next-area { 
     display: none !important; 
 }
+/* Фикс белых полос от скрытых ячеек ввода */
+div.cell_input,
+div.input,
+div.input_area,
+div.highlight,
+.highlight,
+div.cell,
+.cell,
+.jp-InputArea,
+.jp-InputArea-editor,
+.jp-CodeCell .jp-InputArea,
+.jp-CodeCell .jp-InputArea-editor,
+.jp-CodeCell .jp-Cell-inputWrapper,
+.jp-Cell-inputWrapper,
+.jp-InputCollapser,
+.jp-Collapser,
+div.jp-InputArea,
+div.jp-Cell-inputWrapper {
+    background-color: #242e38 !important;
+    border-color: #4a4d55 !important;
+}
+
+div.cell_input pre,
+div.input pre,
+div.highlight pre,
+.highlight pre,
+.jp-InputArea pre,
+.jp-InputArea-editor pre {
+    background-color: transparent !important;
+    color: #e0d6b8 !important;
+}
+
+/* Скрываем пустые свёрнутые блоки "Show code cell source" если они белые */
+details.jp-Details,
+details.cell_details,
+details {
+    background-color: #242e38 !important;
+    border: 1px solid #4a4d55 !important;
+    border-radius: 6px;
+    color: #d4d4d4 !important;
+}
+
+details summary {
+    background-color: #2a3542 !important;
+    color: #d4d4d4 !important;
+    padding: 8px 12px;
+}
