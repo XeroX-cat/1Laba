@@ -1,7 +1,7 @@
 /* Шрифты */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
 
-/* Цветовая палитра и переменные */
+/* Цветовая палитра */
 :root,
 html[data-theme="light"], html[data-theme="dark"],
 html[data-mode="light"], html[data-mode="dark"] {
@@ -13,7 +13,6 @@ html[data-mode="light"], html[data-mode="dark"] {
     --border-color: #333333;
     --code-bg: #232323;
 
-    /* Переопределяем переменные темы, чтобы всё оставалось тёмным */
     --pst-color-background: #1c1c1c;
     --pst-color-on-background: #d4d4d4;
     --pst-color-text-base: #d4d4d4;
@@ -35,7 +34,7 @@ html[data-mode="light"], html[data-mode="dark"] {
     --pst-color-info: #88c0d0;
 }
 
-/* Основной фон с легкой сеткой */
+/* Основной фон */
 body, .bd-article, .bd-content, .article-container {
     background-color: var(--bg-color) !important;
     color: var(--text-color) !important;
@@ -76,7 +75,7 @@ h3 {
     padding-left: 12px;
 }
 
-/* Ссылки и акценты */
+/* Ссылки */
 a {
     color: var(--accent-color) !important;
     text-decoration: none;
@@ -92,12 +91,23 @@ strong {
     font-weight: 600; 
 }
 
-/* Боковое меню (исправляем синий цвет на золотой) */
+/* Сайдбар — заголовок и меню */
 .bd-sidebar, .bd-sidebar-primary, .bd-sidebar-secondary {
     background-color: #141414 !important;
     border-right: 1px solid var(--border-color) !important;
     font-family: 'Lora', serif;
 }
+
+/* Заголовок сайдбара "Лабораторная работа 01" */
+.bd-sidebar-header,
+.bd-sidebar .navbar-brand,
+.bd-sidebar .site-logo,
+.sidebar-header h2,
+.sidebar-header a {
+    color: var(--accent-color) !important;
+}
+
+/* Пункты меню */
 .bd-sidebar .nav-link,
 .bd-sidebar .nav-item > a,
 nav.bd-links .nav-link {
@@ -118,6 +128,7 @@ nav.bd-links .active > a {
     border-left: 3px solid var(--accent-color);
     background-color: rgba(201, 169, 97, 0.08) !important;
 }
+
 .navbar-brand, .site-logo, .bd-header .navbar-brand {
     color: var(--accent-color) !important;
 }
@@ -127,7 +138,7 @@ nav.bd-links .active > a {
     color: #d4d4d4 !important;
 }
 
-/* Блоки кода (делаем темными) */
+/* Блоки кода */
 div.cell_input,
 div.input,
 div.input_area,
@@ -169,7 +180,7 @@ p code, li code {
 .highlight .mi, .highlight .mf { color: #d8a0a0 !important; }
 .highlight .o, .highlight .ow { color: #b8b8b8 !important; }
 
-/* Блоки вывода (stdout / print) */
+/* Блоки вывода */
 div.cell_output,
 .output_area,
 .output_subarea,
@@ -197,7 +208,7 @@ div.cell_output pre,
     padding: 0 !important;
 }
 
-/* Таблицы (исправляем съезд и белый фон pandas) */
+/* Таблицы — полное переопределение */
 div.cell_output .output_subarea,
 div.cell_output .rendered_html,
 div.cell_output .colab-df-container {
@@ -206,16 +217,19 @@ div.cell_output .colab-df-container {
     border: none !important;
     padding: 0 !important;
     margin: 0 !important;
+    width: 100% !important;
 }
 
+/* Сама таблица — растягиваем на всю ширину */
 div.cell_output table,
 table.dataframe,
 .dataframe,
 .rendered_html table {
     display: table !important;
-    width: auto !important;
+    width: 100% !important;
     min-width: 100% !important;
-    max-height: none !important;
+    max-width: 100% !important;
+    table-layout: auto !important;
     background-color: transparent !important;
     color: var(--text-color) !important;
     border-collapse: collapse !important;
@@ -226,11 +240,12 @@ table.dataframe,
     border-bottom: 2px solid var(--accent-color) !important;
 }
 
+/* Заголовки таблицы — перебиваем inline стили pandas */
 div.cell_output table th,
-.dataframe thead th,
-.dataframe th,
 table.dataframe th,
-table.dataframe thead th {
+.dataframe th,
+table.dataframe thead th,
+.dataframe thead th {
     background-color: #232323 !important;
     color: var(--accent-color) !important;
     font-family: 'Playfair Display', serif !important;
@@ -242,12 +257,13 @@ table.dataframe thead th {
     border-bottom: 1px solid var(--accent-color) !important;
     padding: 10px 14px !important;
     text-align: left !important;
+    vertical-align: middle !important;
 }
 
+/* Ячейки данных */
 div.cell_output table td,
-.dataframe tbody td,
-.dataframe td,
-table.dataframe td {
+table.dataframe td,
+.dataframe td {
     background-color: transparent !important;
     color: var(--text-color) !important;
     border: none !important;
@@ -256,7 +272,9 @@ table.dataframe td {
     vertical-align: middle !important;
 }
 
+/* Индексный столбец */
 div.cell_output table tbody th,
+table.dataframe tbody th,
 .dataframe tbody th {
     background-color: transparent !important;
     color: var(--accent-color) !important;
@@ -266,15 +284,17 @@ div.cell_output table tbody th,
     text-align: right !important;
 }
 
+/* Зебра */
 div.cell_output table tbody tr:nth-child(even) td,
 div.cell_output table tbody tr:nth-child(even) th,
-.dataframe tbody tr:nth-child(even) td,
-.dataframe tbody tr:nth-child(even) th {
+table.dataframe tbody tr:nth-child(even) td,
+table.dataframe tbody tr:nth-child(even) th {
     background-color: rgba(255, 255, 255, 0.03) !important;
 }
 
+/* Hover */
 div.cell_output table tbody tr:hover td,
-.dataframe tbody tr:hover td {
+table.dataframe tbody tr:hover td {
     background-color: rgba(201, 169, 97, 0.08) !important;
 }
 
@@ -288,7 +308,7 @@ div.cell_output table tbody tr:hover td,
     border-radius: 4px !important;
 }
 
-/* Цитаты и примечания */
+/* Цитаты */
 blockquote {
     border-left: 4px solid var(--accent-color);
     background-color: rgba(201, 169, 97, 0.05);
@@ -299,7 +319,7 @@ blockquote {
     border-radius: 0 4px 4px 0;
 }
 
-/* Графики и изображения */
+/* Графики */
 div.cell_output img {
     border: 1px solid #333;
     border-radius: 4px;
