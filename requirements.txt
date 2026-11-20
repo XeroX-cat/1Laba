@@ -5,5 +5,5 @@ matplotlib
 seaborn
 openpyxl
 ipywidgets
---extra-index-url https://gitlab.tudelft.nl/api/v4/projects/11239/packages/pypi/simple
-sphinx-thebe ~= 0.9.9
+git+https://github.com/TeachBooks/Sphinx-Thebe
+ipympl
