@@ -25,7 +25,7 @@ kernelspec:
 <br><br>
 
 <p style="font-size: 1rem; color: #888; margin-top: 40px; letter-spacing: 1px;">
-ВЫПОЛНИЛА: <strong style="color: #d4d4d4;">КОМАНДА №1</strong>
+ВЫПОЛНИЛА: <strong style="color: #d4d4d4;">КОМАНДА №14</strong>
 </p>
 
 <p style="font-size: 0.9rem; color: #666; margin-top: 10px;">
