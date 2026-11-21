@@ -1,7 +1,7 @@
 format: jb-book
 root: intro
 chapters:
-  - file: 1Laba_sprint1
+  - file: 1Laba
     title: Спринт 1
   - file: 1Laba_sprint2
     title: Спринт 2
